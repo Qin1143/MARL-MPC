@@ -1,0 +1,16 @@
+[0.022s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[0.070s] [35m[1mScanning dependencies of target traj_pub[0m
+[0.127s] [ 66%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_visualization.cpp.o[0m
+[0.127s] [ 66%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
+[1.826s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_visualization.cpp:3:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KPlanningVisualization::PlanningVisualization(const rclcpp::NodeOptions&)[m[K’
+[1.826s]     3 | [01;31m[KPlanningVisualization[m[K::PlanningVisualization(const rclcpp::NodeOptions & options) : Node("planning_visualization", options)
+[1.826s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.826s] In file included from [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_visualization.cpp:1[m[K:
+[1.826s] [01m[K/home/tony/webots_ws/src/traj_publish/include/traj_visualization.hpp:10:18:[m[K [01;36m[Knote: [m[K‘[01m[KPlanningVisualization::PlanningVisualization(const rclcpp::NodeOptions&)[m[K’ previously defined here
+[1.826s]    10 |         explicit [01;36m[KPlanningVisualization[m[K(const rclcpp::NodeOptions & options) : Node("planning_visualization", options) {}
+[1.826s]       |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.299s] make[2]: *** [CMakeFiles/traj_pub.dir/build.make:76: CMakeFiles/traj_pub.dir/src/traj_visualization.cpp.o] Error 1
+[2.299s] make[2]: *** Waiting for unfinished jobs....
+[3.620s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/traj_pub.dir/all] Error 2
+[3.620s] make: *** [Makefile:141: all] Error 2
+[3.623s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '2': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16

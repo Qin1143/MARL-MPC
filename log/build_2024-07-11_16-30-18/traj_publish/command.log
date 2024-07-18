@@ -1,0 +1,1 @@
+Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16

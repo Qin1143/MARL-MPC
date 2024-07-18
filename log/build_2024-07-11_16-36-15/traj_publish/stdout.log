@@ -1,0 +1,19 @@
+[100%] Built target traj_pub
+-- Install configuration: ""
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/package_run_dependencies/traj_publish
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/parent_prefix_path/traj_publish
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/path.sh
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/path.dsv
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.bash
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.sh
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.zsh
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.dsv
+-- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/package.dsv
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/packages/traj_publish
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake/traj_publishConfig.cmake
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake/traj_publishConfig-version.cmake
+-- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/package.xml
+-- Installing: /home/tony/webots_ws/install/traj_publish/lib/traj_publish/traj_pub
+-- Set runtime path of "/home/tony/webots_ws/install/traj_publish/lib/traj_publish/traj_pub" to ""

@@ -1,0 +1,26 @@
+[0.204s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[0.249s] [35m[1mScanning dependencies of target traj_pub[0m
+[0.305s] [ 33%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
+[3.779s] [ 66%] [32m[1mLinking CXX executable traj_pub[0m
+[3.953s] [100%] Built target traj_pub
+[3.964s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '0': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[3.993s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --install /home/tony/webots_ws/build/traj_publish
+[4.004s] -- Install configuration: ""
+[4.004s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/package_run_dependencies/traj_publish
+[4.004s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/parent_prefix_path/traj_publish
+[4.004s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/ament_prefix_path.sh
+[4.004s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/ament_prefix_path.dsv
+[4.004s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/path.sh
+[4.004s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/path.dsv
+[4.004s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.bash
+[4.004s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.sh
+[4.004s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.zsh
+[4.004s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.dsv
+[4.005s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/package.dsv
+[4.005s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/packages/traj_publish
+[4.005s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake/traj_publishConfig.cmake
+[4.005s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake/traj_publishConfig-version.cmake
+[4.005s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/package.xml
+[4.005s] -- Installing: /home/tony/webots_ws/install/traj_publish/lib/traj_publish/traj_pub
+[4.006s] -- Set runtime path of "/home/tony/webots_ws/install/traj_publish/lib/traj_publish/traj_pub" to ""
+[4.010s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '0': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --install /home/tony/webots_ws/build/traj_publish

@@ -1,0 +1,49 @@
+[ 46%] Built target qpOASES
+[ 56%] Built target example2
+[ 56%] Built target example1a
+[ 60%] Built target example1b
+[ 70%] Built target qrecipe
+[ 70%] Built target example1
+[ 75%] Built target example5
+[ 80%] Built target example3
+[ 90%] Built target exampleLP
+[ 90%] Built target qrecipeSchur
+[ 95%] Built target example4
+[100%] Built target example3b
+-- Install configuration: "Release"
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/lib/libqpOASES.a
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Types.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/QProblem.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/QProblemB.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/extras
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/extras/SolutionAnalysis.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/extras/OQPinterface.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/extras/SolutionAnalysis.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Matrices.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SparseSolver.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Flipper.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Bounds.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/QProblem.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Indexlist.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/MessageHandling.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Indexlist.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Constraints.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/QProblemB.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SQProblemSchur.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Constants.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Bounds.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/MessageHandling.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Utils.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Options.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Utils.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SQProblem.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/LapackBlasReplacement.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Constraints.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SQProblemSchur.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SubjectTo.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SQProblem.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/ConstraintProduct.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SubjectTo.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/UnitTesting.hpp

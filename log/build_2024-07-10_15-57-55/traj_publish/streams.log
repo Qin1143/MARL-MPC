@@ -1,0 +1,34 @@
+[0.011s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[0.046s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.066s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.211s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.239s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.242s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.346s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.380s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.381s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.481s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.562s] -- Found traj_publish: 0.0.0 (/home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake)
+[0.562s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.617s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.618s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.618s] -- Configured cppcheck include dirs: 
+[0.618s] -- Configured cppcheck exclude dirs and/or files: 
+[0.619s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.619s] -- Configured cpplint exclude dirs and/or files: 
+[0.619s] -- Added test 'lint_cmake' to check CMake code style
+[0.620s] -- Added test 'uncrustify' to check C / C++ code style
+[0.620s] -- Configured uncrustify additional arguments: 
+[0.620s] -- Added test 'xmllint' to check XML markup files
+[0.623s] -- Configuring done
+[0.629s] -- Generating done
+[0.631s] -- Build files have been written to: /home/tony/webots_ws/build/traj_publish
+[0.666s] [ 50%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
+[0.678s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Ktraj_pub.hpp: No such file or directory
+[0.679s]     1 | #include [01;31m[K"traj_pub.hpp"[m[K
+[0.679s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.679s] compilation terminated.
+[0.680s] make[2]: *** [CMakeFiles/traj_pub.dir/build.make:63: CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o] Error 1
+[0.680s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/traj_pub.dir/all] Error 2
+[0.680s] make: *** [Makefile:141: all] Error 2
+[0.685s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16

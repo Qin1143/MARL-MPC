@@ -1,0 +1,22 @@
+[0.195s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[0.236s] [35m[1mScanning dependencies of target traj_pub[0m
+[0.328s] [ 66%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_visualization.cpp.o[0m
+[0.329s] [ 66%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
+[2.249s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:[m[K In member function ‘[01m[Kvoid TrajectoryPublisher::publishBspline()[m[K’:
+[2.249s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:69:46:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kconstexpr Eigen::EigenBase<Derived>::Index Eigen::EigenBase<Derived>::size() const [with Derived = Eigen::Matrix<double, -1, -1>; Eigen::EigenBase<Derived>::Index = long int][m[K’
+[2.249s]    69 |         [01;31m[Kstd::cout << "Control Points Size: " << control_points.size[m[K << std::endl;
+[2.249s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.249s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:274[m[K,
+[2.249s]                  from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+[2.250s]                  from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+[2.250s]                  from [01m[K/home/tony/webots_ws/src/traj_publish/include/traj_visualization.hpp:3[m[K,
+[2.250s]                  from [01m[K/home/tony/webots_ws/src/traj_publish/include/traj_publish/traj_pub.hpp:7[m[K,
+[2.250s]                  from [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:1[m[K:
+[2.250s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/EigenBase.h:67:16:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.250s]    67 |   inline Index [01;36m[Ksize[m[K() const EIGEN_NOEXCEPT { return rows() * cols(); }
+[2.250s]       |                [01;36m[K^~~~[m[K
+[3.031s] make[2]: *** [CMakeFiles/traj_pub.dir/build.make:63: CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o] Error 1
+[3.031s] make[2]: *** Waiting for unfinished jobs....
+[3.472s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/traj_pub.dir/all] Error 2
+[3.472s] make: *** [Makefile:141: all] Error 2
+[3.476s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '2': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16

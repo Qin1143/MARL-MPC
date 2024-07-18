@@ -1,0 +1,74 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+-- Found motor_interfaces: 0.0.0 (/home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake)
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tony/webots_ws/build/mpc_controller
+[35m[1mScanning dependencies of target control_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/mpc_controller.cpp.o[0m
+In file included from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:1014[m[K,
+                 from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:66[m[K,
+                 from [01m[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4[m[K,
+                 from [01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:1[m[K:
+[01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:[m[K In member function ‘[01m[Kvoid qpOASES::QProblemB::applyGivens(qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t&, qpOASES::real_t&) const[m[K’:
+[01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:447:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knu[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  447 | inline void QProblemB::applyGivens( real_t c, real_t s, [01;35m[Kreal_t nu[m[K, real_t xold, real_t yold,
+      |                                                         [01;35m[K~~~~~~~^~[m[K
+In file included from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:43[m[K,
+                 from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:67[m[K,
+                 from [01m[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4[m[K,
+                 from [01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:1[m[K:
+[01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:[m[K In copy constructor ‘[01m[KqpOASES::ConstraintProduct::ConstraintProduct(const qpOASES::ConstraintProduct&)[m[K’:
+[01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:64:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtoCopy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   64 |   ConstraintProduct( [01;35m[Kconst ConstraintProduct &toCopy[m[K /**< Rhs object. */
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:[m[K In member function ‘[01m[KqpOASES::ConstraintProduct& qpOASES::ConstraintProduct::operator=(const qpOASES::ConstraintProduct&)[m[K’:
+[01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:71:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtoCopy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   71 |   ConstraintProduct &operator=( [01;35m[Kconst ConstraintProduct &toCopy[m[K /**< Rhs object. */
+      |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:[m[K In member function ‘[01m[KEigen::MatrixXd MPC_controller::MPC_Solve_qp(Eigen::Vector3d, std::vector<Eigen::Matrix<double, 3, 1> >, std::vector<Eigen::Matrix<double, 2, 1> >, int)[m[K’:
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:82:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[KH[m[K’ [[01;35m[K-Wvla[m[K]
+   82 |     real_t [01;35m[KH[m[K[2*N*2*N],g[2*N],A[2*N],lb[2*N],ub[2*N],lbA[1],ubA[1];
+      |            [01;35m[K^[m[K
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:82:23:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kg[m[K’ [[01;35m[K-Wvla[m[K]
+   82 |     real_t H[2*N*2*N],[01;35m[Kg[m[K[2*N],A[2*N],lb[2*N],ub[2*N],lbA[1],ubA[1];
+      |                       [01;35m[K^[m[K
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:82:30:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[KA[m[K’ [[01;35m[K-Wvla[m[K]
+   82 |     real_t H[2*N*2*N],g[2*N],[01;35m[KA[m[K[2*N],lb[2*N],ub[2*N],lbA[1],ubA[1];
+      |                              [01;35m[K^[m[K
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:82:37:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Klb[m[K’ [[01;35m[K-Wvla[m[K]
+   82 |     real_t H[2*N*2*N],g[2*N],A[2*N],[01;35m[Klb[m[K[2*N],ub[2*N],lbA[1],ubA[1];
+      |                                     [01;35m[K^~[m[K
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:82:45:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kub[m[K’ [[01;35m[K-Wvla[m[K]
+   82 |     real_t H[2*N*2*N],g[2*N],A[2*N],lb[2*N],[01;35m[Kub[m[K[2*N],lbA[1],ubA[1];
+      |                                             [01;35m[K^~[m[K
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:110:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kx_solution[m[K’ [[01;35m[K-Wvla[m[K]
+  110 |     real_t [01;35m[Kx_solution[m[K[2*N];
+      |            [01;35m[K^~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable control_node[0m
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/control_node.dir/build.make:148: control_node] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

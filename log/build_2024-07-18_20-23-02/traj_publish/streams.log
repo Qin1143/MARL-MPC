@@ -1,0 +1,15 @@
+[0.033s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[0.082s] [35m[1mScanning dependencies of target traj_pub[0m
+[0.146s] [ 33%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
+[2.166s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:[m[K In member function ‘[01m[Kvoid TrajectoryPublisher::publishBspline()[m[K’:
+[2.166s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:81:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline_visualization_[m[K’ was not declared in this scope; did you mean ‘[01m[Kvisualization_[m[K’?
+[2.166s]    81 |         [01;31m[Kbspline_visualization_[m[K->publish(marker);
+[2.166s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.166s]       |         [32m[Kvisualization_[m[K
+[2.168s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:81:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker[m[K’ was not declared in this scope
+[2.168s]    81 |         bspline_visualization_->publish([01;31m[Kmarker[m[K);
+[2.168s]       |                                         [01;31m[K^~~~~~[m[K
+[2.938s] make[2]: *** [CMakeFiles/traj_pub.dir/build.make:63: CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o] Error 1
+[2.938s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/traj_pub.dir/all] Error 2
+[2.938s] make: *** [Makefile:141: all] Error 2
+[2.940s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '2': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16

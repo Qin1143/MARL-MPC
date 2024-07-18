@@ -1,0 +1,367 @@
+[0.010s] Invoking command in '/home/tony/webots_ws/src/qpOASES/build/qpOASES': /usr/bin/cmake /home/tony/webots_ws/src/qpOASES -DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/src/qpOASES/install/qpOASES
+[0.105s] -- The CXX compiler identification is GNU 9.4.0
+[0.111s] -- Check for working CXX compiler: /usr/bin/c++
+[0.227s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.228s] -- Detecting CXX compiler ABI info
+[0.324s] -- Detecting CXX compiler ABI info - done
+[0.337s] -- Detecting CXX compile features
+[0.337s] -- Detecting CXX compile features - done
+[0.339s] -- Configuring done
+[0.351s] -- Generating done
+[0.352s] -- Build files have been written to: /home/tony/webots_ws/src/qpOASES/build/qpOASES
+[0.355s] Invoked command in '/home/tony/webots_ws/src/qpOASES/build/qpOASES' returned '0': /usr/bin/cmake /home/tony/webots_ws/src/qpOASES -DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/src/qpOASES/install/qpOASES
+[0.359s] Invoking command in '/home/tony/webots_ws/src/qpOASES/build/qpOASES': /usr/bin/cmake --build /home/tony/webots_ws/src/qpOASES/build/qpOASES -- -j16 -l16
+[0.402s] [35m[1mScanning dependencies of target qpOASES[0m
+[0.421s] [  9%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Options.cpp.o[0m
+[0.422s] [  9%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Constraints.cpp.o[0m
+[0.422s] [  9%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Indexlist.cpp.o[0m
+[0.422s] [  9%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Bounds.cpp.o[0m
+[0.422s] [ 12%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Flipper.cpp.o[0m
+[0.422s] [ 17%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/LAPACKReplacement.cpp.o[0m
+[0.422s] [ 17%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/OQPinterface.cpp.o[0m
+[0.422s] [ 19%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Matrices.cpp.o[0m
+[0.422s] [ 21%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/MessageHandling.cpp.o[0m
+[0.423s] [ 24%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/QProblem.cpp.o[0m
+[0.423s] [ 29%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SQProblem.cpp.o[0m
+[0.423s] [ 29%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/BLASReplacement.cpp.o[0m
+[0.425s] [ 31%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SolutionAnalysis.cpp.o[0m
+[0.425s] [ 36%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/QProblemB.cpp.o[0m
+[0.425s] [ 36%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SQProblemSchur.cpp.o[0m
+[0.432s] [ 39%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SparseSolver.cpp.o[0m
+[0.550s] [01m[K/home/tony/webots_ws/src/qpOASES/src/MessageHandling.cpp:[m[K In member function ‘[01m[KqpOASES::returnValue qpOASES::MessageHandling::throwMessage(qpOASES::returnValue, const char*, const char*, const char*, long unsigned int, qpOASES::VisibilityStatus, const char*)[m[K’:
+[0.551s] [01m[K/home/tony/webots_ws/src/qpOASES/src/MessageHandling.cpp:517:50:[m[K [01;35m[Kwarning: [m[K‘[01m[K->[m[K’ directive output may be truncated writing 2 bytes into a region of size between 1 and 160 [[01;35m[K-Wformat-truncation=[m[K]
+[0.551s]   517 |    snprintf( myPrintfString,MAX_STRING_LENGTH,"%s[01;35m[K->[m[K", whitespaces );
+[0.551s]       |                                                  [01;35m[K^~[m[K
+[0.551s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[0.551s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/MessageHandling.cpp:36[m[K:
+[0.551s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 3 and 162 bytes into a destination of size 160
+[0.551s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[0.551s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.551s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[0.552s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.595s] [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:[m[K In member function ‘[01m[KqpOASES::returnValue qpOASES::Options::print() const[m[K’:
+[0.595s] [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:386:80:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size 126 [[01;35m[K-Wformat-truncation=[m[K]
+[0.596s]   386 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"printLevel                     =  [01;35m[K%s[m[K\n",[32m[Kinfo[m[K );
+[0.596s]       |                                                                                [01;35m[K^~[m[K    [32m[K~~~~[m[K
+[0.596s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[0.596s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[0.597s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[0.597s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40[m[K,
+[0.597s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36[m[K:
+[0.597s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 36 and 195 bytes into a destination of size 160
+[0.598s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[0.598s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.598s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[0.598s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.598s] [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:392:80:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size 126 [[01;35m[K-Wformat-truncation=[m[K]
+[0.598s]   392 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableRamping                  =  [01;35m[K%s[m[K\n",[32m[Kinfo[m[K );
+[0.598s]       |                                                                                [01;35m[K^~[m[K    [32m[K~~~~[m[K
+[0.599s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[0.599s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[0.599s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[0.599s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40[m[K,
+[0.599s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36[m[K:
+[0.599s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 36 and 195 bytes into a destination of size 160
+[0.599s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[0.599s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.599s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[0.599s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.600s] [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:396:80:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size 126 [[01;35m[K-Wformat-truncation=[m[K]
+[0.600s]   396 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableFarBounds                =  [01;35m[K%s[m[K\n",[32m[Kinfo[m[K );
+[0.600s]       |                                                                                [01;35m[K^~[m[K    [32m[K~~~~[m[K
+[0.600s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[0.600s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[0.600s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[0.600s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40[m[K,
+[0.600s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36[m[K:
+[0.600s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 36 and 195 bytes into a destination of size 160
+[0.601s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[0.601s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.601s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[0.601s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.601s] [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:400:80:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size 126 [[01;35m[K-Wformat-truncation=[m[K]
+[0.601s]   400 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableFlippingBounds           =  [01;35m[K%s[m[K\n",[32m[Kinfo[m[K );
+[0.601s]       |                                                                                [01;35m[K^~[m[K    [32m[K~~~~[m[K
+[0.601s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[0.601s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[0.601s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[0.601s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40[m[K,
+[0.602s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36[m[K:
+[0.602s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 36 and 195 bytes into a destination of size 160
+[0.602s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[0.602s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.602s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[0.602s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.602s] [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:404:80:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size 126 [[01;35m[K-Wformat-truncation=[m[K]
+[0.602s]   404 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableRegularisation           =  [01;35m[K%s[m[K\n",[32m[Kinfo[m[K );
+[0.602s]       |                                                                                [01;35m[K^~[m[K    [32m[K~~~~[m[K
+[0.602s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[0.602s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[0.603s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[0.603s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40[m[K,
+[0.603s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36[m[K:
+[0.603s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 36 and 195 bytes into a destination of size 160
+[0.603s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[0.603s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.603s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[0.603s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.603s] [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:408:80:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size 126 [[01;35m[K-Wformat-truncation=[m[K]
+[0.603s]   408 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableFullLITests              =  [01;35m[K%s[m[K\n",[32m[Kinfo[m[K );
+[0.603s]       |                                                                                [01;35m[K^~[m[K    [32m[K~~~~[m[K
+[0.604s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[0.604s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[0.604s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[0.604s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40[m[K,
+[0.604s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36[m[K:
+[0.604s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 36 and 195 bytes into a destination of size 160
+[0.604s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[0.604s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.604s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[0.604s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.605s] [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:412:80:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size 126 [[01;35m[K-Wformat-truncation=[m[K]
+[0.605s]   412 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableNZCTests                 =  [01;35m[K%s[m[K\n",[32m[Kinfo[m[K );
+[0.605s]       |                                                                                [01;35m[K^~[m[K    [32m[K~~~~[m[K
+[0.605s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[0.605s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[0.605s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[0.605s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40[m[K,
+[0.605s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36[m[K:
+[0.605s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 36 and 195 bytes into a destination of size 160
+[0.605s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[0.605s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.606s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[0.606s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.606s] [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:422:80:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size 126 [[01;35m[K-Wformat-truncation=[m[K]
+[0.606s]   422 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableEqualities               =  [01;35m[K%s[m[K\n",[32m[Kinfo[m[K );
+[0.606s]       |                                                                                [01;35m[K^~[m[K    [32m[K~~~~[m[K
+[0.606s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[0.606s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[0.606s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[0.606s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40[m[K,
+[0.606s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36[m[K:
+[0.607s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 36 and 195 bytes into a destination of size 160
+[0.607s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[0.607s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.607s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[0.607s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.607s] [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:426:80:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size 126 [[01;35m[K-Wformat-truncation=[m[K]
+[0.607s]   426 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableInertiaCorrection        =  [01;35m[K%s[m[K\n",[32m[Kinfo[m[K );
+[0.607s]       |                                                                                [01;35m[K^~[m[K    [32m[K~~~~[m[K
+[0.608s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[0.608s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[0.608s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[0.608s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40[m[K,
+[0.608s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36[m[K:
+[0.608s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 36 and 195 bytes into a destination of size 160
+[0.608s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[0.608s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.609s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[0.609s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.609s] [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:470:80:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size 126 [[01;35m[K-Wformat-truncation=[m[K]
+[0.609s]   470 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"initialStatusBounds            =  [01;35m[K%s[m[K\n",[32m[Kinfo[m[K );
+[0.609s]       |                                                                                [01;35m[K^~[m[K    [32m[K~~~~[m[K
+[0.609s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[0.609s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[0.609s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[0.609s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40[m[K,
+[0.609s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36[m[K:
+[0.609s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 36 and 195 bytes into a destination of size 160
+[0.610s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[0.610s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.610s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[0.610s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.622s] [ 41%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SubjectTo.cpp.o[0m
+[0.635s] [ 43%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Utils.cpp.o[0m
+[1.352s] [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:[m[K In member function ‘[01m[KqpOASES::returnValue qpOASES::QProblemB::printIteration(qpOASES::int_t, qpOASES::int_t, qpOASES::SubjectToStatus, qpOASES::real_t, qpOASES::BooleanType)[m[K’:
+[1.352s] [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:3837:76:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size between 119 and 135 [[01;35m[K-Wformat-truncation=[m[K]
+[1.352s]  3837 |     snprintf( myPrintfString,MAX_STRING_LENGTH,"   %5.1d   |   %1.6e   |   [01;35m[K%s[m[K %4.1d   |  %4.1d   \n", (int)iter,tau,[32m[Kinfo[m[K,(int)BC_idx,(int)getNFX( ) );
+[1.352s]       |                                                                            [01;35m[K^~[m[K                                       [32m[K~~~~[m[K
+[1.352s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[1.352s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[1.352s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[1.352s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Indexlist.hpp:40[m[K,
+[1.352s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/SubjectTo.hpp:40[m[K,
+[1.352s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp:40[m[K,
+[1.352s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Flipper.hpp:40[m[K,
+[1.352s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:42[m[K,
+[1.352s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:36[m[K:
+[1.352s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 45 and 234 bytes into a destination of size 160
+[1.352s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[1.353s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.353s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[1.353s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.353s] [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:3827:78:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size between 118 and 134 [[01;35m[K-Wformat-truncation=[m[K]
+[1.353s]  3827 |      snprintf( myPrintfString,MAX_STRING_LENGTH,"   %5.1d*  |   %1.6e   |    [01;35m[K%s[m[K SOLVED     |  %4.1d   \n", (int)iter,tau,[32m[Kinfo[m[K,(int)getNFX( ) );
+[1.353s]       |                                                                              [01;35m[K^~[m[K                                          [32m[K~~~~[m[K
+[1.353s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[1.353s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[1.353s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[1.353s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Indexlist.hpp:40[m[K,
+[1.353s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/SubjectTo.hpp:40[m[K,
+[1.353s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp:40[m[K,
+[1.353s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Flipper.hpp:40[m[K,
+[1.353s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:42[m[K,
+[1.353s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:36[m[K:
+[1.353s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 50 and 232 bytes into a destination of size 160
+[1.353s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[1.354s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.354s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[1.354s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.354s] [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:3825:78:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size between 118 and 134 [[01;35m[K-Wformat-truncation=[m[K]
+[1.354s]  3825 |      snprintf( myPrintfString,MAX_STRING_LENGTH,"   %5.1d   |   %1.6e   |    [01;35m[K%s[m[K SOLVED     |  %4.1d   \n", (int)iter,tau,[32m[Kinfo[m[K,(int)getNFX( ) );
+[1.354s]       |                                                                              [01;35m[K^~[m[K                                          [32m[K~~~~[m[K
+[1.354s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[1.354s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[1.354s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[1.354s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Indexlist.hpp:40[m[K,
+[1.354s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/SubjectTo.hpp:40[m[K,
+[1.354s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp:40[m[K,
+[1.354s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Flipper.hpp:40[m[K,
+[1.354s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:42[m[K,
+[1.354s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:36[m[K:
+[1.354s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 50 and 232 bytes into a destination of size 160
+[1.354s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[1.355s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.355s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[1.355s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.393s] [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:[m[K In member function ‘[01m[KqpOASES::returnValue qpOASES::QProblem::printIteration(qpOASES::int_t, qpOASES::int_t, qpOASES::SubjectToStatus, qpOASES::BooleanType, qpOASES::real_t, qpOASES::BooleanType)[m[K’:
+[2.393s] [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:6244:76:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size between 119 and 135 [[01;35m[K-Wformat-truncation=[m[K]
+[2.393s]  6244 |     snprintf( myPrintfString,MAX_STRING_LENGTH,"   %5.1d   |   %1.6e   |   [01;35m[K%s[m[K %4.1d   |  %4.1d   |  %4.1d   \n", (int)iter,tau,[32m[Kinfo[m[K,(int)BC_idx,(int)getNFX( ),(int)getNAC( ) );
+[2.393s]       |                                                                            [01;35m[K^~[m[K                                                  [32m[K~~~~[m[K
+[2.393s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[2.393s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[2.393s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[2.393s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Indexlist.hpp:40[m[K,
+[2.393s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/SubjectTo.hpp:40[m[K,
+[2.393s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp:40[m[K,
+[2.393s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Flipper.hpp:40[m[K,
+[2.393s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:42[m[K,
+[2.393s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:41[m[K,
+[2.393s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:36[m[K:
+[2.393s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 55 and 251 bytes into a destination of size 160
+[2.393s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[2.394s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.394s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[2.394s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.394s] [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:6229:78:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size between 118 and 134 [[01;35m[K-Wformat-truncation=[m[K]
+[2.394s]  6229 |      snprintf( myPrintfString,MAX_STRING_LENGTH,"   %5.1d*  |   %1.6e   |    [01;35m[K%s[m[K SOLVED     |  %4.1d   |  %4.1d   \n", (int)iter,tau,[32m[Kinfo[m[K,(int)getNFX( ),(int)getNAC( ) );
+[2.394s]       |                                                                              [01;35m[K^~[m[K                                                     [32m[K~~~~[m[K
+[2.394s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[2.394s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[2.394s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[2.394s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Indexlist.hpp:40[m[K,
+[2.394s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/SubjectTo.hpp:40[m[K,
+[2.394s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp:40[m[K,
+[2.394s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Flipper.hpp:40[m[K,
+[2.394s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:42[m[K,
+[2.394s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:41[m[K,
+[2.394s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:36[m[K:
+[2.394s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 60 and 249 bytes into a destination of size 160
+[2.395s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[2.395s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.395s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[2.395s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.395s] [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:6227:78:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive output may be truncated writing up to 159 bytes into a region of size between 118 and 134 [[01;35m[K-Wformat-truncation=[m[K]
+[2.395s]  6227 |      snprintf( myPrintfString,MAX_STRING_LENGTH,"   %5.1d   |   %1.6e   |    [01;35m[K%s[m[K SOLVED     |  %4.1d   |  %4.1d   \n", (int)iter,tau,[32m[Kinfo[m[K,(int)getNFX( ),(int)getNAC( ) );
+[2.395s]       |                                                                              [01;35m[K^~[m[K                                                     [32m[K~~~~[m[K
+[2.395s] In file included from [01m[K/usr/include/stdio.h:867[m[K,
+[2.395s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39[m[K,
+[2.395s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39[m[K,
+[2.395s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Indexlist.hpp:40[m[K,
+[2.395s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/SubjectTo.hpp:40[m[K,
+[2.395s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp:40[m[K,
+[2.395s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Flipper.hpp:40[m[K,
+[2.395s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:42[m[K,
+[2.395s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:41[m[K,
+[2.395s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:36[m[K:
+[2.396s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 60 and 249 bytes into a destination of size 160
+[2.396s]    67 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[2.396s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.396s]    68 | [01;36m[K       __bos (__s), __fmt, __va_arg_pack ())[m[K;
+[2.396s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.940s] [ 46%] [32m[1mLinking CXX static library libs/libqpOASES.a[0m
+[3.011s] [ 46%] Built target qpOASES
+[3.021s] [35m[1mScanning dependencies of target example5[0m
+[3.021s] [35m[1mScanning dependencies of target example1[0m
+[3.021s] [35m[1mScanning dependencies of target example1a[0m
+[3.021s] [35m[1mScanning dependencies of target qrecipe[0m
+[3.021s] [35m[1mScanning dependencies of target example3[0m
+[3.022s] [35m[1mScanning dependencies of target example2[0m
+[3.022s] [35m[1mScanning dependencies of target exampleLP[0m
+[3.022s] [35m[1mScanning dependencies of target example4[0m
+[3.022s] [35m[1mScanning dependencies of target example1b[0m
+[3.023s] [35m[1mScanning dependencies of target example3b[0m
+[3.023s] [35m[1mScanning dependencies of target qrecipeSchur[0m
+[3.034s] [ 48%] [32mBuilding CXX object CMakeFiles/example1a.dir/examples/example1a.cpp.o[0m
+[3.034s] [ 51%] [32mBuilding CXX object CMakeFiles/example5.dir/examples/example5.cpp.o[0m
+[3.034s] [ 53%] [32mBuilding CXX object CMakeFiles/example1.dir/examples/example1.cpp.o[0m
+[3.035s] [ 56%] [32mBuilding CXX object CMakeFiles/exampleLP.dir/examples/exampleLP.cpp.o[0m
+[3.035s] [ 60%] [32mBuilding CXX object CMakeFiles/example3.dir/examples/example3.cpp.o[0m
+[3.035s] [ 60%] [32mBuilding CXX object CMakeFiles/qrecipe.dir/examples/qrecipe.cpp.o[0m
+[3.035s] [ 63%] [32mBuilding CXX object CMakeFiles/example2.dir/examples/example2.cpp.o[0m
+[3.035s] [ 65%] [32mBuilding CXX object CMakeFiles/qrecipeSchur.dir/examples/qrecipeSchur.cpp.o[0m
+[3.036s] [ 68%] [32mBuilding CXX object CMakeFiles/example4.dir/examples/example4.cpp.o[0m
+[3.036s] [ 70%] [32mBuilding CXX object CMakeFiles/example1b.dir/examples/example1b.cpp.o[0m
+[3.037s] [ 73%] [32mBuilding CXX object CMakeFiles/example3b.dir/examples/example3b.cpp.o[0m
+[3.130s] [ 75%] [32m[1mLinking CXX executable bin/example3[0m
+[3.133s] [ 78%] [32m[1mLinking CXX executable bin/exampleLP[0m
+[3.135s] [ 80%] [32m[1mLinking CXX executable bin/example1[0m
+[3.140s] [ 82%] [32m[1mLinking CXX executable bin/example2[0m
+[3.183s] [ 85%] [32m[1mLinking CXX executable bin/example3b[0m
+[3.193s] [ 87%] [32m[1mLinking CXX executable bin/example1b[0m
+[3.196s] [ 90%] [32m[1mLinking CXX executable bin/example1a[0m
+[3.220s] [ 92%] [32m[1mLinking CXX executable bin/example4[0m
+[3.223s] [ 95%] [32m[1mLinking CXX executable bin/qrecipeSchur[0m
+[3.232s] [ 97%] [32m[1mLinking CXX executable bin/qrecipe[0m
+[3.249s] [100%] [32m[1mLinking CXX executable bin/example5[0m
+[3.282s] [100%] Built target example1
+[3.282s] [100%] Built target exampleLP
+[3.291s] [100%] Built target example3
+[3.333s] [100%] Built target example1a
+[3.334s] [100%] Built target example2
+[3.354s] [100%] Built target example1b
+[3.359s] [100%] Built target qrecipeSchur
+[3.363s] [100%] Built target example4
+[3.365s] [100%] Built target example3b
+[3.365s] [100%] Built target example5
+[3.383s] [100%] Built target qrecipe
+[3.407s] Invoked command in '/home/tony/webots_ws/src/qpOASES/build/qpOASES' returned '0': /usr/bin/cmake --build /home/tony/webots_ws/src/qpOASES/build/qpOASES -- -j16 -l16
+[3.497s] Invoking command in '/home/tony/webots_ws/src/qpOASES/build/qpOASES': /usr/bin/cmake --install /home/tony/webots_ws/src/qpOASES/build/qpOASES
+[3.504s] -- Install configuration: "Release"
+[3.504s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/lib/libqpOASES.a
+[3.510s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES.hpp
+[3.510s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES
+[3.510s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Types.hpp
+[3.510s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/QProblem.hpp
+[3.510s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/QProblemB.hpp
+[3.510s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/extras
+[3.510s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/extras/SolutionAnalysis.hpp
+[3.511s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/extras/OQPinterface.hpp
+[3.511s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/extras/SolutionAnalysis.ipp
+[3.511s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Matrices.hpp
+[3.511s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SparseSolver.hpp
+[3.511s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Flipper.hpp
+[3.511s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Bounds.ipp
+[3.511s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/QProblem.ipp
+[3.511s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Indexlist.ipp
+[3.511s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/MessageHandling.ipp
+[3.511s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Indexlist.hpp
+[3.512s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Constraints.ipp
+[3.512s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/QProblemB.ipp
+[3.512s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SQProblemSchur.hpp
+[3.512s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Constants.hpp
+[3.512s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Bounds.hpp
+[3.512s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/MessageHandling.hpp
+[3.512s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Utils.ipp
+[3.512s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Options.hpp
+[3.512s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Utils.hpp
+[3.513s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SQProblem.hpp
+[3.513s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/LapackBlasReplacement.hpp
+[3.513s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Constraints.hpp
+[3.513s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SQProblemSchur.ipp
+[3.513s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SubjectTo.ipp
+[3.513s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SQProblem.ipp
+[3.513s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/ConstraintProduct.hpp
+[3.513s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SubjectTo.hpp
+[3.513s] -- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/UnitTesting.hpp
+[3.515s] Invoked command in '/home/tony/webots_ws/src/qpOASES/build/qpOASES' returned '0': /usr/bin/cmake --install /home/tony/webots_ws/src/qpOASES/build/qpOASES

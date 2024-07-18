@@ -1,0 +1,6 @@
+{
+  "package_name": "traj_interfaces",
+  "non_idl_tuples": [
+    "/home/tony/webots_ws/src/traj_interfaces:msg/Bspline.msg"
+  ]
+}

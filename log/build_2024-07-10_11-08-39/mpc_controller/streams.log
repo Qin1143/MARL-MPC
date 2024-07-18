@@ -1,0 +1,32 @@
+[0.011s] Invoking command in '/home/tony/webots_ws/build/mpc_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/mpc_controller -- -j16 -l16
+[0.043s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.064s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.209s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.236s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.239s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.339s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.376s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.377s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.477s] CMake Error at CMakeLists.txt:34 (add_executable):
+[0.477s]   add_executable cannot create target "mpc_controller" because another target
+[0.477s]   with the same name already exists.  The existing target is a static library
+[0.477s]   created in source directory "/home/tony/webots_ws/src/mpc_controller".  See
+[0.477s]   documentation for policy CMP0002 for more details.
+[0.477s] 
+[0.478s] 
+[0.478s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.528s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.529s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.529s] -- Configured cppcheck include dirs: /home/tony/webots_ws/src/mpc_controller/include
+[0.529s] -- Configured cppcheck exclude dirs and/or files: 
+[0.529s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.530s] -- Configured cpplint exclude dirs and/or files: 
+[0.530s] -- Added test 'lint_cmake' to check CMake code style
+[0.531s] -- Added test 'uncrustify' to check C / C++ code style
+[0.531s] -- Configured uncrustify additional arguments: 
+[0.531s] -- Added test 'xmllint' to check XML markup files
+[0.533s] -- Configuring incomplete, errors occurred!
+[0.533s] See also "/home/tony/webots_ws/build/mpc_controller/CMakeFiles/CMakeOutput.log".
+[0.533s] See also "/home/tony/webots_ws/build/mpc_controller/CMakeFiles/CMakeError.log".
+[0.539s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.541s] Invoked command in '/home/tony/webots_ws/build/mpc_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/mpc_controller -- -j16 -l16

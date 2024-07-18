@@ -1,0 +1,410 @@
+[0.000000] (-) TimerEvent: {}
+[0.000121] (qpOASES) JobQueued: {'identifier': 'qpOASES', 'dependencies': OrderedDict()}
+[0.000515] (qpOASES) JobStarted: {'identifier': 'qpOASES'}
+[0.007419] (qpOASES) JobProgress: {'identifier': 'qpOASES', 'progress': 'cmake'}
+[0.007866] (qpOASES) Command: {'cmd': ['/usr/bin/cmake', '/home/tony/webots_ws/src/qpOASES', '-DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/src/qpOASES/install/qpOASES'], 'cwd': '/home/tony/webots_ws/src/qpOASES/build/qpOASES', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1653'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '13499'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:52939'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1689,unix/Jarvis:/tmp/.ICE-unix/1689'), ('INVOCATION_ID', '849ddd8d88954660bb37381ff9d57b52'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1ac85d0f-f456-47cf-bf84-b44b34bfeed3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/src/qpOASES/build/qpOASES'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.099898] (-) TimerEvent: {}
+[0.105509] (qpOASES) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.111485] (qpOASES) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.200092] (-) TimerEvent: {}
+[0.227137] (qpOASES) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.228470] (qpOASES) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300387] (-) TimerEvent: {}
+[0.324275] (qpOASES) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.337120] (qpOASES) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.337704] (qpOASES) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.339319] (qpOASES) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.351639] (qpOASES) StdoutLine: {'line': b'-- Generating done\n'}
+[0.352895] (qpOASES) StdoutLine: {'line': b'-- Build files have been written to: /home/tony/webots_ws/src/qpOASES/build/qpOASES\n'}
+[0.355070] (qpOASES) CommandEnded: {'returncode': 0}
+[0.355602] (qpOASES) JobProgress: {'identifier': 'qpOASES', 'progress': 'build'}
+[0.358168] (qpOASES) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tony/webots_ws/src/qpOASES/build/qpOASES', '--', '-j16', '-l16'], 'cwd': '/home/tony/webots_ws/src/qpOASES/build/qpOASES', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1653'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '13499'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:52939'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1689,unix/Jarvis:/tmp/.ICE-unix/1689'), ('INVOCATION_ID', '849ddd8d88954660bb37381ff9d57b52'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1ac85d0f-f456-47cf-bf84-b44b34bfeed3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/src/qpOASES/build/qpOASES'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.400532] (-) TimerEvent: {}
+[0.402620] (qpOASES) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qpOASES\x1b[0m\n'}
+[0.421863] (qpOASES) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Options.cpp.o\x1b[0m\n'}
+[0.422120] (qpOASES) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Constraints.cpp.o\x1b[0m\n'}
+[0.422228] (qpOASES) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Indexlist.cpp.o\x1b[0m\n'}
+[0.422393] (qpOASES) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Bounds.cpp.o\x1b[0m\n'}
+[0.422560] (qpOASES) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Flipper.cpp.o\x1b[0m\n'}
+[0.422647] (qpOASES) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/LAPACKReplacement.cpp.o\x1b[0m\n'}
+[0.422725] (qpOASES) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/OQPinterface.cpp.o\x1b[0m\n'}
+[0.422795] (qpOASES) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Matrices.cpp.o\x1b[0m\n'}
+[0.422865] (qpOASES) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/MessageHandling.cpp.o\x1b[0m\n'}
+[0.423228] (qpOASES) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/QProblem.cpp.o\x1b[0m\n'}
+[0.423417] (qpOASES) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SQProblem.cpp.o\x1b[0m\n'}
+[0.423528] (qpOASES) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/BLASReplacement.cpp.o\x1b[0m\n'}
+[0.425353] (qpOASES) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SolutionAnalysis.cpp.o\x1b[0m\n'}
+[0.425767] (qpOASES) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/QProblemB.cpp.o\x1b[0m\n'}
+[0.425886] (qpOASES) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SQProblemSchur.cpp.o\x1b[0m\n'}
+[0.432063] (qpOASES) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SparseSolver.cpp.o\x1b[0m\n'}
+[0.500664] (-) TimerEvent: {}
+[0.550811] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/MessageHandling.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KqpOASES::returnValue qpOASES::MessageHandling::throwMessage(qpOASES::returnValue, const char*, const char*, const char*, long unsigned int, qpOASES::VisibilityStatus, const char*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.551081] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/MessageHandling.cpp:517:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing 2 bytes into a region of size between 1 and 160 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[0.551196] (qpOASES) StderrLine: {'line': b'  517 |    snprintf( myPrintfString,MAX_STRING_LENGTH,"%s\x1b[01;35m\x1b[K->\x1b[m\x1b[K", whitespaces );\n'}
+[0.551281] (qpOASES) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.551375] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[0.551475] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/MessageHandling.cpp:36\x1b[m\x1b[K:\n'}
+[0.551569] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 3 and 162 bytes into a destination of size 160\n'}
+[0.551677] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[0.551783] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.551881] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[0.552011] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.595097] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KqpOASES::returnValue qpOASES::Options::print() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.595626] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:386:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size 126 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[0.595861] (qpOASES) StderrLine: {'line': b'  386 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"printLevel                     =  \x1b[01;35m\x1b[K%s\x1b[m\x1b[K\\n",\x1b[32m\x1b[Kinfo\x1b[m\x1b[K );\n'}
+[0.596075] (qpOASES) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K    \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[0.596321] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[0.596558] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[0.596960] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[0.597299] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40\x1b[m\x1b[K,\n'}
+[0.597545] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36\x1b[m\x1b[K:\n'}
+[0.597753] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 36 and 195 bytes into a destination of size 160\n'}
+[0.597927] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[0.598139] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.598309] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[0.598473] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.598682] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:392:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size 126 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[0.598784] (qpOASES) StderrLine: {'line': b'  392 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableRamping                  =  \x1b[01;35m\x1b[K%s\x1b[m\x1b[K\\n",\x1b[32m\x1b[Kinfo\x1b[m\x1b[K );\n'}
+[0.598874] (qpOASES) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K    \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[0.598980] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[0.599081] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[0.599185] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[0.599285] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40\x1b[m\x1b[K,\n'}
+[0.599387] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36\x1b[m\x1b[K:\n'}
+[0.599490] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 36 and 195 bytes into a destination of size 160\n'}
+[0.599608] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[0.599697] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.599779] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[0.599865] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.599980] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:396:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size 126 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[0.600086] (qpOASES) StderrLine: {'line': b'  396 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableFarBounds                =  \x1b[01;35m\x1b[K%s\x1b[m\x1b[K\\n",\x1b[32m\x1b[Kinfo\x1b[m\x1b[K );\n'}
+[0.600189] (qpOASES) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K    \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[0.600286] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[0.600385] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[0.600487] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[0.600573] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40\x1b[m\x1b[K,\n'}
+[0.600653] (-) TimerEvent: {}
+[0.600790] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36\x1b[m\x1b[K:\n'}
+[0.600898] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 36 and 195 bytes into a destination of size 160\n'}
+[0.601001] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[0.601098] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.601182] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[0.601273] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.601359] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:400:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size 126 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[0.601460] (qpOASES) StderrLine: {'line': b'  400 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableFlippingBounds           =  \x1b[01;35m\x1b[K%s\x1b[m\x1b[K\\n",\x1b[32m\x1b[Kinfo\x1b[m\x1b[K );\n'}
+[0.601557] (qpOASES) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K    \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[0.601667] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[0.601768] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[0.601867] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[0.601963] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40\x1b[m\x1b[K,\n'}
+[0.602051] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36\x1b[m\x1b[K:\n'}
+[0.602137] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 36 and 195 bytes into a destination of size 160\n'}
+[0.602227] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[0.602302] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.602377] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[0.602454] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.602532] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:404:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size 126 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[0.602612] (qpOASES) StderrLine: {'line': b'  404 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableRegularisation           =  \x1b[01;35m\x1b[K%s\x1b[m\x1b[K\\n",\x1b[32m\x1b[Kinfo\x1b[m\x1b[K );\n'}
+[0.602699] (qpOASES) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K    \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[0.602783] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[0.602881] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[0.602989] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[0.603086] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40\x1b[m\x1b[K,\n'}
+[0.603183] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36\x1b[m\x1b[K:\n'}
+[0.603273] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 36 and 195 bytes into a destination of size 160\n'}
+[0.603365] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[0.603442] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.603513] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[0.603606] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.603718] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:408:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size 126 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[0.603822] (qpOASES) StderrLine: {'line': b'  408 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableFullLITests              =  \x1b[01;35m\x1b[K%s\x1b[m\x1b[K\\n",\x1b[32m\x1b[Kinfo\x1b[m\x1b[K );\n'}
+[0.603946] (qpOASES) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K    \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[0.604058] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[0.604160] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[0.604271] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[0.604374] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40\x1b[m\x1b[K,\n'}
+[0.604476] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36\x1b[m\x1b[K:\n'}
+[0.604576] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 36 and 195 bytes into a destination of size 160\n'}
+[0.604677] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[0.604772] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.604867] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[0.604963] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.605063] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:412:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size 126 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[0.605161] (qpOASES) StderrLine: {'line': b'  412 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableNZCTests                 =  \x1b[01;35m\x1b[K%s\x1b[m\x1b[K\\n",\x1b[32m\x1b[Kinfo\x1b[m\x1b[K );\n'}
+[0.605255] (qpOASES) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K    \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[0.605334] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[0.605405] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[0.605482] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[0.605564] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40\x1b[m\x1b[K,\n'}
+[0.605653] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36\x1b[m\x1b[K:\n'}
+[0.605740] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 36 and 195 bytes into a destination of size 160\n'}
+[0.605832] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[0.605923] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.606025] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[0.606129] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.606228] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:422:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size 126 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[0.606330] (qpOASES) StderrLine: {'line': b'  422 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableEqualities               =  \x1b[01;35m\x1b[K%s\x1b[m\x1b[K\\n",\x1b[32m\x1b[Kinfo\x1b[m\x1b[K );\n'}
+[0.606431] (qpOASES) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K    \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[0.606533] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[0.606629] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[0.606730] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[0.606825] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40\x1b[m\x1b[K,\n'}
+[0.606932] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36\x1b[m\x1b[K:\n'}
+[0.607028] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 36 and 195 bytes into a destination of size 160\n'}
+[0.607130] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[0.607229] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.607330] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[0.607431] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.607530] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:426:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size 126 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[0.607628] (qpOASES) StderrLine: {'line': b'  426 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"enableInertiaCorrection        =  \x1b[01;35m\x1b[K%s\x1b[m\x1b[K\\n",\x1b[32m\x1b[Kinfo\x1b[m\x1b[K );\n'}
+[0.607949] (qpOASES) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K    \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[0.608139] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[0.608255] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[0.608357] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[0.608455] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40\x1b[m\x1b[K,\n'}
+[0.608556] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36\x1b[m\x1b[K:\n'}
+[0.608660] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 36 and 195 bytes into a destination of size 160\n'}
+[0.608775] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[0.608876] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.608979] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[0.609079] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.609171] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:470:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size 126 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[0.609266] (qpOASES) StderrLine: {'line': b'  470 |  snprintf( myPrintfString,MAX_STRING_LENGTH,"initialStatusBounds            =  \x1b[01;35m\x1b[K%s\x1b[m\x1b[K\\n",\x1b[32m\x1b[Kinfo\x1b[m\x1b[K );\n'}
+[0.609367] (qpOASES) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K    \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[0.609468] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[0.609563] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[0.609665] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[0.609767] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Options.hpp:40\x1b[m\x1b[K,\n'}
+[0.609855] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/Options.cpp:36\x1b[m\x1b[K:\n'}
+[0.609953] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 36 and 195 bytes into a destination of size 160\n'}
+[0.610054] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[0.610153] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.610252] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[0.610360] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.622845] (qpOASES) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SubjectTo.cpp.o\x1b[0m\n'}
+[0.635477] (qpOASES) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Utils.cpp.o\x1b[0m\n'}
+[0.700803] (-) TimerEvent: {}
+[0.801170] (-) TimerEvent: {}
+[0.901517] (-) TimerEvent: {}
+[1.001796] (-) TimerEvent: {}
+[1.102107] (-) TimerEvent: {}
+[1.202400] (-) TimerEvent: {}
+[1.302692] (-) TimerEvent: {}
+[1.351971] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KqpOASES::returnValue qpOASES::QProblemB::printIteration(qpOASES::int_t, qpOASES::int_t, qpOASES::SubjectToStatus, qpOASES::real_t, qpOASES::BooleanType)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.352154] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:3837:76:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size between 119 and 135 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[1.352233] (qpOASES) StderrLine: {'line': b' 3837 |     snprintf( myPrintfString,MAX_STRING_LENGTH,"   %5.1d   |   %1.6e   |   \x1b[01;35m\x1b[K%s\x1b[m\x1b[K %4.1d   |  %4.1d   \\n", (int)iter,tau,\x1b[32m\x1b[Kinfo\x1b[m\x1b[K,(int)BC_idx,(int)getNFX( ) );\n'}
+[1.352313] (qpOASES) StderrLine: {'line': b'      |                                                                            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K                                       \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[1.352377] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[1.352440] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[1.352503] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[1.352564] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Indexlist.hpp:40\x1b[m\x1b[K,\n'}
+[1.352627] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/SubjectTo.hpp:40\x1b[m\x1b[K,\n'}
+[1.352686] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp:40\x1b[m\x1b[K,\n'}
+[1.352745] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Flipper.hpp:40\x1b[m\x1b[K,\n'}
+[1.352803] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:42\x1b[m\x1b[K,\n'}
+[1.352861] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:36\x1b[m\x1b[K:\n'}
+[1.352919] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 45 and 234 bytes into a destination of size 160\n'}
+[1.352978] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[1.353037] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.353101] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[1.353159] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.353216] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:3827:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size between 118 and 134 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[1.353278] (qpOASES) StderrLine: {'line': b' 3827 |      snprintf( myPrintfString,MAX_STRING_LENGTH,"   %5.1d*  |   %1.6e   |    \x1b[01;35m\x1b[K%s\x1b[m\x1b[K SOLVED     |  %4.1d   \\n", (int)iter,tau,\x1b[32m\x1b[Kinfo\x1b[m\x1b[K,(int)getNFX( ) );\n'}
+[1.353338] (qpOASES) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K^~\x1b[m\x1b[K                                          \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[1.353396] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[1.353453] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[1.353510] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[1.353565] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Indexlist.hpp:40\x1b[m\x1b[K,\n'}
+[1.353632] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/SubjectTo.hpp:40\x1b[m\x1b[K,\n'}
+[1.353690] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp:40\x1b[m\x1b[K,\n'}
+[1.353746] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Flipper.hpp:40\x1b[m\x1b[K,\n'}
+[1.353803] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:42\x1b[m\x1b[K,\n'}
+[1.353861] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:36\x1b[m\x1b[K:\n'}
+[1.353919] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 50 and 232 bytes into a destination of size 160\n'}
+[1.353982] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[1.354048] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.354106] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[1.354163] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.354221] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:3825:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size between 118 and 134 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[1.354282] (qpOASES) StderrLine: {'line': b' 3825 |      snprintf( myPrintfString,MAX_STRING_LENGTH,"   %5.1d   |   %1.6e   |    \x1b[01;35m\x1b[K%s\x1b[m\x1b[K SOLVED     |  %4.1d   \\n", (int)iter,tau,\x1b[32m\x1b[Kinfo\x1b[m\x1b[K,(int)getNFX( ) );\n'}
+[1.354340] (qpOASES) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K^~\x1b[m\x1b[K                                          \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[1.354398] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[1.354456] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[1.354513] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[1.354570] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Indexlist.hpp:40\x1b[m\x1b[K,\n'}
+[1.354628] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/SubjectTo.hpp:40\x1b[m\x1b[K,\n'}
+[1.354684] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp:40\x1b[m\x1b[K,\n'}
+[1.354741] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Flipper.hpp:40\x1b[m\x1b[K,\n'}
+[1.354798] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:42\x1b[m\x1b[K,\n'}
+[1.354854] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblemB.cpp:36\x1b[m\x1b[K:\n'}
+[1.354910] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 50 and 232 bytes into a destination of size 160\n'}
+[1.354973] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[1.355030] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.355085] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[1.355146] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.402826] (-) TimerEvent: {}
+[1.503114] (-) TimerEvent: {}
+[1.603376] (-) TimerEvent: {}
+[1.703651] (-) TimerEvent: {}
+[1.803939] (-) TimerEvent: {}
+[1.904219] (-) TimerEvent: {}
+[2.004498] (-) TimerEvent: {}
+[2.105164] (-) TimerEvent: {}
+[2.205449] (-) TimerEvent: {}
+[2.305720] (-) TimerEvent: {}
+[2.392921] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KqpOASES::returnValue qpOASES::QProblem::printIteration(qpOASES::int_t, qpOASES::int_t, qpOASES::SubjectToStatus, qpOASES::BooleanType, qpOASES::real_t, qpOASES::BooleanType)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.393112] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:6244:76:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size between 119 and 135 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[2.393190] (qpOASES) StderrLine: {'line': b' 6244 |     snprintf( myPrintfString,MAX_STRING_LENGTH,"   %5.1d   |   %1.6e   |   \x1b[01;35m\x1b[K%s\x1b[m\x1b[K %4.1d   |  %4.1d   |  %4.1d   \\n", (int)iter,tau,\x1b[32m\x1b[Kinfo\x1b[m\x1b[K,(int)BC_idx,(int)getNFX( ),(int)getNAC( ) );\n'}
+[2.393258] (qpOASES) StderrLine: {'line': b'      |                                                                            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K                                                  \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[2.393320] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[2.393380] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[2.393437] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[2.393495] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Indexlist.hpp:40\x1b[m\x1b[K,\n'}
+[2.393552] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/SubjectTo.hpp:40\x1b[m\x1b[K,\n'}
+[2.393619] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp:40\x1b[m\x1b[K,\n'}
+[2.393679] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Flipper.hpp:40\x1b[m\x1b[K,\n'}
+[2.393735] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:42\x1b[m\x1b[K,\n'}
+[2.393791] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:41\x1b[m\x1b[K,\n'}
+[2.393854] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:36\x1b[m\x1b[K:\n'}
+[2.393911] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 55 and 251 bytes into a destination of size 160\n'}
+[2.393975] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[2.394031] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.394086] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[2.394141] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.394197] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:6229:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size between 118 and 134 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[2.394256] (qpOASES) StderrLine: {'line': b' 6229 |      snprintf( myPrintfString,MAX_STRING_LENGTH,"   %5.1d*  |   %1.6e   |    \x1b[01;35m\x1b[K%s\x1b[m\x1b[K SOLVED     |  %4.1d   |  %4.1d   \\n", (int)iter,tau,\x1b[32m\x1b[Kinfo\x1b[m\x1b[K,(int)getNFX( ),(int)getNAC( ) );\n'}
+[2.394314] (qpOASES) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K^~\x1b[m\x1b[K                                                     \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[2.394372] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[2.394427] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[2.394483] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[2.394539] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Indexlist.hpp:40\x1b[m\x1b[K,\n'}
+[2.394601] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/SubjectTo.hpp:40\x1b[m\x1b[K,\n'}
+[2.394656] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp:40\x1b[m\x1b[K,\n'}
+[2.394718] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Flipper.hpp:40\x1b[m\x1b[K,\n'}
+[2.394777] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:42\x1b[m\x1b[K,\n'}
+[2.394835] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:41\x1b[m\x1b[K,\n'}
+[2.394891] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:36\x1b[m\x1b[K:\n'}
+[2.394953] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 60 and 249 bytes into a destination of size 160\n'}
+[2.395011] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[2.395067] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.395122] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[2.395177] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.395237] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:6227:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive output may be truncated writing up to 159 bytes into a region of size between 118 and 134 [\x1b[01;35m\x1b[K-Wformat-truncation=\x1b[m\x1b[K]\n'}
+[2.395295] (qpOASES) StderrLine: {'line': b' 6227 |      snprintf( myPrintfString,MAX_STRING_LENGTH,"   %5.1d   |   %1.6e   |    \x1b[01;35m\x1b[K%s\x1b[m\x1b[K SOLVED     |  %4.1d   |  %4.1d   \\n", (int)iter,tau,\x1b[32m\x1b[Kinfo\x1b[m\x1b[K,(int)getNFX( ),(int)getNAC( ) );\n'}
+[2.395351] (qpOASES) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K^~\x1b[m\x1b[K                                                     \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[2.395412] (qpOASES) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdio.h:867\x1b[m\x1b[K,\n'}
+[2.395470] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/MessageHandling.hpp:39\x1b[m\x1b[K,\n'}
+[2.395526] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Utils.hpp:39\x1b[m\x1b[K,\n'}
+[2.395582] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Indexlist.hpp:40\x1b[m\x1b[K,\n'}
+[2.395639] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/SubjectTo.hpp:40\x1b[m\x1b[K,\n'}
+[2.395694] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp:40\x1b[m\x1b[K,\n'}
+[2.395749] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/Flipper.hpp:40\x1b[m\x1b[K,\n'}
+[2.395804] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:42\x1b[m\x1b[K,\n'}
+[2.395865] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:41\x1b[m\x1b[K,\n'}
+[2.395935] (qpOASES) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/src/QProblem.cpp:36\x1b[m\x1b[K:\n'}
+[2.395998] (qpOASES) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__builtin___snprintf_chk\x1b[m\x1b[K\xe2\x80\x99 output between 60 and 249 bytes into a destination of size 160\n'}
+[2.396056] (qpOASES) StderrLine: {'line': b'   67 |   return \x1b[01;36m\x1b[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,\x1b[m\x1b[K\n'}
+[2.396112] (qpOASES) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.396166] (qpOASES) StderrLine: {'line': b'   68 | \x1b[01;36m\x1b[K       __bos (__s), __fmt, __va_arg_pack ())\x1b[m\x1b[K;\n'}
+[2.396221] (qpOASES) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.405823] (-) TimerEvent: {}
+[2.506073] (-) TimerEvent: {}
+[2.606336] (-) TimerEvent: {}
+[2.706616] (-) TimerEvent: {}
+[2.807055] (-) TimerEvent: {}
+[2.907571] (-) TimerEvent: {}
+[2.940301] (qpOASES) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX static library libs/libqpOASES.a\x1b[0m\n'}
+[3.007745] (-) TimerEvent: {}
+[3.011295] (qpOASES) StdoutLine: {'line': b'[ 46%] Built target qpOASES\n'}
+[3.021397] (qpOASES) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target example5\x1b[0m\n'}
+[3.021657] (qpOASES) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target example1\x1b[0m\n'}
+[3.021740] (qpOASES) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target example1a\x1b[0m\n'}
+[3.021831] (qpOASES) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qrecipe\x1b[0m\n'}
+[3.021903] (qpOASES) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target example3\x1b[0m\n'}
+[3.022007] (qpOASES) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target example2\x1b[0m\n'}
+[3.022117] (qpOASES) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target exampleLP\x1b[0m\n'}
+[3.022465] (qpOASES) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target example4\x1b[0m\n'}
+[3.022905] (qpOASES) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target example1b\x1b[0m\n'}
+[3.023312] (qpOASES) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target example3b\x1b[0m\n'}
+[3.023615] (qpOASES) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qrecipeSchur\x1b[0m\n'}
+[3.034103] (qpOASES) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/example1a.dir/examples/example1a.cpp.o\x1b[0m\n'}
+[3.034383] (qpOASES) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/example5.dir/examples/example5.cpp.o\x1b[0m\n'}
+[3.034901] (qpOASES) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/example1.dir/examples/example1.cpp.o\x1b[0m\n'}
+[3.035140] (qpOASES) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/exampleLP.dir/examples/exampleLP.cpp.o\x1b[0m\n'}
+[3.035430] (qpOASES) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/example3.dir/examples/example3.cpp.o\x1b[0m\n'}
+[3.035526] (qpOASES) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/qrecipe.dir/examples/qrecipe.cpp.o\x1b[0m\n'}
+[3.035635] (qpOASES) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/example2.dir/examples/example2.cpp.o\x1b[0m\n'}
+[3.035834] (qpOASES) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/qrecipeSchur.dir/examples/qrecipeSchur.cpp.o\x1b[0m\n'}
+[3.036406] (qpOASES) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/example4.dir/examples/example4.cpp.o\x1b[0m\n'}
+[3.036870] (qpOASES) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/example1b.dir/examples/example1b.cpp.o\x1b[0m\n'}
+[3.037364] (qpOASES) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/example3b.dir/examples/example3b.cpp.o\x1b[0m\n'}
+[3.107864] (-) TimerEvent: {}
+[3.130239] (qpOASES) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable bin/example3\x1b[0m\n'}
+[3.133768] (qpOASES) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX executable bin/exampleLP\x1b[0m\n'}
+[3.135431] (qpOASES) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable bin/example1\x1b[0m\n'}
+[3.139996] (qpOASES) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX executable bin/example2\x1b[0m\n'}
+[3.182872] (qpOASES) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable bin/example3b\x1b[0m\n'}
+[3.193366] (qpOASES) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable bin/example1b\x1b[0m\n'}
+[3.196108] (qpOASES) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable bin/example1a\x1b[0m\n'}
+[3.208028] (-) TimerEvent: {}
+[3.220610] (qpOASES) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable bin/example4\x1b[0m\n'}
+[3.223526] (qpOASES) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable bin/qrecipeSchur\x1b[0m\n'}
+[3.232483] (qpOASES) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable bin/qrecipe\x1b[0m\n'}
+[3.249018] (qpOASES) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable bin/example5\x1b[0m\n'}
+[3.282145] (qpOASES) StdoutLine: {'line': b'[100%] Built target example1\n'}
+[3.282837] (qpOASES) StdoutLine: {'line': b'[100%] Built target exampleLP\n'}
+[3.291793] (qpOASES) StdoutLine: {'line': b'[100%] Built target example3\n'}
+[3.308174] (-) TimerEvent: {}
+[3.333775] (qpOASES) StdoutLine: {'line': b'[100%] Built target example1a\n'}
+[3.334003] (qpOASES) StdoutLine: {'line': b'[100%] Built target example2\n'}
+[3.354531] (qpOASES) StdoutLine: {'line': b'[100%] Built target example1b\n'}
+[3.359555] (qpOASES) StdoutLine: {'line': b'[100%] Built target qrecipeSchur\n'}
+[3.363240] (qpOASES) StdoutLine: {'line': b'[100%] Built target example4\n'}
+[3.365164] (qpOASES) StdoutLine: {'line': b'[100%] Built target example3b\n'}
+[3.365287] (qpOASES) StdoutLine: {'line': b'[100%] Built target example5\n'}
+[3.383190] (qpOASES) StdoutLine: {'line': b'[100%] Built target qrecipe\n'}
+[3.406636] (qpOASES) CommandEnded: {'returncode': 0}
+[3.408350] (-) TimerEvent: {}
+[3.476127] (qpOASES) JobProgress: {'identifier': 'qpOASES', 'progress': 'install'}
+[3.496844] (qpOASES) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tony/webots_ws/src/qpOASES/build/qpOASES'], 'cwd': '/home/tony/webots_ws/src/qpOASES/build/qpOASES', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1653'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '13499'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:52939'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1689,unix/Jarvis:/tmp/.ICE-unix/1689'), ('INVOCATION_ID', '849ddd8d88954660bb37381ff9d57b52'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1ac85d0f-f456-47cf-bf84-b44b34bfeed3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/src/qpOASES/build/qpOASES'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[3.503951] (qpOASES) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[3.504145] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/lib/libqpOASES.a\n'}
+[3.508435] (-) TimerEvent: {}
+[3.510064] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES.hpp\n'}
+[3.510239] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES\n'}
+[3.510354] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Types.hpp\n'}
+[3.510498] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/QProblem.hpp\n'}
+[3.510626] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/QProblemB.hpp\n'}
+[3.510817] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/extras\n'}
+[3.510956] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/extras/SolutionAnalysis.hpp\n'}
+[3.511050] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/extras/OQPinterface.hpp\n'}
+[3.511137] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/extras/SolutionAnalysis.ipp\n'}
+[3.511215] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Matrices.hpp\n'}
+[3.511294] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SparseSolver.hpp\n'}
+[3.511406] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Flipper.hpp\n'}
+[3.511507] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Bounds.ipp\n'}
+[3.511605] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/QProblem.ipp\n'}
+[3.511706] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Indexlist.ipp\n'}
+[3.511805] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/MessageHandling.ipp\n'}
+[3.511901] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Indexlist.hpp\n'}
+[3.512050] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Constraints.ipp\n'}
+[3.512151] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/QProblemB.ipp\n'}
+[3.512235] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SQProblemSchur.hpp\n'}
+[3.512359] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Constants.hpp\n'}
+[3.512456] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Bounds.hpp\n'}
+[3.512561] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/MessageHandling.hpp\n'}
+[3.512690] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Utils.ipp\n'}
+[3.512789] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Options.hpp\n'}
+[3.512891] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Utils.hpp\n'}
+[3.513005] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SQProblem.hpp\n'}
+[3.513124] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/LapackBlasReplacement.hpp\n'}
+[3.513232] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/Constraints.hpp\n'}
+[3.513343] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SQProblemSchur.ipp\n'}
+[3.513440] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SubjectTo.ipp\n'}
+[3.513539] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SQProblem.ipp\n'}
+[3.513641] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/ConstraintProduct.hpp\n'}
+[3.513740] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/SubjectTo.hpp\n'}
+[3.513844] (qpOASES) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/src/qpOASES/install/qpOASES/include/qpOASES/UnitTesting.hpp\n'}
+[3.515520] (qpOASES) CommandEnded: {'returncode': 0}
+[3.529239] (qpOASES) JobEnded: {'identifier': 'qpOASES', 'rc': 0}
+[3.530097] (-) EventReactorShutdown: {}

@@ -1,0 +1,21 @@
+[0.588s] Invoking command in '/home/tony/webots_ws/src/my_mir_package': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_interfaces LD_LIBRARY_PATH=/home/tony/webots_ws/install/motor_interfaces/lib:/home/tony/webots_ws/install/traj_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/tony/webots_ws/build/my_mir_package/prefix_override:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_mir_package build --build-base /home/tony/webots_ws/build/my_mir_package/build install --record /home/tony/webots_ws/build/my_mir_package/install.log --install-scripts $base/lib/my_mir_package --single-version-externally-managed install_data
+[0.765s] running egg_info
+[0.765s] writing ../../build/my_mir_package/my_mir_package.egg-info/PKG-INFO
+[0.765s] writing dependency_links to ../../build/my_mir_package/my_mir_package.egg-info/dependency_links.txt
+[0.765s] writing entry points to ../../build/my_mir_package/my_mir_package.egg-info/entry_points.txt
+[0.765s] writing requirements to ../../build/my_mir_package/my_mir_package.egg-info/requires.txt
+[0.765s] writing top-level names to ../../build/my_mir_package/my_mir_package.egg-info/top_level.txt
+[0.793s] reading manifest file '../../build/my_mir_package/my_mir_package.egg-info/SOURCES.txt'
+[0.793s] writing manifest file '../../build/my_mir_package/my_mir_package.egg-info/SOURCES.txt'
+[0.794s] running build
+[0.794s] running build_py
+[0.794s] running install
+[0.794s] running install_lib
+[0.795s] running install_data
+[0.795s] running install_egg_info
+[0.797s] removing '/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages/my_mir_package-0.0.0-py3.8.egg-info' (and everything under it)
+[0.797s] Copying ../../build/my_mir_package/my_mir_package.egg-info to /home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages/my_mir_package-0.0.0-py3.8.egg-info
+[0.798s] running install_scripts
+[0.810s] Installing my_mir_driver script to /home/tony/webots_ws/install/my_mir_package/lib/my_mir_package
+[0.810s] writing list of installed files to '/home/tony/webots_ws/build/my_mir_package/install.log'
+[0.828s] Invoked command in '/home/tony/webots_ws/src/my_mir_package' returned '0': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_interfaces LD_LIBRARY_PATH=/home/tony/webots_ws/install/motor_interfaces/lib:/home/tony/webots_ws/install/traj_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/tony/webots_ws/build/my_mir_package/prefix_override:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_mir_package build --build-base /home/tony/webots_ws/build/my_mir_package/build install --record /home/tony/webots_ws/build/my_mir_package/install.log --install-scripts $base/lib/my_mir_package --single-version-externally-managed install_data

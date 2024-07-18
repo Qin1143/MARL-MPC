@@ -1,0 +1,62 @@
+[0.011s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake /home/tony/webots_ws/src/traj_publish -DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/install/traj_publish
+[0.143s] -- The C compiler identification is GNU 9.4.0
+[0.230s] -- The CXX compiler identification is GNU 9.4.0
+[0.237s] -- Check for working C compiler: /usr/bin/cc
+[0.322s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.323s] -- Detecting C compiler ABI info
+[0.430s] -- Detecting C compiler ABI info - done
+[0.446s] -- Detecting C compile features
+[0.446s] -- Detecting C compile features - done
+[0.448s] -- Check for working CXX compiler: /usr/bin/c++
+[0.560s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.562s] -- Detecting CXX compiler ABI info
+[0.679s] -- Detecting CXX compiler ABI info - done
+[0.691s] -- Detecting CXX compile features
+[0.691s] -- Detecting CXX compile features - done
+[0.698s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.721s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.721s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.916s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.968s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.976s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.079s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.106s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.188s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.238s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.240s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.241s] -- Looking for pthread.h
+[1.343s] -- Looking for pthread.h - found
+[1.343s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.446s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.447s] -- Looking for pthread_create in pthreads
+[1.546s] -- Looking for pthread_create in pthreads - not found
+[1.546s] -- Looking for pthread_create in pthread
+[1.652s] -- Looking for pthread_create in pthread - found
+[1.653s] -- Found Threads: TRUE  
+[1.784s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.814s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.884s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.885s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.885s] -- Configured cppcheck include dirs: 
+[1.885s] -- Configured cppcheck exclude dirs and/or files: 
+[1.886s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.886s] -- Configured cpplint exclude dirs and/or files: 
+[1.887s] -- Added test 'lint_cmake' to check CMake code style
+[1.888s] -- Added test 'uncrustify' to check C / C++ code style
+[1.888s] -- Configured uncrustify additional arguments: 
+[1.888s] -- Added test 'xmllint' to check XML markup files
+[1.892s] -- Configuring done
+[1.898s] -- Generating done
+[1.899s] -- Build files have been written to: /home/tony/webots_ws/build/traj_publish
+[1.907s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake /home/tony/webots_ws/src/traj_publish -DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/install/traj_publish
+[1.910s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[1.962s] [35m[1mScanning dependencies of target traj_pub[0m
+[2.000s] [ 50%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
+[4.245s] [100%] [32m[1mLinking CXX executable traj_pub[0m
+[4.392s] /usr/bin/ld: CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o: in function `rclcpp::Publisher<nav_msgs::msg::Path_<std::allocator<void> >, std::allocator<void> >::Publisher(rclcpp::node_interfaces::NodeBaseInterface*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rclcpp::QoS const&, rclcpp::PublisherOptionsWithAllocator<std::allocator<void> > const&)':
+[4.392s] traj_pub.cpp:(.text._ZN6rclcpp9PublisherIN8nav_msgs3msg5Path_ISaIvEEES4_EC2EPNS_15node_interfaces17NodeBaseInterfaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_3QoSERKNS_29PublisherOptionsWithAllocatorIS4_EE[_ZN6rclcpp9PublisherIN8nav_msgs3msg5Path_ISaIvEEES4_EC5EPNS_15node_interfaces17NodeBaseInterfaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_3QoSERKNS_29PublisherOptionsWithAllocatorIS4_EE]+0x6e): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<nav_msgs::msg::Path_<std::allocator<void> > >()'
+[4.392s] collect2: error: ld returned 1 exit status
+[4.396s] make[2]: *** [CMakeFiles/traj_pub.dir/build.make:136: traj_pub] Error 1
+[4.396s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/traj_pub.dir/all] Error 2
+[4.396s] make: *** [Makefile:141: all] Error 2
+[4.399s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16

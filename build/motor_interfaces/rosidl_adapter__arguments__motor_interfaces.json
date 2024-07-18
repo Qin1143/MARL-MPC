@@ -1,0 +1,6 @@
+{
+  "package_name": "motor_interfaces",
+  "non_idl_tuples": [
+    "/home/tony/webots_ws/src/motor_interfaces:msg/Motor.msg"
+  ]
+}

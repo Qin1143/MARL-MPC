@@ -1,0 +1,51 @@
+[0.017s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[0.073s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.099s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.257s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.292s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.296s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.416s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.458s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.460s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.574s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.663s] -- Found traj_interfaces: 0.0.0 (/home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake)
+[0.707s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.775s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.776s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.776s] -- Configured cppcheck include dirs: 
+[0.776s] -- Configured cppcheck exclude dirs and/or files: 
+[0.777s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.777s] -- Configured cpplint exclude dirs and/or files: 
+[0.777s] -- Added test 'lint_cmake' to check CMake code style
+[0.778s] -- Added test 'uncrustify' to check C / C++ code style
+[0.778s] -- Configured uncrustify additional arguments: 
+[0.778s] -- Added test 'xmllint' to check XML markup files
+[0.783s] -- Configuring done
+[0.792s] -- Generating done
+[0.793s] -- Build files have been written to: /home/tony/webots_ws/build/traj_publish
+[0.838s] [35m[1mScanning dependencies of target traj_pub[0m
+[0.895s] [ 66%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
+[0.895s] [ 66%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_visualization.cpp.o[0m
+[2.580s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_visualization.cpp:3:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KPlanningVisualization::PlanningVisualization(const rclcpp::NodeOptions&)[m[K’
+[2.580s]     3 | [01;31m[KPlanningVisualization[m[K::PlanningVisualization(const rclcpp::NodeOptions & options) : Node("planning_visualization", options)
+[2.580s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.580s] In file included from [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_visualization.cpp:1[m[K:
+[2.580s] [01m[K/home/tony/webots_ws/src/traj_publish/include/traj_visualization.hpp:10:9:[m[K [01;36m[Knote: [m[K‘[01m[KPlanningVisualization::PlanningVisualization(const rclcpp::NodeOptions&)[m[K’ previously defined here
+[2.580s]    10 |         [01;36m[KPlanningVisualization[m[K(const rclcpp::NodeOptions & options) : Node("planning_visualization", options) {}
+[2.580s]       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.595s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:[m[K In constructor ‘[01m[KTrajectoryPublisher::TrajectoryPublisher(std::string)[m[K’:
+[2.595s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:9:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_[m[K’ was not declared in this scope; did you mean ‘[01m[Kvisualization_msgs[m[K’?
+[2.595s]     9 |         [01;31m[Kvisualization_[m[K.reset(new PlanningVisualization(get_node_options()));
+[2.595s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.595s]       |         [32m[Kvisualization_msgs[m[K
+[2.660s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:[m[K In member function ‘[01m[Kvoid TrajectoryPublisher::publishTrajectory()[m[K’:
+[2.661s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:115:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_[m[K’ was not declared in this scope; did you mean ‘[01m[Kvisualization_msgs[m[K’?
+[2.661s]   115 |         [01;31m[Kvisualization_[m[K->displayTraj(trajectory, 0);
+[2.661s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.661s]       |         [32m[Kvisualization_msgs[m[K
+[3.057s] make[2]: *** [CMakeFiles/traj_pub.dir/build.make:76: CMakeFiles/traj_pub.dir/src/traj_visualization.cpp.o] Error 1
+[3.057s] make[2]: *** Waiting for unfinished jobs....
+[3.383s] make[2]: *** [CMakeFiles/traj_pub.dir/build.make:63: CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o] Error 1
+[3.383s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/traj_pub.dir/all] Error 2
+[3.383s] make: *** [Makefile:141: all] Error 2
+[3.387s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '2': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16

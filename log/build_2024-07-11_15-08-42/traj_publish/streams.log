@@ -1,0 +1,33 @@
+[0.025s] Invoking command in '/home/tony/webots_ws/build/traj_publish': AMENT_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/tony/webots_ws/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[0.086s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.109s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.272s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.308s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.312s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.433s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.477s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.478s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.587s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.678s] -- Found traj_interfaces: 0.0.0 (/home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake)
+[0.733s] CMake Error at CMakeLists.txt:25 (find_package):
+[0.733s]   By not providing "FindEigen.cmake" in CMAKE_MODULE_PATH this project has
+[0.733s]   asked CMake to find a package configuration file provided by "Eigen", but
+[0.733s]   CMake did not find one.
+[0.733s] 
+[0.733s]   Could not find a package configuration file provided by "Eigen" with any of
+[0.733s]   the following names:
+[0.733s] 
+[0.733s]     EigenConfig.cmake
+[0.733s]     eigen-config.cmake
+[0.734s] 
+[0.734s]   Add the installation prefix of "Eigen" to CMAKE_PREFIX_PATH or set
+[0.734s]   "Eigen_DIR" to a directory containing one of the above files.  If "Eigen"
+[0.734s]   provides a separate development package or SDK, be sure it has been
+[0.734s]   installed.
+[0.734s] 
+[0.734s] 
+[0.734s] -- Configuring incomplete, errors occurred!
+[0.735s] See also "/home/tony/webots_ws/build/traj_publish/CMakeFiles/CMakeOutput.log".
+[0.735s] See also "/home/tony/webots_ws/build/traj_publish/CMakeFiles/CMakeError.log".
+[0.740s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.744s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '2': AMENT_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/tony/webots_ws/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16

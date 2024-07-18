@@ -1,0 +1,16 @@
+/home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/package_run_dependencies/traj_publish
+/home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/parent_prefix_path/traj_publish
+/home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/ament_prefix_path.sh
+/home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/ament_prefix_path.dsv
+/home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/path.sh
+/home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/path.dsv
+/home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.bash
+/home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.sh
+/home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.zsh
+/home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.dsv
+/home/tony/webots_ws/install/traj_publish/share/traj_publish/package.dsv
+/home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/packages/traj_publish
+/home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake/traj_publishConfig.cmake
+/home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake/traj_publishConfig-version.cmake
+/home/tony/webots_ws/install/traj_publish/share/traj_publish/package.xml
+/home/tony/webots_ws/install/traj_publish/lib/traj_publish/traj_pub

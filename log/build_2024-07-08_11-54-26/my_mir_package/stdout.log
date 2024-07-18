@@ -1,0 +1,16 @@
+running egg_info
+writing ../../build/my_mir_package/my_mir_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_mir_package/my_mir_package.egg-info/dependency_links.txt
+writing entry points to ../../build/my_mir_package/my_mir_package.egg-info/entry_points.txt
+writing requirements to ../../build/my_mir_package/my_mir_package.egg-info/requires.txt
+writing top-level names to ../../build/my_mir_package/my_mir_package.egg-info/top_level.txt
+reading manifest file '../../build/my_mir_package/my_mir_package.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_mir_package/my_mir_package.egg-info/SOURCES.txt'
+running build
+running build_py
+copying my_mir_package/my_mir_driver.py -> /home/tony/webots_ws/build/my_mir_package/build/lib/my_mir_package
+running install
+running install_lib
+copying /home/tony/webots_ws/build/my_mir_package/build/lib/my_mir_package/my_mir_driver.py -> /home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages/my_mir_package
+byte-compiling /home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages/my_mir_package/my_mir_driver.py to my_mir_driver.cpython-38.pyc
+running install_data

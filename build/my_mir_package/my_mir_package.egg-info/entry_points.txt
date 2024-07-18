@@ -1,0 +1,3 @@
+[console_scripts]
+my_mir_driver = my_mir_package.my_mir_driver:main
+

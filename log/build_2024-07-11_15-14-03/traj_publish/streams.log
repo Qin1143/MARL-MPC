@@ -1,0 +1,26 @@
+[0.020s] Invoking command in '/home/tony/webots_ws/build/traj_publish': AMENT_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/tony/webots_ws/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[0.064s] [35m[1mScanning dependencies of target traj_pub[0m
+[0.142s] [ 50%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
+[3.719s] [100%] [32m[1mLinking CXX executable traj_pub[0m
+[3.916s] [100%] Built target traj_pub
+[3.926s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '0': AMENT_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/tony/webots_ws/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[3.964s] Invoking command in '/home/tony/webots_ws/build/traj_publish': AMENT_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/tony/webots_ws/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tony/webots_ws/build/traj_publish
+[3.977s] -- Install configuration: ""
+[3.977s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/package_run_dependencies/traj_publish
+[3.978s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/parent_prefix_path/traj_publish
+[3.978s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/ament_prefix_path.sh
+[3.978s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/ament_prefix_path.dsv
+[3.978s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/path.sh
+[3.978s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/path.dsv
+[3.978s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.bash
+[3.978s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.sh
+[3.978s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.zsh
+[3.978s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.dsv
+[3.978s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/package.dsv
+[3.978s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/packages/traj_publish
+[3.979s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake/traj_publishConfig.cmake
+[3.979s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake/traj_publishConfig-version.cmake
+[3.979s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/package.xml
+[3.979s] -- Installing: /home/tony/webots_ws/install/traj_publish/lib/traj_publish/traj_pub
+[3.981s] -- Set runtime path of "/home/tony/webots_ws/install/traj_publish/lib/traj_publish/traj_pub" to ""
+[3.983s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '0': AMENT_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/tony/webots_ws/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tony/webots_ws/build/traj_publish

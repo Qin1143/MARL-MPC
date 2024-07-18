@@ -1,0 +1,10 @@
+[01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:[m[K In member function ‘[01m[Kvoid TrajectoryPublisher::publishBspline()[m[K’:
+[01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:46:31:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KEigen[m[K’
+   46 |         Eigen::VectorXd knots [01;31m[KEigen[m[K::VectorXd::LinSpaced(8, 0.0, 7.0); // knot vector 节点向量
+      |                               [01;31m[K^~~~~[m[K
+[01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:47:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kknots[m[K’ was not declared in this scope
+   47 |         bspline.knots.reserve([01;31m[Kknots[m[K.rows());
+      |                               [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/traj_pub.dir/build.make:63: CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/traj_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

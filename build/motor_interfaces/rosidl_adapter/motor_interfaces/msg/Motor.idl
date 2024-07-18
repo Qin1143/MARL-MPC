@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from motor_interfaces/msg/Motor.msg
+// generated code does not contain a copyright notice
+
+
+module motor_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      " motor.msg")
+    struct Motor {
+      @verbatim (language="comment", text=
+        " Custom message for motor speed" "\n"
+        " This message will be used to pass motor speed information" "\n"
+        " Motor speed in radians per second")
+      float left_speed;
+
+      float right_speed;
+
+      @verbatim (language="comment", text=
+        " Motor torque in Newton meters")
+      float left_torque;
+
+      float right_torque;
+    };
+  };
+};

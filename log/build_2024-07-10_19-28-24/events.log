@@ -1,0 +1,273 @@
+[0.000000] (-) TimerEvent: {}
+[0.000119] (-) JobUnselected: {'identifier': 'motor_interfaces'}
+[0.000166] (-) JobUnselected: {'identifier': 'mpc_controller'}
+[0.000193] (-) JobUnselected: {'identifier': 'my_mir_package'}
+[0.000214] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000234] (-) JobUnselected: {'identifier': 'qpOASES'}
+[0.000254] (-) JobUnselected: {'identifier': 'traj_publish'}
+[0.000275] (traj_interfaces) JobQueued: {'identifier': 'traj_interfaces', 'dependencies': OrderedDict()}
+[0.000771] (traj_interfaces) JobStarted: {'identifier': 'traj_interfaces'}
+[0.030455] (traj_interfaces) JobProgress: {'identifier': 'traj_interfaces', 'progress': 'cmake'}
+[0.032043] (traj_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/tony/webots_ws/src/traj_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/install/traj_interfaces'], 'cwd': '/home/tony/webots_ws/build/traj_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1653'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tony/webots_ws/install/motor_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony/webots_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '13499'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tony/webots_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:52939'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1689,unix/Jarvis:/tmp/.ICE-unix/1689'), ('INVOCATION_ID', '849ddd8d88954660bb37381ff9d57b52'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/motor_interfaces:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:cb749f9d-2366-4687-926a-bfc5fe072144'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/build/traj_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy')]), 'shell': False}
+[0.099856] (-) TimerEvent: {}
+[0.142636] (traj_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.199993] (-) TimerEvent: {}
+[0.206413] (traj_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.215083] (traj_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.300106] (-) TimerEvent: {}
+[0.307020] (traj_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.307993] (traj_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.393270] (traj_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.400176] (-) TimerEvent: {}
+[0.402394] (traj_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.402597] (traj_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.404365] (traj_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.495336] (traj_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.495963] (traj_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500329] (-) TimerEvent: {}
+[0.600345] (traj_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.600516] (-) TimerEvent: {}
+[0.610474] (traj_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.610834] (traj_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.613268] (traj_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.636926] (traj_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.637126] (traj_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.700645] (-) TimerEvent: {}
+[0.801178] (-) TimerEvent: {}
+[0.809253] (traj_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.812399] (traj_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.818471] (traj_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.901298] (-) TimerEvent: {}
+[0.947402] (traj_interfaces) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.976091] (traj_interfaces) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.001396] (-) TimerEvent: {}
+[1.043175] (traj_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.074441] (traj_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[1.101512] (-) TimerEvent: {}
+[1.149468] (traj_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.201705] (-) TimerEvent: {}
+[1.302115] (-) TimerEvent: {}
+[1.303020] (traj_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.402297] (-) TimerEvent: {}
+[1.497119] (traj_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.502384] (-) TimerEvent: {}
+[1.573317] (traj_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.597690] (traj_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.601562] (traj_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.602540] (-) TimerEvent: {}
+[1.646375] (traj_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.646535] (traj_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.646615] (traj_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.646683] (traj_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.674311] (traj_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.702630] (-) TimerEvent: {}
+[1.750301] (traj_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.770589] (traj_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.772262] (traj_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.773264] (traj_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.779941] (traj_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.802733] (-) TimerEvent: {}
+[1.823214] (traj_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.825458] (traj_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/tony/webots_ws/build/traj_interfaces\n'}
+[1.834845] (traj_interfaces) CommandEnded: {'returncode': 0}
+[1.835561] (traj_interfaces) JobProgress: {'identifier': 'traj_interfaces', 'progress': 'build'}
+[1.838339] (traj_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tony/webots_ws/build/traj_interfaces', '--', '-j16', '-l16'], 'cwd': '/home/tony/webots_ws/build/traj_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1653'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tony/webots_ws/install/motor_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony/webots_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '13499'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tony/webots_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:52939'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1689,unix/Jarvis:/tmp/.ICE-unix/1689'), ('INVOCATION_ID', '849ddd8d88954660bb37381ff9d57b52'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/motor_interfaces:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:cb749f9d-2366-4687-926a-bfc5fe072144'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/build/traj_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy')]), 'shell': False}
+[1.893535] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__cpp\x1b[0m\n'}
+[1.894172] (traj_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.903141] (-) TimerEvent: {}
+[1.910043] (traj_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.003250] (-) TimerEvent: {}
+[2.080222] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__rosidl_generator_c\x1b[0m\n'}
+[2.095233] (traj_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/traj_interfaces__rosidl_generator_c.dir/rosidl_generator_c/traj_interfaces/msg/detail/bspline__functions.c.o\x1b[0m\n'}
+[2.096365] (traj_interfaces) StdoutLine: {'line': b'[  9%] Built target traj_interfaces__cpp\n'}
+[2.103388] (-) TimerEvent: {}
+[2.106438] (traj_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.106615] (traj_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.106727] (traj_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.139864] (traj_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libtraj_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.178506] (traj_interfaces) StdoutLine: {'line': b'[ 22%] Built target traj_interfaces__rosidl_generator_c\n'}
+[2.189216] (traj_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.189404] (traj_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.203497] (-) TimerEvent: {}
+[2.270691] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.270928] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.278916] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.282843] (traj_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/traj_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/traj_interfaces/msg/bspline__type_support.cpp.o\x1b[0m\n'}
+[2.283510] (traj_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/traj_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/traj_interfaces/msg/detail/bspline__type_support.cpp.o\x1b[0m\n'}
+[2.296697] (traj_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/traj_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/traj_interfaces/msg/detail/dds_fastrtps/bspline__type_support.cpp.o\x1b[0m\n'}
+[2.303608] (-) TimerEvent: {}
+[2.339816] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[2.353750] (traj_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/traj_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/traj_interfaces/msg/bspline__type_support.cpp.o\x1b[0m\n'}
+[2.355847] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.370507] (traj_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/traj_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/traj_interfaces/msg/detail/bspline__type_support.c.o\x1b[0m\n'}
+[2.382831] (traj_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libtraj_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.403629] (traj_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking C shared library libtraj_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.403827] (-) TimerEvent: {}
+[2.424622] (traj_interfaces) StdoutLine: {'line': b'[ 51%] Built target traj_interfaces__rosidl_typesupport_c\n'}
+[2.437642] (traj_interfaces) StdoutLine: {'line': b'[ 51%] Built target traj_interfaces__rosidl_typesupport_introspection_c\n'}
+[2.503964] (-) TimerEvent: {}
+[2.531102] (traj_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libtraj_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.572705] (traj_interfaces) StdoutLine: {'line': b'[ 54%] Built target traj_interfaces__rosidl_typesupport_cpp\n'}
+[2.573000] (traj_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libtraj_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.604080] (-) TimerEvent: {}
+[2.638818] (traj_interfaces) StdoutLine: {'line': b'[ 58%] Built target traj_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[2.704269] (-) TimerEvent: {}
+[2.711113] (traj_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libtraj_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.799420] (traj_interfaces) StdoutLine: {'line': b'[ 61%] Built target traj_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[2.804347] (-) TimerEvent: {}
+[2.814975] (traj_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.904463] (-) TimerEvent: {}
+[2.999062] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.004557] (-) TimerEvent: {}
+[3.018094] (traj_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/traj_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/traj_interfaces/msg/detail/bspline__type_support_c.cpp.o\x1b[0m\n'}
+[3.104686] (-) TimerEvent: {}
+[3.205268] (-) TimerEvent: {}
+[3.305258] (traj_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libtraj_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.305544] (-) TimerEvent: {}
+[3.402726] (traj_interfaces) StdoutLine: {'line': b'[ 70%] Built target traj_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[3.405643] (-) TimerEvent: {}
+[3.419978] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces\x1b[0m\n'}
+[3.437244] (traj_interfaces) StdoutLine: {'line': b'[ 70%] Built target traj_interfaces\n'}
+[3.453082] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__py\x1b[0m\n'}
+[3.472744] (traj_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.505755] (-) TimerEvent: {}
+[3.605991] (-) TimerEvent: {}
+[3.706289] (-) TimerEvent: {}
+[3.776822] (traj_interfaces) StdoutLine: {'line': b'[ 74%] Built target traj_interfaces__py\n'}
+[3.788594] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__python\x1b[0m\n'}
+[3.806450] (-) TimerEvent: {}
+[3.823179] (traj_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/traj_interfaces__python.dir/rosidl_generator_py/traj_interfaces/msg/_bspline_s.c.o\x1b[0m\n'}
+[3.906634] (-) TimerEvent: {}
+[3.917022] (traj_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/traj_interfaces/libtraj_interfaces__python.so\x1b[0m\n'}
+[3.967896] (traj_interfaces) StdoutLine: {'line': b'[ 80%] Built target traj_interfaces__python\n'}
+[3.980915] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[3.981094] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.981172] (traj_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[3.996837] (traj_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/traj_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/traj_interfaces/_traj_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.997362] (traj_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/traj_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/traj_interfaces/_traj_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.998162] (traj_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/traj_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/traj_interfaces/_traj_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.006739] (-) TimerEvent: {}
+[4.062972] (traj_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/traj_interfaces/traj_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.063435] (traj_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/traj_interfaces/traj_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.065317] (traj_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/traj_interfaces/traj_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.097499] (traj_interfaces) StdoutLine: {'line': b'[100%] Built target traj_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.097796] (traj_interfaces) StdoutLine: {'line': b'[100%] Built target traj_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.106838] (-) TimerEvent: {}
+[4.125910] (traj_interfaces) StdoutLine: {'line': b'[100%] Built target traj_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.136775] (traj_interfaces) CommandEnded: {'returncode': 0}
+[4.195196] (traj_interfaces) JobProgress: {'identifier': 'traj_interfaces', 'progress': 'install'}
+[4.207017] (-) TimerEvent: {}
+[4.211974] (traj_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tony/webots_ws/build/traj_interfaces'], 'cwd': '/home/tony/webots_ws/build/traj_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1653'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tony/webots_ws/install/motor_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony/webots_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '13499'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tony/webots_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:52939'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1689,unix/Jarvis:/tmp/.ICE-unix/1689'), ('INVOCATION_ID', '849ddd8d88954660bb37381ff9d57b52'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/motor_interfaces:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:cb749f9d-2366-4687-926a-bfc5fe072144'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/build/traj_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy')]), 'shell': False}
+[4.223036] (traj_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.223385] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/ament_index/resource_index/rosidl_interfaces/traj_interfaces\n'}
+[4.223520] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces\n'}
+[4.223619] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg\n'}
+[4.223723] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/bspline.h\n'}
+[4.223812] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.223901] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail\n'}
+[4.223987] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__functions.c\n'}
+[4.224051] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__type_support.h\n'}
+[4.224171] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__struct.h\n'}
+[4.224240] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__functions.h\n'}
+[4.224375] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/environment/library_path.sh\n'}
+[4.224516] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/environment/library_path.dsv\n'}
+[4.224718] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_generator_c.so\n'}
+[4.225065] (traj_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_generator_c.so" to ""\n'}
+[4.225184] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces\n'}
+[4.225280] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg\n'}
+[4.225372] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.225437] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail\n'}
+[4.225498] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__rosidl_typesupport_fastrtps_c.h\n'}
+[4.225588] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[4.225899] (traj_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.225995] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces\n'}
+[4.226092] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg\n'}
+[4.226177] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.226263] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail\n'}
+[4.226347] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.226410] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/dds_fastrtps\n'}
+[4.226495] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.226893] (traj_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.226976] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces\n'}
+[4.227098] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg\n'}
+[4.227169] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.227264] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail\n'}
+[4.227339] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__rosidl_typesupport_introspection_c.h\n'}
+[4.227439] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__type_support.c\n'}
+[4.227537] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[4.227860] (traj_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.227957] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_c.so\n'}
+[4.228271] (traj_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[4.228379] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces\n'}
+[4.228456] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg\n'}
+[4.228546] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/bspline.hpp\n'}
+[4.228666] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.228771] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail\n'}
+[4.228850] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__traits.hpp\n'}
+[4.228973] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__type_support.hpp\n'}
+[4.229046] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__builder.hpp\n'}
+[4.229148] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__struct.hpp\n'}
+[4.229228] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces\n'}
+[4.229306] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg\n'}
+[4.229369] (traj_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail\n'}
+[4.229445] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__type_support.cpp\n'}
+[4.229507] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.229586] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[4.230010] (traj_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.230087] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_cpp.so\n'}
+[4.230375] (traj_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[4.230476] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/environment/pythonpath.sh\n'}
+[4.230568] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/environment/pythonpath.dsv\n'}
+[4.230752] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/__init__.py\n'}
+[4.270615] (traj_interfaces) StdoutLine: {'line': b"Compiling '/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/__init__.py'...\n"}
+[4.275893] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/msg\n'}
+[4.276088] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/msg/__init__.py\n'}
+[4.276210] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/msg/_bspline_s.c\n'}
+[4.276324] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/msg/_bspline.py\n'}
+[4.276591] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/traj_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.277123] (traj_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/traj_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.277360] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/traj_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.277907] (traj_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/traj_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.278108] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/traj_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.278613] (traj_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/traj_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.278734] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__python.so\n'}
+[4.279147] (traj_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__python.so" to ""\n'}
+[4.279249] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/msg/Bspline.idl\n'}
+[4.279429] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/msg/Bspline.msg\n'}
+[4.279630] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/ament_index/resource_index/package_run_dependencies/traj_interfaces\n'}
+[4.279834] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/ament_index/resource_index/parent_prefix_path/traj_interfaces\n'}
+[4.279997] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/environment/ament_prefix_path.sh\n'}
+[4.280150] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/environment/ament_prefix_path.dsv\n'}
+[4.280309] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/environment/path.sh\n'}
+[4.280466] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/environment/path.dsv\n'}
+[4.280616] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/local_setup.bash\n'}
+[4.280802] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/local_setup.sh\n'}
+[4.280966] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/local_setup.zsh\n'}
+[4.281110] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/local_setup.dsv\n'}
+[4.281261] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/package.dsv\n'}
+[4.281495] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/ament_index/resource_index/packages/traj_interfaces\n'}
+[4.281729] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_generator_cExport.cmake\n'}
+[4.281893] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.282121] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.282281] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.282473] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[4.282636] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.282844] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_generator_cppExport.cmake\n'}
+[4.283069] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.283234] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.283436] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[4.283603] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.283762] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[4.283929] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.284088] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.284258] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.284401] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.284554] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.284708] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.284918] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfacesConfig.cmake\n'}
+[4.285068] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfacesConfig-version.cmake\n'}
+[4.285284] (traj_interfaces) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/package.xml\n'}
+[4.287628] (traj_interfaces) CommandEnded: {'returncode': 0}
+[4.307075] (-) TimerEvent: {}
+[4.384269] (traj_interfaces) JobEnded: {'identifier': 'traj_interfaces', 'rc': 0}
+[4.384985] (-) EventReactorShutdown: {}

@@ -1,0 +1,22 @@
+[0.653s] Invoking command in '/home/tony/webots_ws/src/my_package': PYTHONPATH=/home/tony/webots_ws/build/my_package/prefix_override:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_package build --build-base /home/tony/webots_ws/build/my_package/build install --record /home/tony/webots_ws/build/my_package/install.log --install-scripts $base/lib/my_package --single-version-externally-managed install_data
+[0.826s] running egg_info
+[0.827s] writing ../../build/my_package/my_package.egg-info/PKG-INFO
+[0.827s] writing dependency_links to ../../build/my_package/my_package.egg-info/dependency_links.txt
+[0.827s] writing entry points to ../../build/my_package/my_package.egg-info/entry_points.txt
+[0.827s] writing requirements to ../../build/my_package/my_package.egg-info/requires.txt
+[0.827s] writing top-level names to ../../build/my_package/my_package.egg-info/top_level.txt
+[0.853s] reading manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'
+[0.853s] writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'
+[0.854s] running build
+[0.854s] running build_py
+[0.854s] running install
+[0.855s] running install_lib
+[0.856s] running install_data
+[0.856s] running install_egg_info
+[0.857s] removing '/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages/my_package-0.0.0-py3.8.egg-info' (and everything under it)
+[0.858s] Copying ../../build/my_package/my_package.egg-info to /home/tony/webots_ws/install/my_package/lib/python3.8/site-packages/my_package-0.0.0-py3.8.egg-info
+[0.858s] running install_scripts
+[0.872s] Installing my_robot_driver script to /home/tony/webots_ws/install/my_package/lib/my_package
+[0.872s] Installing obstacle_avoider script to /home/tony/webots_ws/install/my_package/lib/my_package
+[0.872s] writing list of installed files to '/home/tony/webots_ws/build/my_package/install.log'
+[0.895s] Invoked command in '/home/tony/webots_ws/src/my_package' returned '0': PYTHONPATH=/home/tony/webots_ws/build/my_package/prefix_override:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_package build --build-base /home/tony/webots_ws/build/my_package/build install --record /home/tony/webots_ws/build/my_package/install.log --install-scripts $base/lib/my_package --single-version-externally-managed install_data

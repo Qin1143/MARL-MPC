@@ -1,0 +1,85 @@
+[0.149s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.149s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd5d57d4100>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd5d57d4100>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd5d5666c40>)
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.263s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tony/webots_ws/src/qpOASES'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.290s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'cmake' and name 'qpOASES'
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.302s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 284 installed packages in /opt/ros/foxy
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'qpOASES' build argument 'cmake_args' from command line to 'None'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'qpOASES' build argument 'cmake_target' from command line to 'None'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'qpOASES' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'qpOASES' build argument 'cmake_clean_cache' from command line to 'False'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'qpOASES' build argument 'cmake_clean_first' from command line to 'False'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'qpOASES' build argument 'cmake_force_configure' from command line to 'False'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'qpOASES' build argument 'ament_cmake_args' from command line to 'None'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'qpOASES' build argument 'catkin_cmake_args' from command line to 'None'
+[0.356s] Level 5:colcon.colcon_core.verb:set package 'qpOASES' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.356s] DEBUG:colcon.colcon_core.verb:Building package 'qpOASES' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tony/webots_ws/src/qpOASES/build/qpOASES', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tony/webots_ws/src/qpOASES/install/qpOASES', 'merge_install': False, 'path': '/home/tony/webots_ws/src/qpOASES', 'symlink_install': False, 'test_result_base': None}
+[0.356s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.357s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.357s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tony/webots_ws/src/qpOASES'
+[0.358s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.358s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.358s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tony/webots_ws/src/qpOASES/build/qpOASES': /usr/bin/cmake /home/tony/webots_ws/src/qpOASES -DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/src/qpOASES/install/qpOASES
+[0.712s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tony/webots_ws/src/qpOASES/build/qpOASES' returned '0': /usr/bin/cmake /home/tony/webots_ws/src/qpOASES -DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/src/qpOASES/install/qpOASES
+[0.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tony/webots_ws/src/qpOASES/build/qpOASES': /usr/bin/cmake --build /home/tony/webots_ws/src/qpOASES/build/qpOASES -- -j16 -l16
+[3.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tony/webots_ws/src/qpOASES/build/qpOASES' returned '0': /usr/bin/cmake --build /home/tony/webots_ws/src/qpOASES/build/qpOASES -- -j16 -l16
+[3.854s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tony/webots_ws/src/qpOASES/build/qpOASES': /usr/bin/cmake --install /home/tony/webots_ws/src/qpOASES/build/qpOASES
+[3.872s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(qpOASES)
+[3.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tony/webots_ws/src/qpOASES/build/qpOASES' returned '0': /usr/bin/cmake --install /home/tony/webots_ws/src/qpOASES/build/qpOASES
+[3.878s] Level 1:colcon.colcon_core.environment:checking '/home/tony/webots_ws/src/qpOASES/install/qpOASES' for CMake module files
+[3.878s] Level 1:colcon.colcon_core.environment:checking '/home/tony/webots_ws/src/qpOASES/install/qpOASES' for CMake config files
+[3.879s] Level 1:colcon.colcon_core.environment:checking '/home/tony/webots_ws/src/qpOASES/install/qpOASES/lib'
+[3.879s] Level 1:colcon.colcon_core.environment:checking '/home/tony/webots_ws/src/qpOASES/install/qpOASES/bin'
+[3.880s] Level 1:colcon.colcon_core.environment:checking '/home/tony/webots_ws/src/qpOASES/install/qpOASES/lib/pkgconfig/qpOASES.pc'
+[3.880s] Level 1:colcon.colcon_core.environment:checking '/home/tony/webots_ws/src/qpOASES/install/qpOASES/lib/python3.8/site-packages'
+[3.881s] Level 1:colcon.colcon_core.environment:checking '/home/tony/webots_ws/src/qpOASES/install/qpOASES/bin'
+[3.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/tony/webots_ws/src/qpOASES/install/qpOASES/share/qpOASES/package.ps1'
+[3.883s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tony/webots_ws/src/qpOASES/install/qpOASES/share/qpOASES/package.dsv'
+[3.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/tony/webots_ws/src/qpOASES/install/qpOASES/share/qpOASES/package.sh'
+[3.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/tony/webots_ws/src/qpOASES/install/qpOASES/share/qpOASES/package.bash'
+[3.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/tony/webots_ws/src/qpOASES/install/qpOASES/share/qpOASES/package.zsh'
+[3.885s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tony/webots_ws/src/qpOASES/install/qpOASES/share/colcon-core/packages/qpOASES)
+[3.886s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.886s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.886s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.886s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.891s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.891s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.891s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.910s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.910s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tony/webots_ws/src/qpOASES/install/local_setup.ps1'
+[3.911s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tony/webots_ws/src/qpOASES/install/_local_setup_util_ps1.py'
+[3.913s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tony/webots_ws/src/qpOASES/install/setup.ps1'
+[3.914s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tony/webots_ws/src/qpOASES/install/local_setup.sh'
+[3.914s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tony/webots_ws/src/qpOASES/install/_local_setup_util_sh.py'
+[3.914s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tony/webots_ws/src/qpOASES/install/setup.sh'
+[3.915s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tony/webots_ws/src/qpOASES/install/local_setup.bash'
+[3.915s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tony/webots_ws/src/qpOASES/install/setup.bash'
+[3.916s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tony/webots_ws/src/qpOASES/install/local_setup.zsh'
+[3.916s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tony/webots_ws/src/qpOASES/install/setup.zsh'
