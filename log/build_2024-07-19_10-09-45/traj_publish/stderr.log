@@ -1,0 +1,10 @@
+[01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:[m[K In member function ‘[01m[Kvoid TrajectoryPublisher::publishBspline()[m[K’:
+[01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:40:32:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   40 |            0.0, 0.0, 0.0, 0.0; [01;35m[K0[m[K,0, 0.0,// 第三行：z坐标
+      |                                [01;35m[K^[m[K
+[01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:40:37:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   40 |            0.0, 0.0, 0.0, 0.0; 0,0, [01;35m[K0.0[m[K,// 第三行：z坐标
+      |                                     [01;35m[K^~~[m[K
+[01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:41:47:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   41 |         bspline.pos_pts.reserve(pos_pts.cols()[01;35m[K)[m[K; // 预留足够的空间来存储控制点
+      |                                               [01;35m[K^[m[K

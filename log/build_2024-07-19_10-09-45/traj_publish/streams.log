@@ -1,0 +1,36 @@
+[0.033s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[0.083s] [35m[1mScanning dependencies of target traj_pub[0m
+[0.142s] [ 33%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
+[2.062s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:[m[K In member function ‘[01m[Kvoid TrajectoryPublisher::publishBspline()[m[K’:
+[2.062s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:40:32:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[2.062s]    40 |            0.0, 0.0, 0.0, 0.0; [01;35m[K0[m[K,0, 0.0,// 第三行：z坐标
+[2.062s]       |                                [01;35m[K^[m[K
+[2.062s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:40:37:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[2.062s]    40 |            0.0, 0.0, 0.0, 0.0; 0,0, [01;35m[K0.0[m[K,// 第三行：z坐标
+[2.062s]       |                                     [01;35m[K^~~[m[K
+[2.062s] [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:41:47:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[2.062s]    41 |         bspline.pos_pts.reserve(pos_pts.cols()[01;35m[K)[m[K; // 预留足够的空间来存储控制点
+[2.063s]       |                                               [01;35m[K^[m[K
+[3.801s] [ 66%] [32m[1mLinking CXX executable traj_pub[0m
+[4.019s] [100%] Built target traj_pub
+[4.032s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '0': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[4.062s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --install /home/tony/webots_ws/build/traj_publish
+[4.071s] -- Install configuration: ""
+[4.071s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/package_run_dependencies/traj_publish
+[4.071s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/parent_prefix_path/traj_publish
+[4.071s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/ament_prefix_path.sh
+[4.071s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/ament_prefix_path.dsv
+[4.071s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/path.sh
+[4.071s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/path.dsv
+[4.071s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.bash
+[4.071s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.sh
+[4.072s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.zsh
+[4.072s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.dsv
+[4.072s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/package.dsv
+[4.072s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/packages/traj_publish
+[4.072s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake/traj_publishConfig.cmake
+[4.072s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake/traj_publishConfig-version.cmake
+[4.072s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/package.xml
+[4.072s] -- Installing: /home/tony/webots_ws/install/traj_publish/lib/traj_publish/traj_pub
+[4.074s] -- Set runtime path of "/home/tony/webots_ws/install/traj_publish/lib/traj_publish/traj_pub" to ""
+[4.076s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '0': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/opt/ros/foxy /usr/bin/cmake --install /home/tony/webots_ws/build/traj_publish

@@ -34,10 +34,10 @@ private:
         bspline.start_time = this->get_clock()->now();
         bspline.traj_id = 1;
 
-        Eigen::MatrixXd pos_pts(3, 4);
-        pos_pts << 0.0, 1.0, 2.0, 3.0, // 第一行：x坐标
-           0.0, 0.0, 1.0, 3.0, // 第二行：y坐标
-           0.0, 0.0, 0.0, 0.0; // 第三行：z坐标
+        Eigen::MatrixXd pos_pts(3, 7);
+        pos_pts << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0,// 第一行：x坐标
+           0.0, 0.0, 1.0, 3.0, 3.0, 3.0, 2.0,// 第二行：y坐标
+           0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;// 第三行：z坐标
         bspline.pos_pts.reserve(pos_pts.cols()); // 预留足够的空间来存储控制点
         // Eigen::Vector3d point_temp;
         for (int i = 0; i < pos_pts.cols(); ++i)
@@ -51,10 +51,30 @@ private:
             // cout<<"point : "<<point_temp<<endl;
         }
 
-        // Eigen::VectorXd knots = Eigen::VectorXd::LinSpaced(8, 0.0, 1.0); // knot vector 节点向量
+        int m_k = pos_pts.cols() + 1 + bspline.order; // 控制点个数
+        int mid = m_k - bspline.order*2;
+        Eigen::VectorXd mid_knots = Eigen::VectorXd::LinSpaced(mid, 0.0, pos_pts.cols());
 
-        Eigen::VectorXd knots(8); // knot vector 节点向量
-        knots << 0.0, 0.0, 0.0, 0.0, 3.0, 3.0, 3.0, 3.0;
+        // Eigen::VectorXd knots = Eigen::VectorXd::LinSpaced(8, 0.0, 1.0); // knot vector 节点向量 (数量=n+1+p+1)
+
+        Eigen::VectorXd knots(m_k); // knot vector 节点向量
+        // knots << 0.0, 0.0, 0.0, 0.0, 3.0, 3.0, 3.0, 3.0;
+        for (int i = 0; i < bspline.order; ++i)
+        {
+            knots(i) = 0.0;
+        }
+
+        for (int i = 0; i < bspline.order; ++i)
+        {
+            knots(m_k - 1 - i) = pos_pts.cols();
+        }
+
+        for (int i = 0; i < mid; ++i)
+        {
+            knots(bspline.order + i) = mid_knots(i);
+        }
+        // 输出knots的数值
+        std::cout<<"knots: "<<knots<<std::endl;
 
         bspline.knots.reserve(knots.cols());
 
