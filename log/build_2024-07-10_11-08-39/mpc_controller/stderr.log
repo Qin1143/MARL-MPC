@@ -1,8 +1,0 @@
-CMake Error at CMakeLists.txt:34 (add_executable):
-  add_executable cannot create target "mpc_controller" because another target
-  with the same name already exists.  The existing target is a static library
-  created in source directory "/home/tony/webots_ws/src/mpc_controller".  See
-  documentation for policy CMP0002 for more details.
-
-
-make: *** [Makefile:266: cmake_check_build_system] Error 1

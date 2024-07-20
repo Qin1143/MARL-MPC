@@ -1,0 +1,152 @@
+[0.017s] Invoking command in '/home/tony/webots_ws/build/mpc_controller': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/webots_ros2_msgs:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/home/tony/webots_ws/install/webots_ros2_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/webots_ros2_msgs/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake /home/tony/webots_ws/src/mpc_controller -DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/install/mpc_controller
+[0.068s] -- The C compiler identification is GNU 9.4.0
+[0.116s] -- The CXX compiler identification is GNU 9.4.0
+[0.120s] -- Check for working C compiler: /usr/bin/cc
+[0.185s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.186s] -- Detecting C compiler ABI info
+[0.250s] -- Detecting C compiler ABI info - done
+[0.260s] -- Detecting C compile features
+[0.260s] -- Detecting C compile features - done
+[0.262s] -- Check for working CXX compiler: /usr/bin/c++
+[0.333s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.334s] -- Detecting CXX compiler ABI info
+[0.408s] -- Detecting CXX compiler ABI info - done
+[0.417s] -- Detecting CXX compile features
+[0.417s] -- Detecting CXX compile features - done
+[0.420s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.442s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.442s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.618s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.660s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.667s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.748s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.775s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.840s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.885s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.887s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.887s] -- Looking for pthread.h
+[0.966s] -- Looking for pthread.h - found
+[0.966s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.042s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.042s] -- Looking for pthread_create in pthreads
+[1.119s] -- Looking for pthread_create in pthreads - not found
+[1.119s] -- Looking for pthread_create in pthread
+[1.196s] -- Looking for pthread_create in pthread - found
+[1.197s] -- Found Threads: TRUE  
+[1.312s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.338s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.391s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[1.400s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[1.407s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.407s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.693s] -- Found motor_interfaces: 0.0.0 (/home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake)
+[1.698s] -- Found traj_interfaces: 0.0.0 (/home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake)
+[1.744s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.810s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.811s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.811s] -- Configured cppcheck include dirs: 
+[1.811s] -- Configured cppcheck exclude dirs and/or files: 
+[1.812s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.812s] -- Configured cpplint exclude dirs and/or files: 
+[1.813s] -- Added test 'lint_cmake' to check CMake code style
+[1.813s] -- Added test 'uncrustify' to check C / C++ code style
+[1.814s] -- Configured uncrustify additional arguments: 
+[1.814s] -- Added test 'xmllint' to check XML markup files
+[1.820s] -- Configuring done
+[1.831s] -- Generating done
+[1.833s] -- Build files have been written to: /home/tony/webots_ws/build/mpc_controller
+[1.841s] Invoked command in '/home/tony/webots_ws/build/mpc_controller' returned '0': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/webots_ros2_msgs:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/home/tony/webots_ws/install/webots_ros2_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/webots_ros2_msgs/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake /home/tony/webots_ws/src/mpc_controller -DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/install/mpc_controller
+[1.844s] Invoking command in '/home/tony/webots_ws/build/mpc_controller': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/webots_ros2_msgs:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/home/tony/webots_ws/install/webots_ros2_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/webots_ros2_msgs/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/tony/webots_ws/build/mpc_controller -- -j16 -l16
+[1.888s] [35m[1mScanning dependencies of target control_node[0m
+[1.992s] [ 75%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/mpc_controller.cpp.o[0m
+[1.992s] [ 75%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/uniform_bspline.cpp.o[0m
+[1.992s] [ 75%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[2.198s] In file included from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:1014[m[K,
+[2.198s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:66[m[K,
+[2.198s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4[m[K,
+[2.198s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:1[m[K:
+[2.198s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:[m[K In member function ‘[01m[Kvoid qpOASES::QProblemB::applyGivens(qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t&, qpOASES::real_t&) const[m[K’:
+[2.198s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:447:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knu[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.198s]   447 | inline void QProblemB::applyGivens( real_t c, real_t s, [01;35m[Kreal_t nu[m[K, real_t xold, real_t yold,
+[2.198s]       |                                                         [01;35m[K~~~~~~~^~[m[K
+[2.198s] In file included from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:43[m[K,
+[2.199s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:67[m[K,
+[2.199s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4[m[K,
+[2.199s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:1[m[K:
+[2.199s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:[m[K In copy constructor ‘[01m[KqpOASES::ConstraintProduct::ConstraintProduct(const qpOASES::ConstraintProduct&)[m[K’:
+[2.199s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:64:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtoCopy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.199s]    64 |   ConstraintProduct( [01;35m[Kconst ConstraintProduct &toCopy[m[K /**< Rhs object. */
+[2.199s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[2.199s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:[m[K In member function ‘[01m[KqpOASES::ConstraintProduct& qpOASES::ConstraintProduct::operator=(const qpOASES::ConstraintProduct&)[m[K’:
+[2.199s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:71:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtoCopy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.199s]    71 |   ConstraintProduct &operator=( [01;35m[Kconst ConstraintProduct &toCopy[m[K /**< Rhs object. */
+[2.199s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[3.110s] In file included from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:1014[m[K,
+[3.110s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:66[m[K,
+[3.110s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4[m[K,
+[3.110s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:5[m[K:
+[3.110s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:[m[K In member function ‘[01m[Kvoid qpOASES::QProblemB::applyGivens(qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t&, qpOASES::real_t&) const[m[K’:
+[3.110s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:447:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knu[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.110s]   447 | inline void QProblemB::applyGivens( real_t c, real_t s, [01;35m[Kreal_t nu[m[K, real_t xold, real_t yold,
+[3.110s]       |                                                         [01;35m[K~~~~~~~^~[m[K
+[3.110s] In file included from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:43[m[K,
+[3.110s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:67[m[K,
+[3.110s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4[m[K,
+[3.110s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:5[m[K:
+[3.111s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:[m[K In copy constructor ‘[01m[KqpOASES::ConstraintProduct::ConstraintProduct(const qpOASES::ConstraintProduct&)[m[K’:
+[3.111s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:64:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtoCopy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.111s]    64 |   ConstraintProduct( [01;35m[Kconst ConstraintProduct &toCopy[m[K /**< Rhs object. */
+[3.111s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[3.111s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:[m[K In member function ‘[01m[KqpOASES::ConstraintProduct& qpOASES::ConstraintProduct::operator=(const qpOASES::ConstraintProduct&)[m[K’:
+[3.111s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:71:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtoCopy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.111s]    71 |   ConstraintProduct &operator=( [01;35m[Kconst ConstraintProduct &toCopy[m[K /**< Rhs object. */
+[3.111s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.048s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::MPC_calculate(double&)[m[K’:
+[4.048s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:362:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.048s]   362 |             for (int i = 0; [01;35m[Ki < U_r.size()[m[K; i++)
+[4.048s]       |                             [01;35m[K~~^~~~~~~~~~~~[m[K
+[4.052s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:240:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw_start[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.052s]   240 |         double [01;35m[Kyaw_start[m[K = atan2(vel_start(1), vel_start(0));       // 初始航向角
+[4.052s]       |                [01;35m[K^~~~~~~~~[m[K
+[4.081s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:[m[K In member function ‘[01m[KEigen::MatrixXd MPC_controller::MPC_Solve_qp(Eigen::Vector3d, std::vector<Eigen::Matrix<double, 3, 1> >, std::vector<Eigen::Matrix<double, 2, 1> >, int)[m[K’:
+[4.081s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:82:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[KH[m[K’ [[01;35m[K-Wvla[m[K]
+[4.081s]    82 |     real_t [01;35m[KH[m[K[2*N*2*N],g[2*N],A[2*N],lb[2*N],ub[2*N],lbA[1],ubA[1];
+[4.081s]       |            [01;35m[K^[m[K
+[4.081s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:82:23:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kg[m[K’ [[01;35m[K-Wvla[m[K]
+[4.082s]    82 |     real_t H[2*N*2*N],[01;35m[Kg[m[K[2*N],A[2*N],lb[2*N],ub[2*N],lbA[1],ubA[1];
+[4.082s]       |                       [01;35m[K^[m[K
+[4.082s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:82:30:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[KA[m[K’ [[01;35m[K-Wvla[m[K]
+[4.082s]    82 |     real_t H[2*N*2*N],g[2*N],[01;35m[KA[m[K[2*N],lb[2*N],ub[2*N],lbA[1],ubA[1];
+[4.082s]       |                              [01;35m[K^[m[K
+[4.082s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:82:37:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Klb[m[K’ [[01;35m[K-Wvla[m[K]
+[4.082s]    82 |     real_t H[2*N*2*N],g[2*N],A[2*N],[01;35m[Klb[m[K[2*N],ub[2*N],lbA[1],ubA[1];
+[4.082s]       |                                     [01;35m[K^~[m[K
+[4.082s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:82:45:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kub[m[K’ [[01;35m[K-Wvla[m[K]
+[4.082s]    82 |     real_t H[2*N*2*N],g[2*N],A[2*N],lb[2*N],[01;35m[Kub[m[K[2*N],lbA[1],ubA[1];
+[4.082s]       |                                             [01;35m[K^~[m[K
+[4.082s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/mpc_controller.cpp:110:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kx_solution[m[K’ [[01;35m[K-Wvla[m[K]
+[4.082s]   110 |     real_t [01;35m[Kx_solution[m[K[2*N];
+[4.082s]       |            [01;35m[K^~~~~~~~~~[m[K
+[9.748s] [100%] [32m[1mLinking CXX executable control_node[0m
+[10.274s] [100%] Built target control_node
+[10.286s] Invoked command in '/home/tony/webots_ws/build/mpc_controller' returned '0': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/webots_ros2_msgs:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/home/tony/webots_ws/install/webots_ros2_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/webots_ros2_msgs/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/tony/webots_ws/build/mpc_controller -- -j16 -l16
+[10.333s] Invoking command in '/home/tony/webots_ws/build/mpc_controller': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/webots_ros2_msgs:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/home/tony/webots_ws/install/webots_ros2_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/webots_ros2_msgs/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/tony/webots_ws/build/mpc_controller
+[10.342s] -- Install configuration: ""
+[10.343s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/ament_index/resource_index/package_run_dependencies/mpc_controller
+[10.344s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/ament_index/resource_index/parent_prefix_path/mpc_controller
+[10.344s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/mpc_controller/environment/ament_prefix_path.sh
+[10.344s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/mpc_controller/environment/ament_prefix_path.dsv
+[10.344s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/mpc_controller/environment/path.sh
+[10.345s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/mpc_controller/environment/path.dsv
+[10.345s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/mpc_controller/local_setup.bash
+[10.345s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/mpc_controller/local_setup.sh
+[10.345s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/mpc_controller/local_setup.zsh
+[10.345s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/mpc_controller/local_setup.dsv
+[10.345s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/mpc_controller/package.dsv
+[10.345s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/ament_index/resource_index/packages/mpc_controller
+[10.345s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/mpc_controller/cmake/mpc_controllerConfig.cmake
+[10.346s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/mpc_controller/cmake/mpc_controllerConfig-version.cmake
+[10.346s] -- Installing: /home/tony/webots_ws/install/mpc_controller/share/mpc_controller/package.xml
+[10.346s] -- Installing: /home/tony/webots_ws/install/mpc_controller/lib/mpc_controller/control_node
+[10.356s] -- Set runtime path of "/home/tony/webots_ws/install/mpc_controller/lib/mpc_controller/control_node" to ""
+[10.358s] Invoked command in '/home/tony/webots_ws/build/mpc_controller' returned '0': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/webots_ros2_msgs:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/home/tony/webots_ws/install/webots_ros2_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/webots_ros2_msgs/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/tony/webots_ws/build/mpc_controller

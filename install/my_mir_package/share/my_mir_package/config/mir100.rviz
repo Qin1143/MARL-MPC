@@ -8,7 +8,6 @@ Panels:
         - /Status1
         - /Grid1
         - /Odometry1
-        - /Odometry1/Shape1
       Splitter Ratio: 0.5
     Tree Height: 814
   - Class: rviz_common/Selection
@@ -83,25 +82,6 @@ Visualization Manager:
         Reliability Policy: Reliable
         Value: /odom
       Value: true
-    - Class: rviz_default_plugins/Axes
-      Enabled: true
-      Length: 1
-      Name: Axes
-      Radius: 0.10000000149011612
-      Reference Frame: <Fixed Frame>
-      Value: true
-    - Class: rviz_default_plugins/Marker
-      Enabled: true
-      Name: Marker
-      Namespaces:
-        "": true
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /traj_visualization
-      Value: true
     - Alpha: 1
       Buffer Length: 1
       Class: rviz_default_plugins/Path
@@ -128,6 +108,18 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /bspline_visualization
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: Marker
+      Namespaces:
+        "": true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /traj_visualization
       Value: true
   Enabled: true
   Global Options:
@@ -172,7 +164,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 40.22093963623047
+      Distance: 24.3604736328125
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -187,10 +179,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.5547963380813599
+      Pitch: 1.060397744178772
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.71544885635376
+      Yaw: 0.8703977465629578
     Saved: ~
 Window Geometry:
   Displays:

@@ -34,6 +34,7 @@ double traj_duration_;
 double t_step;
 double linear_v, angular_v;
 
+int robot_num;
 int traj_id_;
 double roll, pitch, yaw;
 vector<bspline_planner::UniformBspline> traj_;
@@ -46,18 +47,24 @@ class control_node : public rclcpp::Node
 {
 public:
     control_node(std::string node_name) : Node(node_name)
-    {
+    {        
+        // 声明参数
+        this->declare_parameter("robot_num", 1);
+        this->declare_parameter("v_max", 1.8);
+        this->declare_parameter("w_max", 1.2);
+        this->declare_parameter("omega0", 1.0);
+        this->declare_parameter("omega1", 0.1);
+        
+        // 打印robot_num参数
+        this->get_parameter("robot_num", robot_num);
+        std::cout << "robot_num: " << robot_num << std::endl;
+
         pub_motor_cmd = this->create_publisher<motor_interfaces::msg::Motor>("motor_cmd", 10);
         bspline_visualization_ = this->create_publisher<nav_msgs::msg::Path>("/bspline_visualization", 10);
         sub_odom_msg = this->create_subscription<nav_msgs::msg::Odometry>("odom", 10, std::bind(&control_node::odom_callback, this, std::placeholders::_1));
         sub_dir_msg = this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/direction", 10, std::bind(&control_node::dir_callback, this, std::placeholders::_1));
         sub_stop_msg = this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/stop", 10, std::bind(&control_node::stop_callback, this, std::placeholders::_1));
         sub_bspline_msg = this->create_subscription<traj_interfaces::msg::Bspline>("/traj_pub/bspline_traj", 10, std::bind(&control_node::traj_callback, this, std::placeholders::_1));
-        // 声明参数
-        this->declare_parameter("v_max", 1.8);
-        this->declare_parameter("w_max", 1.2);
-        this->declare_parameter("omega0", 1.0);
-        this->declare_parameter("omega1", 0.1);
     }
 
     void cmdCallback()
@@ -162,7 +169,7 @@ private:
         {
             return;
         }
-        
+
         Eigen::MatrixXd pos_pts(3, msg->pos_pts.size());
 
         Eigen::VectorXd knots(msg->knots.size());

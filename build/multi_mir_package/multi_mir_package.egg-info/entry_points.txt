@@ -1,0 +1,3 @@
+[console_scripts]
+multi_mir_driver = multi_mir_package.multi_mir_driver:main
+

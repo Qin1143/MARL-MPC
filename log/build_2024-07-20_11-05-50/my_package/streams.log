@@ -1,0 +1,47 @@
+[0.553s] Invoking command in '/home/tony/webots_ws/src/my_package': PYTHONPATH=/home/tony/webots_ws/build/my_package/prefix_override:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_package build --build-base /home/tony/webots_ws/build/my_package/build install --record /home/tony/webots_ws/build/my_package/install.log --install-scripts $base/lib/my_package --single-version-externally-managed install_data
+[0.914s] running egg_info
+[0.915s] creating ../../build/my_package/my_package.egg-info
+[0.915s] writing ../../build/my_package/my_package.egg-info/PKG-INFO
+[0.916s] writing dependency_links to ../../build/my_package/my_package.egg-info/dependency_links.txt
+[0.916s] writing entry points to ../../build/my_package/my_package.egg-info/entry_points.txt
+[0.917s] writing requirements to ../../build/my_package/my_package.egg-info/requires.txt
+[0.917s] writing top-level names to ../../build/my_package/my_package.egg-info/top_level.txt
+[0.919s] writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'
+[0.964s] reading manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'
+[0.965s] writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'
+[0.965s] running build
+[0.965s] running build_py
+[0.965s] creating /home/tony/webots_ws/build/my_package/build
+[0.965s] creating /home/tony/webots_ws/build/my_package/build/lib
+[0.965s] creating /home/tony/webots_ws/build/my_package/build/lib/my_package
+[0.965s] copying my_package/__init__.py -> /home/tony/webots_ws/build/my_package/build/lib/my_package
+[0.965s] copying my_package/my_robot_driver.py -> /home/tony/webots_ws/build/my_package/build/lib/my_package
+[0.966s] copying my_package/obstacle_avoider.py -> /home/tony/webots_ws/build/my_package/build/lib/my_package
+[0.966s] running install
+[0.967s] running install_lib
+[0.968s] creating /home/tony/webots_ws/install/my_package/lib/python3.8/site-packages/my_package
+[0.968s] copying /home/tony/webots_ws/build/my_package/build/lib/my_package/__init__.py -> /home/tony/webots_ws/install/my_package/lib/python3.8/site-packages/my_package
+[0.968s] copying /home/tony/webots_ws/build/my_package/build/lib/my_package/my_robot_driver.py -> /home/tony/webots_ws/install/my_package/lib/python3.8/site-packages/my_package
+[0.969s] copying /home/tony/webots_ws/build/my_package/build/lib/my_package/obstacle_avoider.py -> /home/tony/webots_ws/install/my_package/lib/python3.8/site-packages/my_package
+[0.969s] byte-compiling /home/tony/webots_ws/install/my_package/lib/python3.8/site-packages/my_package/__init__.py to __init__.cpython-38.pyc
+[0.971s] byte-compiling /home/tony/webots_ws/install/my_package/lib/python3.8/site-packages/my_package/my_robot_driver.py to my_robot_driver.cpython-38.pyc
+[0.971s] byte-compiling /home/tony/webots_ws/install/my_package/lib/python3.8/site-packages/my_package/obstacle_avoider.py to obstacle_avoider.cpython-38.pyc
+[0.972s] running install_data
+[0.972s] creating /home/tony/webots_ws/install/my_package/share/ament_index
+[0.972s] creating /home/tony/webots_ws/install/my_package/share/ament_index/resource_index
+[0.972s] creating /home/tony/webots_ws/install/my_package/share/ament_index/resource_index/packages
+[0.972s] copying resource/my_package -> /home/tony/webots_ws/install/my_package/share/ament_index/resource_index/packages
+[0.972s] creating /home/tony/webots_ws/install/my_package/share/my_package/launch
+[0.972s] copying launch/robot_launch.py -> /home/tony/webots_ws/install/my_package/share/my_package/launch
+[0.973s] creating /home/tony/webots_ws/install/my_package/share/my_package/worlds
+[0.973s] copying worlds/my_world.wbt -> /home/tony/webots_ws/install/my_package/share/my_package/worlds
+[0.973s] creating /home/tony/webots_ws/install/my_package/share/my_package/resource
+[0.973s] copying resource/my_robot.urdf -> /home/tony/webots_ws/install/my_package/share/my_package/resource
+[0.973s] copying package.xml -> /home/tony/webots_ws/install/my_package/share/my_package
+[0.973s] running install_egg_info
+[0.975s] Copying ../../build/my_package/my_package.egg-info to /home/tony/webots_ws/install/my_package/lib/python3.8/site-packages/my_package-0.0.0-py3.8.egg-info
+[0.977s] running install_scripts
+[0.999s] Installing my_robot_driver script to /home/tony/webots_ws/install/my_package/lib/my_package
+[0.999s] Installing obstacle_avoider script to /home/tony/webots_ws/install/my_package/lib/my_package
+[0.999s] writing list of installed files to '/home/tony/webots_ws/build/my_package/install.log'
+[1.035s] Invoked command in '/home/tony/webots_ws/src/my_package' returned '0': PYTHONPATH=/home/tony/webots_ws/build/my_package/prefix_override:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_package build --build-base /home/tony/webots_ws/build/my_package/build install --record /home/tony/webots_ws/build/my_package/install.log --install-scripts $base/lib/my_package --single-version-externally-managed install_data

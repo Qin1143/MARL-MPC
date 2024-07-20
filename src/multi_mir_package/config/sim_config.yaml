@@ -1,0 +1,6 @@
+control_node:
+  ros__parameters:
+    v_max: 1.8
+    w_max: 1.2
+    omega0: 1.0
+    omega1: 0.1

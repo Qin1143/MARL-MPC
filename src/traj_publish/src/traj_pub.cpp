@@ -74,7 +74,7 @@ private:
             knots(bspline.order + i) = mid_knots(i);
         }
         // 输出knots的数值
-        std::cout<<"knots: "<<knots<<std::endl;
+        // std::cout<<"knots: "<<knots<<std::endl;
 
         bspline.knots.reserve(knots.cols());
 
@@ -90,12 +90,12 @@ private:
         // 发布Bspline消息
         bspline_publisher_->publish(bspline);
         Eigen::MatrixXd control_points = pos_pts;
-        // 打印控制点信息
-        std::cout << "Control Points Size: " << control_points.size() << std::endl;
-        for (int i = 0; i < control_points.cols(); ++i)
-        {
-            std::cout << "Control Point " << i + 1 << ": (" << control_points(0, i) << ", " << control_points(1, i) << ")" << std::endl;
-        }
+        // // 打印控制点信息
+        // std::cout << "Control Points Size: " << control_points.size() << std::endl;
+        // for (int i = 0; i < control_points.cols(); ++i)
+        // {
+        //     std::cout << "Control Point " << i + 1 << ": (" << control_points(0, i) << ", " << control_points(1, i) << ")" << std::endl;
+        // }
 
         visualization_->displayTraj(control_points, 0);
 

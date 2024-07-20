@@ -1,9 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000140] (-) JobUnselected: {'identifier': 'motor_interfaces'}
-[0.000185] (-) JobUnselected: {'identifier': 'mpc_controller'}
-[0.000207] (-) JobUnselected: {'identifier': 'my_mir_package'}
-[0.000239] (-) JobUnselected: {'identifier': 'my_package'}
-[0.000261] (-) JobUnselected: {'identifier': 'qpOASES'}
-[0.000282] (-) JobUnselected: {'identifier': 'traj_inferfaces'}
-[0.000302] (-) JobUnselected: {'identifier': 'traj_publish'}
-[0.000701] (-) EventReactorShutdown: {}

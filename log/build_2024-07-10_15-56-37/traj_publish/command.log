@@ -1,2 +1,0 @@
-Invoking command in '/home/tony/webots_ws/build/traj_publish': /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
-Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '2': /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
