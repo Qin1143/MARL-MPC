@@ -31,7 +31,6 @@ rclcpp::Time start_time_, time_s, time_e;
 clock_t start_clock, end_clock;
 double duration;
 double traj_duration_;
-double t_step;
 double linear_v, angular_v;
 
 int robot_num;
@@ -46,6 +45,8 @@ enum DIRECTION {POSITIVE=0,NEGATIVE=1};
 class control_node : public rclcpp::Node
 {
 public:
+    double t_step = 0.03;
+    
     control_node(std::string node_name) : Node(node_name)
     {        
         // 声明参数

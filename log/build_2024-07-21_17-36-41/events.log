@@ -1,0 +1,115 @@
+[0.000000] (-) TimerEvent: {}
+[0.000596] (-) JobUnselected: {'identifier': 'motor_interfaces'}
+[0.000676] (-) JobUnselected: {'identifier': 'multi_mir_package'}
+[0.000703] (-) JobUnselected: {'identifier': 'my_mir_package'}
+[0.000724] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000746] (-) JobUnselected: {'identifier': 'qpOASES'}
+[0.000766] (-) JobUnselected: {'identifier': 'traj_interfaces'}
+[0.000785] (-) JobUnselected: {'identifier': 'traj_publish'}
+[0.000805] (mpc_controller) JobQueued: {'identifier': 'mpc_controller', 'dependencies': OrderedDict([('motor_interfaces', '/home/tony/webots_ws/install/motor_interfaces'), ('traj_interfaces', '/home/tony/webots_ws/install/traj_interfaces')])}
+[0.000831] (mpc_controller) JobStarted: {'identifier': 'mpc_controller'}
+[0.018001] (mpc_controller) JobProgress: {'identifier': 'mpc_controller', 'progress': 'cmake'}
+[0.020174] (mpc_controller) JobProgress: {'identifier': 'mpc_controller', 'progress': 'build'}
+[0.022398] (mpc_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tony/webots_ws/build/mpc_controller', '--', '-j16', '-l16'], 'cwd': '/home/tony/webots_ws/build/mpc_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1681'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1580'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5349'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tony/webots_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:55336'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1717,unix/Jarvis:/tmp/.ICE-unix/1717'), ('INVOCATION_ID', 'ed78cf2ae2ba41ceb1f89da7bc7f5b8d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/home/tony/webots_ws/install/motor_interfaces:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:41237c35-0461-48c7-a558-44d2b4602e1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/build/mpc_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy')]), 'shell': False}
+[0.076825] (mpc_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_node\x1b[0m\n'}
+[0.099797] (-) TimerEvent: {}
+[0.144684] (mpc_controller) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o\x1b[0m\n'}
+[0.199900] (-) TimerEvent: {}
+[0.300227] (-) TimerEvent: {}
+[0.400575] (-) TimerEvent: {}
+[0.500928] (-) TimerEvent: {}
+[0.601221] (-) TimerEvent: {}
+[0.701508] (-) TimerEvent: {}
+[0.801794] (-) TimerEvent: {}
+[0.902085] (-) TimerEvent: {}
+[1.002364] (-) TimerEvent: {}
+[1.102657] (-) TimerEvent: {}
+[1.203348] (-) TimerEvent: {}
+[1.223647] (mpc_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:1014\x1b[m\x1b[K,\n'}
+[1.223867] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:66\x1b[m\x1b[K,\n'}
+[1.223946] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4\x1b[m\x1b[K,\n'}
+[1.224017] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:5\x1b[m\x1b[K:\n'}
+[1.224089] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid qpOASES::QProblemB::applyGivens(qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t&, qpOASES::real_t&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.224160] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:447:64:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Knu\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.224228] (mpc_controller) StderrLine: {'line': b'  447 | inline void QProblemB::applyGivens( real_t c, real_t s, \x1b[01;35m\x1b[Kreal_t nu\x1b[m\x1b[K, real_t xold, real_t yold,\n'}
+[1.224291] (mpc_controller) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~~~~^~\x1b[m\x1b[K\n'}
+[1.224353] (mpc_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:43\x1b[m\x1b[K,\n'}
+[1.224414] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:67\x1b[m\x1b[K,\n'}
+[1.224477] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4\x1b[m\x1b[K,\n'}
+[1.224540] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:5\x1b[m\x1b[K:\n'}
+[1.224602] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:\x1b[m\x1b[K In copy constructor \xe2\x80\x98\x1b[01m\x1b[KqpOASES::ConstraintProduct::ConstraintProduct(const qpOASES::ConstraintProduct&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.224663] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:64:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtoCopy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.224725] (mpc_controller) StderrLine: {'line': b'   64 |   ConstraintProduct( \x1b[01;35m\x1b[Kconst ConstraintProduct &toCopy\x1b[m\x1b[K /**< Rhs object. */\n'}
+[1.224784] (mpc_controller) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[1.224843] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KqpOASES::ConstraintProduct& qpOASES::ConstraintProduct::operator=(const qpOASES::ConstraintProduct&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.224904] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:71:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtoCopy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.224964] (mpc_controller) StderrLine: {'line': b'   71 |   ConstraintProduct &operator=( \x1b[01;35m\x1b[Kconst ConstraintProduct &toCopy\x1b[m\x1b[K /**< Rhs object. */\n'}
+[1.225023] (mpc_controller) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[1.303482] (-) TimerEvent: {}
+[1.403781] (-) TimerEvent: {}
+[1.504072] (-) TimerEvent: {}
+[1.604356] (-) TimerEvent: {}
+[1.704645] (-) TimerEvent: {}
+[1.805567] (-) TimerEvent: {}
+[1.905850] (-) TimerEvent: {}
+[2.006487] (-) TimerEvent: {}
+[2.071554] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid control_node::MPC_calculate(double&, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.071774] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:503:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[2.071856] (mpc_controller) StderrLine: {'line': b'  503 |             for (int i = 0; \x1b[01;35m\x1b[Ki < U_r.size()\x1b[m\x1b[K; i++)\n'}
+[2.071925] (mpc_controller) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.075142] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:381:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kyaw_start\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[2.075262] (mpc_controller) StderrLine: {'line': b'  381 |         double \x1b[01;35m\x1b[Kyaw_start\x1b[m\x1b[K = atan2(vel_start(1), vel_start(0));       // \xe5\x88\x9d\xe5\xa7\x8b\xe8\x88\xaa\xe5\x90\x91\xe8\xa7\x92\n'}
+[2.075339] (mpc_controller) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.084275] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.084435] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:535:151:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcontrol_node::create_wall_timer(std::chrono::milliseconds, std::_Bind_helper<false, void (control_node::*)(int), std::shared_ptr<control_node>&, int&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.084534] (mpc_controller) StderrLine: {'line': b'  535 | d::chrono::milliseconds(30), std::bind(&control_node::cmdCallback, node, i)\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.084604] (mpc_controller) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.084669] (mpc_controller) StderrLine: {'line': b'\n'}
+[2.084731] (mpc_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.084795] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.084859] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[2.084923] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:4\x1b[m\x1b[K:\n'}
+[2.084986] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:232:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.085051] (mpc_controller) StderrLine: {'line': b'  232 |   \x1b[01;36m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(\n'}
+[2.085114] (mpc_controller) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.085177] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:232:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.085251] (mpc_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:1224\x1b[m\x1b[K,\n'}
+[2.085314] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.085376] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.085437] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[2.085498] (mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:4\x1b[m\x1b[K:\n'}
+[2.085559] (mpc_controller) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/node_impl.hpp: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr) [with DurationRepT = long int; DurationT = std::ratio<1, 1000>; CallbackT = std::_Bind<void (control_node::*(std::shared_ptr<control_node>, int))(int)>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.085630] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:535:151:\x1b[m\x1b[K   required from here\n'}
+[2.085693] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.085759] (mpc_controller) StderrLine: {'line': b'  109 | \x1b[01;31m\x1b[KNode\x1b[m\x1b[K::create_wall_timer(\n'}
+[2.085822] (mpc_controller) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.085883] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.085950] (mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[2.106606] (-) TimerEvent: {}
+[2.207325] (-) TimerEvent: {}
+[2.307619] (-) TimerEvent: {}
+[2.408073] (-) TimerEvent: {}
+[2.508352] (-) TimerEvent: {}
+[2.608678] (-) TimerEvent: {}
+[2.708970] (-) TimerEvent: {}
+[2.809264] (-) TimerEvent: {}
+[2.909556] (-) TimerEvent: {}
+[3.009845] (-) TimerEvent: {}
+[3.110135] (-) TimerEvent: {}
+[3.210772] (-) TimerEvent: {}
+[3.311057] (-) TimerEvent: {}
+[3.411333] (-) TimerEvent: {}
+[3.511618] (-) TimerEvent: {}
+[3.611975] (-) TimerEvent: {}
+[3.712276] (-) TimerEvent: {}
+[3.812577] (-) TimerEvent: {}
+[3.912878] (-) TimerEvent: {}
+[4.013183] (-) TimerEvent: {}
+[4.113513] (-) TimerEvent: {}
+[4.213810] (-) TimerEvent: {}
+[4.241840] (mpc_controller) StderrLine: {'line': b'make[2]: *** [CMakeFiles/control_node.dir/build.make:63: CMakeFiles/control_node.dir/src/control_node.cpp.o] Error 1\n'}
+[4.242128] (mpc_controller) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/control_node.dir/all] Error 2\n'}
+[4.242346] (mpc_controller) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[4.246049] (mpc_controller) CommandEnded: {'returncode': 2}
+[4.300524] (mpc_controller) JobEnded: {'identifier': 'mpc_controller', 'rc': 2}
+[4.311670] (-) EventReactorShutdown: {}

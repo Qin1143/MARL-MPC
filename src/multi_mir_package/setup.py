@@ -6,6 +6,8 @@ data_files.append(('share/ament_index/resource_index/packages', ['resource/' + p
 data_files.append(('share/' + package_name + '/launch', ['launch/multi_mir_launch.py']))
 data_files.append(('share/' + package_name + '/worlds', ['worlds/multi_robot_world.wbt']))
 data_files.append(('share/' + package_name + '/resource', ['resource/mir_robot_1.urdf']))
+data_files.append(('share/' + package_name + '/resource', ['resource/mir_robot_2.urdf']))
+data_files.append(('share/' + package_name + '/resource', ['resource/mir_robot_3.urdf']))
 data_files.append(('share/' + package_name, ['package.xml']))
 data_files.append(('share/' + package_name + '/config', ['config/mir100.rviz']))
 
@@ -23,7 +25,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'multi_mir_driver = multi_mir_package.multi_mir_driver:main',
+            'mir_robot_1_driver = multi_mir_package.mir_robot_1_driver:main',
+            'mir_robot_2_driver = multi_mir_package.mir_robot_2_driver:main',
+            'mir_robot_3_driver = multi_mir_package.mir_robot_3_driver:main'
         ],
     },
 )

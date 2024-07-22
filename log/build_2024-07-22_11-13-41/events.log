@@ -1,0 +1,155 @@
+[0.000000] (-) TimerEvent: {}
+[0.000182] (-) JobUnselected: {'identifier': 'motor_interfaces'}
+[0.000239] (-) JobUnselected: {'identifier': 'mpc_controller'}
+[0.000264] (-) JobUnselected: {'identifier': 'multi_mir_package'}
+[0.000286] (-) JobUnselected: {'identifier': 'multi_mpc_controller'}
+[0.000316] (-) JobUnselected: {'identifier': 'my_mir_package'}
+[0.000336] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000356] (-) JobUnselected: {'identifier': 'qpOASES'}
+[0.000375] (-) JobUnselected: {'identifier': 'traj_interfaces'}
+[0.000396] (-) JobUnselected: {'identifier': 'traj_publish'}
+[0.000418] (multi_traj_publish) JobQueued: {'identifier': 'multi_traj_publish', 'dependencies': OrderedDict([('traj_interfaces', '/home/tony/webots_ws/install/traj_interfaces')])}
+[0.000444] (multi_traj_publish) JobStarted: {'identifier': 'multi_traj_publish'}
+[0.013549] (multi_traj_publish) JobProgress: {'identifier': 'multi_traj_publish', 'progress': 'cmake'}
+[0.014420] (multi_traj_publish) Command: {'cmd': ['/usr/bin/cmake', '/home/tony/webots_ws/src/multi_traj_publish', '-DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/install/multi_traj_publish'], 'cwd': '/home/tony/webots_ws/build/multi_traj_publish', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1681'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1580'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '38136'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tony/webots_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:55336'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1717,unix/Jarvis:/tmp/.ICE-unix/1717'), ('INVOCATION_ID', 'ed78cf2ae2ba41ceb1f89da7bc7f5b8d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/home/tony/webots_ws/install/motor_interfaces:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:9407fcb2-2bb0-4c2d-b8d2-a5ce15ee4d4d'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/build/multi_traj_publish'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy')]), 'shell': False}
+[0.096681] (multi_traj_publish) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.099529] (-) TimerEvent: {}
+[0.157598] (multi_traj_publish) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.165755] (multi_traj_publish) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.199652] (-) TimerEvent: {}
+[0.264615] (multi_traj_publish) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.265337] (multi_traj_publish) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299859] (-) TimerEvent: {}
+[0.371603] (multi_traj_publish) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.378627] (multi_traj_publish) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.378829] (multi_traj_publish) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.380580] (multi_traj_publish) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.399967] (-) TimerEvent: {}
+[0.487065] (multi_traj_publish) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.489499] (multi_traj_publish) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500089] (-) TimerEvent: {}
+[0.600478] (-) TimerEvent: {}
+[0.610371] (multi_traj_publish) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.617625] (multi_traj_publish) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.617950] (multi_traj_publish) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.620344] (multi_traj_publish) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.642767] (multi_traj_publish) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.643001] (multi_traj_publish) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.700601] (-) TimerEvent: {}
+[0.800870] (-) TimerEvent: {}
+[0.805328] (multi_traj_publish) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.845181] (multi_traj_publish) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.851834] (multi_traj_publish) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.901050] (-) TimerEvent: {}
+[0.936537] (multi_traj_publish) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.965027] (multi_traj_publish) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.001158] (-) TimerEvent: {}
+[1.042869] (multi_traj_publish) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.086963] (multi_traj_publish) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.087732] (multi_traj_publish) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.088463] (multi_traj_publish) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.101342] (-) TimerEvent: {}
+[1.200208] (multi_traj_publish) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.200923] (multi_traj_publish) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.201420] (-) TimerEvent: {}
+[1.301650] (-) TimerEvent: {}
+[1.305545] (multi_traj_publish) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.306087] (multi_traj_publish) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.376145] (multi_traj_publish) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.376385] (multi_traj_publish) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.401829] (-) TimerEvent: {}
+[1.474397] (multi_traj_publish) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.475179] (multi_traj_publish) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.501907] (-) TimerEvent: {}
+[1.585396] (multi_traj_publish) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[1.602018] (-) TimerEvent: {}
+[1.688785] (multi_traj_publish) StdoutLine: {'line': b'-- Found traj_interfaces: 0.0.0 (/home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake)\n'}
+[1.702122] (-) TimerEvent: {}
+[1.746548] (multi_traj_publish) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[1.799988] (multi_traj_publish) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.803022] (-) TimerEvent: {}
+[1.871693] (multi_traj_publish) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.872643] (multi_traj_publish) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.872787] (multi_traj_publish) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.872863] (multi_traj_publish) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.873579] (multi_traj_publish) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.873717] (multi_traj_publish) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.874178] (multi_traj_publish) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.875172] (multi_traj_publish) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.875278] (multi_traj_publish) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.875927] (multi_traj_publish) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.886070] (multi_traj_publish) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.893551] (multi_traj_publish) StdoutLine: {'line': b'-- Generating done\n'}
+[1.894261] (multi_traj_publish) StdoutLine: {'line': b'-- Build files have been written to: /home/tony/webots_ws/build/multi_traj_publish\n'}
+[1.900802] (multi_traj_publish) CommandEnded: {'returncode': 0}
+[1.901469] (multi_traj_publish) JobProgress: {'identifier': 'multi_traj_publish', 'progress': 'build'}
+[1.904094] (multi_traj_publish) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tony/webots_ws/build/multi_traj_publish', '--', '-j16', '-l16'], 'cwd': '/home/tony/webots_ws/build/multi_traj_publish', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1681'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1580'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '38136'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tony/webots_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:55336'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1717,unix/Jarvis:/tmp/.ICE-unix/1717'), ('INVOCATION_ID', 'ed78cf2ae2ba41ceb1f89da7bc7f5b8d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/home/tony/webots_ws/install/motor_interfaces:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:9407fcb2-2bb0-4c2d-b8d2-a5ce15ee4d4d'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/build/multi_traj_publish'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy')]), 'shell': False}
+[1.904958] (-) TimerEvent: {}
+[1.975673] (multi_traj_publish) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target traj_pub\x1b[0m\n'}
+[2.005074] (-) TimerEvent: {}
+[2.052003] (multi_traj_publish) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o\x1b[0m\n'}
+[2.052198] (multi_traj_publish) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_visualization.cpp.o\x1b[0m\n'}
+[2.105194] (-) TimerEvent: {}
+[2.205565] (-) TimerEvent: {}
+[2.306207] (-) TimerEvent: {}
+[2.406957] (-) TimerEvent: {}
+[2.507643] (-) TimerEvent: {}
+[2.607952] (-) TimerEvent: {}
+[2.708261] (-) TimerEvent: {}
+[2.808958] (-) TimerEvent: {}
+[2.909252] (-) TimerEvent: {}
+[3.010096] (-) TimerEvent: {}
+[3.110727] (-) TimerEvent: {}
+[3.211455] (-) TimerEvent: {}
+[3.312105] (-) TimerEvent: {}
+[3.412886] (-) TimerEvent: {}
+[3.513523] (-) TimerEvent: {}
+[3.613815] (-) TimerEvent: {}
+[3.714112] (-) TimerEvent: {}
+[3.814417] (-) TimerEvent: {}
+[3.914736] (-) TimerEvent: {}
+[4.015032] (-) TimerEvent: {}
+[4.115407] (-) TimerEvent: {}
+[4.215717] (-) TimerEvent: {}
+[4.316028] (-) TimerEvent: {}
+[4.416931] (-) TimerEvent: {}
+[4.517725] (-) TimerEvent: {}
+[4.618019] (-) TimerEvent: {}
+[4.718289] (-) TimerEvent: {}
+[4.818978] (-) TimerEvent: {}
+[4.919323] (-) TimerEvent: {}
+[5.019637] (-) TimerEvent: {}
+[5.119934] (-) TimerEvent: {}
+[5.220228] (-) TimerEvent: {}
+[5.320517] (-) TimerEvent: {}
+[5.420794] (-) TimerEvent: {}
+[5.516936] (multi_traj_publish) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable traj_pub\x1b[0m\n'}
+[5.520965] (-) TimerEvent: {}
+[5.621331] (-) TimerEvent: {}
+[5.721630] (-) TimerEvent: {}
+[5.723371] (multi_traj_publish) StdoutLine: {'line': b'[100%] Built target traj_pub\n'}
+[5.739651] (multi_traj_publish) CommandEnded: {'returncode': 0}
+[5.762397] (multi_traj_publish) JobProgress: {'identifier': 'multi_traj_publish', 'progress': 'install'}
+[5.772798] (multi_traj_publish) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tony/webots_ws/build/multi_traj_publish'], 'cwd': '/home/tony/webots_ws/build/multi_traj_publish', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1681'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1580'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '38136'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tony/webots_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:55336'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1717,unix/Jarvis:/tmp/.ICE-unix/1717'), ('INVOCATION_ID', 'ed78cf2ae2ba41ceb1f89da7bc7f5b8d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/home/tony/webots_ws/install/motor_interfaces:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:9407fcb2-2bb0-4c2d-b8d2-a5ce15ee4d4d'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/build/multi_traj_publish'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy')]), 'shell': False}
+[5.779285] (multi_traj_publish) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.779512] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/ament_index/resource_index/package_run_dependencies/multi_traj_publish\n'}
+[5.779677] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/ament_index/resource_index/parent_prefix_path/multi_traj_publish\n'}
+[5.779861] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/multi_traj_publish/environment/ament_prefix_path.sh\n'}
+[5.779989] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/multi_traj_publish/environment/ament_prefix_path.dsv\n'}
+[5.780113] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/multi_traj_publish/environment/path.sh\n'}
+[5.780253] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/multi_traj_publish/environment/path.dsv\n'}
+[5.780377] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/multi_traj_publish/local_setup.bash\n'}
+[5.780499] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/multi_traj_publish/local_setup.sh\n'}
+[5.780621] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/multi_traj_publish/local_setup.zsh\n'}
+[5.780753] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/multi_traj_publish/local_setup.dsv\n'}
+[5.780877] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/multi_traj_publish/package.dsv\n'}
+[5.781043] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/ament_index/resource_index/packages/multi_traj_publish\n'}
+[5.781200] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/multi_traj_publish/cmake/multi_traj_publishConfig.cmake\n'}
+[5.781299] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/multi_traj_publish/cmake/multi_traj_publishConfig-version.cmake\n'}
+[5.781420] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/share/multi_traj_publish/package.xml\n'}
+[5.781622] (multi_traj_publish) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_traj_publish/lib/multi_traj_publish/traj_pub\n'}
+[5.783336] (multi_traj_publish) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/multi_traj_publish/lib/multi_traj_publish/traj_pub" to ""\n'}
+[5.784808] (multi_traj_publish) CommandEnded: {'returncode': 0}
+[5.821756] (-) TimerEvent: {}
+[5.832910] (multi_traj_publish) JobEnded: {'identifier': 'multi_traj_publish', 'rc': 0}
+[5.833346] (-) EventReactorShutdown: {}

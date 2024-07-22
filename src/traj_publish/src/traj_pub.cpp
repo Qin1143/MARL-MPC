@@ -1,24 +1,26 @@
-#include "traj_publish/traj_pub.hpp"
+#include "traj_pub.hpp"
 
-PlanningVisualization::Ptr visualization_;
+
+// PlanningVisualization::Ptr visualization_;
 
 class TrajectoryPublisher : public rclcpp::Node
 {
 public:
     TrajectoryPublisher(std::string node_name)  : Node(node_name)
     {   
-        visualization_.reset(new PlanningVisualization(get_node_options()));
+        // visualization_.reset(new PlanningVisualization(get_node_options()));
         bspline_publisher_ = this->create_publisher<traj_interfaces::msg::Bspline>("/traj_pub/bspline_traj", 10);
-        // traj_publisher_ = this->create_publisher<nav_msgs::msg::Path>("/traj_pub/trajectory", 10);
         dir_publisher_ = this->create_publisher<std_msgs::msg::UInt8>("/traj_pub/direction", 10);
+        traj_rviz_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("/traj_visualization", 10);
         timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&TrajectoryPublisher::publishBspline, this));
         // 单位毫秒 10Hz 的频率
     }
 
 private:
-    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr traj_publisher_;
     rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr dir_publisher_;
     rclcpp::Publisher<traj_interfaces::msg::Bspline>::SharedPtr bspline_publisher_;
+    rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr traj_rviz_pub_;
+    rclcpp::TimerBase::SharedPtr timer_;
     enum DIRECTION {POSITIVE=0,NEGATIVE=1};
     DIRECTION dir = POSITIVE;
 
@@ -34,10 +36,10 @@ private:
         bspline.start_time = this->get_clock()->now();
         bspline.traj_id = 1;
 
-        Eigen::MatrixXd pos_pts(3, 7);
-        pos_pts << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0,// 第一行：x坐标
-           0.0, 0.0, 1.0, 3.0, 3.0, 3.0, 2.0,// 第二行：y坐标
-           0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;// 第三行：z坐标
+        Eigen::MatrixXd pos_pts(3, 9);
+        pos_pts << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
+            0.0, 0.0, 1.0, 3.0, 3.0, 3.0, 1.0, 0.0, 0.0,        // 第二行：y坐标
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;        // 第三行：z坐标
         bspline.pos_pts.reserve(pos_pts.cols()); // 预留足够的空间来存储控制点
         // Eigen::Vector3d point_temp;
         for (int i = 0; i < pos_pts.cols(); ++i)
@@ -97,61 +99,61 @@ private:
         //     std::cout << "Control Point " << i + 1 << ": (" << control_points(0, i) << ", " << control_points(1, i) << ")" << std::endl;
         // }
 
-        visualization_->displayTraj(control_points, 0);
+        // visualization_->displayTraj(control_points, 0);
+        displayTraj(control_points, 0);
 
     }
 
-    void publishTrajectory()
+    void displayMarkerList(rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr pub, const std::vector<Eigen::Vector3d> &list, double scale,
+                                                  Eigen::Vector4d color, int id)
     {
-        nav_msgs::msg::Path trajectory;
-        std_msgs::msg::UInt8 dir_new;
+        visualization_msgs::msg::Marker sphere, line_strip; // 储存球体和线条的消息
+        sphere.header.frame_id = line_strip.header.frame_id = "map";
+        sphere.header.stamp = line_strip.header.stamp = this->get_clock()->now();
+        sphere.type = visualization_msgs::msg::Marker::SPHERE_LIST;
+        line_strip.type = visualization_msgs::msg::Marker::LINE_STRIP;
+        sphere.action = line_strip.action = visualization_msgs::msg::Marker::ADD;
+        sphere.id = id;
+        line_strip.id = id + 1000;
 
-        dir_new.data = dir;
-        dir_publisher_->publish(dir_new);
-
-        trajectory.header.frame_id = "map";
-        trajectory.header.stamp = this->get_clock()->now();
-
-        // 定义四个控制点 (x, y)
-        std::vector<std::pair<double, double>> control_points = {
-            {0.0, 0.0}, // 控制点1
-            {0.0, 2.0}, // 控制点2
-            {4.0, 2.0}, // 控制点3
-            {4.0, 0.0}  // 控制点4
-        };
-
-        // Generate Bezier curve points
-        for (double t = 0.0; t <= 1.0; t += 0.1)
+        sphere.pose.orientation.w = line_strip.pose.orientation.w = 1.0;
+        sphere.color.r = line_strip.color.r = color(0);
+        sphere.color.g = line_strip.color.g = color(1);
+        sphere.color.b = line_strip.color.b = color(2);
+        sphere.color.a = line_strip.color.a = color(3) > 1e-5 ? color(3) : 1.0;
+        sphere.scale.x = scale;
+        sphere.scale.y = scale;
+        sphere.scale.z = scale;
+        line_strip.scale.x = scale / 2;
+        geometry_msgs::msg::Point pt;
+        for (int i = 0; i < int(list.size()); i++)
         {
-            double x = pow(1 - t, 3) * control_points[0].first +
-                       3 * t * pow(1 - t, 2) * control_points[1].first +
-                       3 * pow(t, 2) * (1 - t) * control_points[2].first +
-                       pow(t, 3) * control_points[3].first;
+            pt.x = list[i](0);
+            pt.y = list[i](1);
+            pt.z = list[i](2);
+            sphere.points.push_back(pt);
+            line_strip.points.push_back(pt);
+        }
+        pub->publish(sphere);
+        pub->publish(line_strip);
+    }
 
-            double y = pow(1 - t, 3) * control_points[0].second +
-                       3 * t * pow(1 - t, 2) * control_points[1].second +
-                       3 * pow(t, 2) * (1 - t) * control_points[2].second +
-                       pow(t, 3) * control_points[3].second;
-
-            geometry_msgs::msg::PoseStamped pose;
-            pose.header.frame_id = "map";
-            pose.header.stamp = trajectory.header.stamp;
-            pose.pose.position.x = x;
-            pose.pose.position.y = y;
-            pose.pose.position.z = 0.0;
-            pose.pose.orientation.x = 0.0;
-            pose.pose.orientation.y = 0.0;
-            pose.pose.orientation.z = 0.0;
-            pose.pose.orientation.w = 1.0;
-
-            trajectory.poses.push_back(pose);
+    void displayTraj(Eigen::MatrixXd optimal_pts, int id)
+    {
+        if (traj_rviz_pub_->get_subscription_count() == 0)
+        {
+            return;
         }
 
-        traj_publisher_->publish(trajectory);
+        std::vector<Eigen::Vector3d> list;
+        for (int i = 0; i < optimal_pts.cols(); i++)
+        {
+            Eigen::Vector3d pt = optimal_pts.col(i).transpose();
+            list.push_back(pt);
+        }
+        Eigen::Vector4d color(1, 0, 0, 1);
+        displayMarkerList(traj_rviz_pub_, list, 0.15, color, id);
     }
-
-    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr publisher_;
-    rclcpp::TimerBase::SharedPtr timer_;
 };
 
 int main(int argc, char** argv)

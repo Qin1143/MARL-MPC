@@ -1,0 +1,153 @@
+[0.020s] Invoking command in '/home/tony/webots_ws/build/mpc_controller': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/tony/webots_ws/build/mpc_controller -- -j16 -l16
+[0.070s] [35m[1mScanning dependencies of target control_node[0m
+[0.147s] [ 25%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[1.216s] In file included from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:1014[m[K,
+[1.216s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:66[m[K,
+[1.216s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4[m[K,
+[1.217s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:5[m[K:
+[1.217s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:[m[K In member function ‘[01m[Kvoid qpOASES::QProblemB::applyGivens(qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t&, qpOASES::real_t&) const[m[K’:
+[1.217s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:447:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knu[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.217s]   447 | inline void QProblemB::applyGivens( real_t c, real_t s, [01;35m[Kreal_t nu[m[K, real_t xold, real_t yold,
+[1.217s]       |                                                         [01;35m[K~~~~~~~^~[m[K
+[1.217s] In file included from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:43[m[K,
+[1.217s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:67[m[K,
+[1.217s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4[m[K,
+[1.217s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:5[m[K:
+[1.217s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:[m[K In copy constructor ‘[01m[KqpOASES::ConstraintProduct::ConstraintProduct(const qpOASES::ConstraintProduct&)[m[K’:
+[1.217s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:64:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtoCopy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.217s]    64 |   ConstraintProduct( [01;35m[Kconst ConstraintProduct &toCopy[m[K /**< Rhs object. */
+[1.217s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.217s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:[m[K In member function ‘[01m[KqpOASES::ConstraintProduct& qpOASES::ConstraintProduct::operator=(const qpOASES::ConstraintProduct&)[m[K’:
+[1.217s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:71:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtoCopy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.218s]    71 |   ConstraintProduct &operator=( [01;35m[Kconst ConstraintProduct &toCopy[m[K /**< Rhs object. */
+[1.218s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.980s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In lambda function:
+[1.980s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:70:208:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kshared_ptr<[01;32m[Kstd_msgs::msg::UInt8_<std::allocator<void> >[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Knav_msgs::msg::Odometry_<std::allocator<void> >[m[K>[m[K’
+[1.980s]    70 | 1), 10, [this, i](const std_msgs::msg::UInt8::SharedPtr msg) {this->odom_callback([01;31m[Kmsg[m[K, i);});
+[1.980s]       |                                                                                   [01;31m[K^~~[m[K
+[1.980s]       |                                                                                   [01;31m[K|[m[K
+[1.980s]       |                                                                                   [01;31m[Kshared_ptr<std_msgs::msg::UInt8_<std::allocator<void> >>[m[K
+[1.980s] 
+[1.980s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:201:65:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid control_node::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr, int)[m[K’
+[1.980s]   201 |     void odom_callback([01;36m[Kconst nav_msgs::msg::Odometry::SharedPtr msg[m[K, int robot_id)
+[1.980s]       |                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.983s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In lambda function:
+[1.984s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:72:233:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kshared_ptr<[01;32m[Ktraj_interfaces::msg::Bspline_<std::allocator<void> >[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Knav_msgs::msg::Odometry_<std::allocator<void> >[m[K>[m[K’
+[1.984s]    72 | this, i](const traj_interfaces::msg::Bspline::SharedPtr msg) {this->odom_callback([01;31m[Kmsg[m[K, i);});
+[1.984s]       |                                                                                   [01;31m[K^~~[m[K
+[1.984s]       |                                                                                   [01;31m[K|[m[K
+[1.984s]       |                                                                                   [01;31m[Kshared_ptr<traj_interfaces::msg::Bspline_<std::allocator<void> >>[m[K
+[1.984s] 
+[1.984s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:201:65:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid control_node::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr, int)[m[K’
+[1.984s]   201 |     void odom_callback([01;36m[Kconst nav_msgs::msg::Odometry::SharedPtr msg[m[K, int robot_id)
+[1.984s]       |                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.986s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In lambda function:
+[1.986s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:74:204:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kshared_ptr<[01;32m[Kstd_msgs::msg::UInt8_<std::allocator<void> >[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Knav_msgs::msg::Odometry_<std::allocator<void> >[m[K>[m[K’
+[1.986s]    74 | 1), 10, [this, i](const std_msgs::msg::UInt8::SharedPtr msg) {this->odom_callback([01;31m[Kmsg[m[K, i);});
+[1.986s]       |                                                                                   [01;31m[K^~~[m[K
+[1.986s]       |                                                                                   [01;31m[K|[m[K
+[1.987s]       |                                                                                   [01;31m[Kshared_ptr<std_msgs::msg::UInt8_<std::allocator<void> >>[m[K
+[1.987s] 
+[1.987s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:201:65:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid control_node::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr, int)[m[K’
+[1.987s]   201 |     void odom_callback([01;36m[Kconst nav_msgs::msg::Odometry::SharedPtr msg[m[K, int robot_id)
+[1.987s]       |                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.990s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::cmdCallback(int)[m[K’:
+[1.990s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:99:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_robot_cmd[m[K’ was not declared in this scope; did you mean ‘[01m[Kpub_robot_cmds[m[K’?
+[1.990s]    99 |             [01;31m[Kpub_robot_cmd[m[K[robot_id]->publish(motor_cmd);
+[1.990s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.990s]       |             [32m[Kpub_robot_cmds[m[K
+[1.991s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:103:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kreceive_traj_[m[K’ was not declared in this scope; did you mean ‘[01m[Kreceive_traj[m[K’?
+[1.991s]   103 |         if (![01;31m[Kreceive_traj_[m[K)
+[1.991s]       |              [01;31m[K^~~~~~~~~~~~~[m[K
+[1.991s]       |              [32m[Kreceive_traj[m[K
+[1.991s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:107:14:[m[K [01;31m[Kerror: [m[K‘[01m[Ktime_s[m[K’ declared as array of ‘[01m[Kauto[m[K’
+[1.991s]   107 |         auto [01;31m[Ktime_s[m[K[robot_id] = this->get_clock()->now();
+[1.991s]       |              [01;31m[K^~~~~~[m[K
+[1.992s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:111:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktraj_duration_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktraj_duration[m[K’?
+[1.992s]   111 |         if (t_cur < [01;31m[Ktraj_duration_[m[K && t_cur >= 0.0)
+[1.992s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.992s]       |                     [32m[Ktraj_duration[m[K
+[1.992s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:115:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcontrol_node::MPC_calculate(double&)[m[K’
+[1.992s]   115 |             MPC_calculate(t_cur[01;31m[K)[m[K;
+[1.992s]       |                                [01;31m[K^[m[K
+[1.992s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:364:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid control_node::MPC_calculate(double&, int)[m[K’
+[1.992s]   364 |     void [01;36m[KMPC_calculate[m[K(double &t_cur, int robot_id)
+[1.992s]       |          [01;36m[K^~~~~~~~~~~~~[m[K
+[1.992s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:364:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[1.993s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:116:50:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcontrol_node::publish_bspline_tracking_points(double&)[m[K’
+[1.993s]   116 |             publish_bspline_tracking_points(t_cur[01;31m[K)[m[K;
+[1.993s]       |                                                  [01;31m[K^[m[K
+[1.993s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:345:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid control_node::publish_bspline_tracking_points(double&, int)[m[K’
+[1.993s]   345 |     void [01;36m[Kpublish_bspline_tracking_points[m[K(double &t_cur, int robot_id)
+[1.993s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.993s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:345:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[1.993s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:125:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_robot_1_cmd[m[K’ was not declared in this scope; did you mean ‘[01m[Kpub_robot_cmds[m[K’?
+[1.993s]   125 |             [01;31m[Kpub_robot_1_cmd[m[K->publish(motor_cmd);
+[1.993s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.993s]       |             [32m[Kpub_robot_cmds[m[K
+[1.994s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:132:21:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Time[m[K’ and ‘[01m[Kstd::vector<rclcpp::Time>[m[K’)
+[1.994s]   132 |         time_last = [01;31m[Ktime_s[m[K;
+[1.994s]       |                     [01;31m[K^~~~~~[m[K
+[1.994s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/clock.hpp:23[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/timer.hpp:27[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:27[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.995s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:4[m[K:
+[1.995s] [01m[K/opt/ros/foxy/include/rclcpp/time.hpp:91:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Time& rclcpp::Time::operator=(const rclcpp::Time&)[m[K’
+[1.995s]    91 |   [01;36m[Koperator[m[K=(const Time & rhs);
+[1.995s]       |   [01;36m[K^~~~~~~~[m[K
+[1.995s] [01m[K/opt/ros/foxy/include/rclcpp/time.hpp:91:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<rclcpp::Time>[m[K’ to ‘[01m[Kconst rclcpp::Time&[m[K’
+[1.995s]    91 |   operator=([01;36m[Kconst Time & rhs[m[K);
+[1.995s]       |             [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[1.995s] [01m[K/opt/ros/foxy/include/rclcpp/time.hpp:101:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Time& rclcpp::Time::operator=(const Time&)[m[K’
+[1.995s]   101 |   [01;36m[Koperator[m[K=(const builtin_interfaces::msg::Time & time_msg);
+[1.995s]       |   [01;36m[K^~~~~~~~[m[K
+[1.995s] [01m[K/opt/ros/foxy/include/rclcpp/time.hpp:101:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<rclcpp::Time>[m[K’ to ‘[01m[Kconst Time&[m[K’ {aka ‘[01m[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&[m[K’}
+[1.995s]   101 |   operator=([01;36m[Kconst builtin_interfaces::msg::Time & time_msg[m[K);
+[1.995s]       |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[2.036s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::MPC_calculate(double&, int)[m[K’:
+[2.036s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:384:54:[m[K [01;31m[Kerror: [m[K‘[01m[Ktraj_duration_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktraj_duration[m[K’?
+[2.036s]   384 |         pos_final = traj[robot_id][0].evaluateDeBoor([01;31m[Ktraj_duration_[m[K);
+[2.036s]       |                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.036s]       |                                                      [32m[Ktraj_duration[m[K
+[2.063s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:503:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[2.063s]   503 |             for (int i = 0; [01;35m[Ki < U_r.size()[m[K; i++)
+[2.063s]       |                             [01;35m[K~~^~~~~~~~~~~~[m[K
+[2.071s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:381:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw_start[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.071s]   381 |         double [01;35m[Kyaw_start[m[K = atan2(vel_start(1), vel_start(0));       // 初始航向角
+[2.071s]       |                [01;35m[K^~~~~~~~~[m[K
+[2.075s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.075s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:533:14:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K==[m[K’ token
+[2.075s]   533 |     for(int i[01;31m[K [m[K[32m[K==[m[K 0 ; i < robot_num; ++i)
+[2.075s]       |              [01;31m[K^[m[K[32m[K~~[m[K
+[2.075s]       |              [32m[K;[m[K
+[2.075s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:533:15:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K==[m[K’ token
+[2.075s]   533 |     for(int i [01;31m[K==[m[K 0 ; i < robot_num; ++i)
+[2.075s]       |               [01;31m[K^~[m[K
+[2.075s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:533:24:[m[K [01;35m[Kwarning: [m[Kfor increment expression has no effect [[01;35m[K-Wunused-value[m[K]
+[2.075s]   533 |     for(int i == 0 ; [01;35m[Ki < robot_num[m[K; ++i)
+[2.075s]       |                      [01;35m[K~~^~~~~~~~~~~[m[K
+[2.075s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:533:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[2.075s]   533 |     for[34m[K([m[Kint i == 0 ; i < robot_num[01;31m[K;[m[K ++i)
+[2.075s]       |        [34m[K~[m[K                          [01;31m[K^[m[K
+[2.076s]       |                                   [32m[K)[m[K
+[2.076s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:533:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kfor[m[K’ clause does not guard... [[01;35m[K-Wmisleading-indentation[m[K]
+[2.076s]   533 |     [01;35m[Kfor[m[K(int i == 0 ; i < robot_num; ++i)
+[2.076s]       |     [01;35m[K^~~[m[K
+[2.076s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:533:37:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kfor[m[K’
+[2.076s]   533 |     for(int i == 0 ; i < robot_num; [01;36m[K++[m[Ki)
+[2.076s]       |                                     [01;36m[K^~[m[K
+[2.076s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:533:39:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+[2.076s]   533 |     for(int i == 0 ; i < robot_num; ++[01;31m[Ki[m[K)
+[2.076s]       |                                       [01;31m[K^[m[K
+[4.215s] make[2]: *** [CMakeFiles/control_node.dir/build.make:63: CMakeFiles/control_node.dir/src/control_node.cpp.o] Error 1
+[4.216s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/control_node.dir/all] Error 2
+[4.216s] make: *** [Makefile:141: all] Error 2
+[4.222s] Invoked command in '/home/tony/webots_ws/build/mpc_controller' returned '2': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/tony/webots_ws/build/mpc_controller -- -j16 -l16

@@ -43,7 +43,7 @@ def generate_launch_description():
     )
 
     traj_pub = TimerAction(
-        period=5.0,
+        period=3.0,
         actions=[
             Node(
                 package='traj_publish',

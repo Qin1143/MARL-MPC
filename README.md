@@ -2,6 +2,14 @@
 
 This work combines the MARL algorithm with the MPC algorithm to achieve multi-agent swarm intelligence.
 
+## Environment
+
+Ubuntu 20.04
+
+ROS2 foxy
+
+Webots 2023a
+
 ## Start single robot simulation
 
 ```

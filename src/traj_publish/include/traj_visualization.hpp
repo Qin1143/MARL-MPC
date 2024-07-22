@@ -4,7 +4,7 @@
 #include "vector"
 
 
-class PlanningVisualization : public rclcpp::Node
+class PlanningVisualization : public rclcpp::Node // 继承自rclcpp::Node类
 {
     public:
         explicit PlanningVisualization(const rclcpp::NodeOptions & options);

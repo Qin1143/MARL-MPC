@@ -7,7 +7,7 @@ CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o: /home/tony/webots_ws/install/traj_in
 CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__traits.hpp
 CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/detail/bspline__type_support.hpp
 CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o: /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
-CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o: /home/tony/webots_ws/src/traj_publish/include/traj_publish/traj_pub.hpp
+CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o: /home/tony/webots_ws/src/traj_publish/include/traj_pub.hpp
 CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o: /home/tony/webots_ws/src/traj_publish/include/traj_visualization.hpp
 CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o: /home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp
 CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp

@@ -12,7 +12,9 @@ from webots_ros2_driver.utils import controller_url_prefix
 
 def generate_launch_description():
     package_dir = get_package_share_directory('multi_mir_package')
-    robot_description = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_1.urdf')).read_text()
+    robot_description_1 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_1.urdf')).read_text()
+    robot_description_2 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_2.urdf')).read_text()
+    robot_description_3 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_3.urdf')).read_text()
     config = os.getcwd() + '/src/mpc_controller/config/mpc_controller.yaml'
 
     webots = WebotsLauncher(
@@ -25,7 +27,7 @@ def generate_launch_description():
         output='screen',
         additional_env={'WEBOTS_CONTROLLER_URL': controller_url_prefix() + 'mir_robot_1'},
         parameters=[
-            {'robot_description': robot_description},
+            {'robot_description': robot_description_1},
         ]
     )
 
@@ -35,7 +37,7 @@ def generate_launch_description():
         output='screen',
         additional_env={'WEBOTS_CONTROLLER_URL': controller_url_prefix() + 'mir_robot_2'},
         parameters=[
-            {'robot_description': robot_description},
+            {'robot_description': robot_description_2},
         ]
     )
 
@@ -45,7 +47,7 @@ def generate_launch_description():
         output='screen',
         additional_env={'WEBOTS_CONTROLLER_URL': controller_url_prefix() + 'mir_robot_3'},
         parameters=[
-            {'robot_description': robot_description},
+            {'robot_description': robot_description_3},
         ]
     )
 
@@ -56,10 +58,10 @@ def generate_launch_description():
     # )
 
     control_node = Node(
-        package='mpc_controller',
+        package='multi_mpc_controller',
         executable='control_node',
         output='screen',
-        parameters=[config]
+        parameters=[{'robot_num': 1}]
     )
 
     rviz2_node = Node(
@@ -73,7 +75,7 @@ def generate_launch_description():
         period=3.0,
         actions=[
             Node(
-                package='traj_publish',
+                package='multi_traj_publish',
                 executable='traj_pub',
                 output='screen'
             )

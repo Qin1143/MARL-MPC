@@ -1,0 +1,276 @@
+[0.000000] (-) TimerEvent: {}
+[0.000126] (-) JobUnselected: {'identifier': 'motor_interfaces'}
+[0.000178] (-) JobUnselected: {'identifier': 'mpc_controller'}
+[0.000204] (-) JobUnselected: {'identifier': 'multi_mir_package'}
+[0.000233] (-) JobUnselected: {'identifier': 'multi_traj_publish'}
+[0.000258] (-) JobUnselected: {'identifier': 'my_mir_package'}
+[0.000278] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000298] (-) JobUnselected: {'identifier': 'qpOASES'}
+[0.000317] (-) JobUnselected: {'identifier': 'traj_interfaces'}
+[0.000336] (-) JobUnselected: {'identifier': 'traj_publish'}
+[0.000356] (multi_mpc_controller) JobQueued: {'identifier': 'multi_mpc_controller', 'dependencies': OrderedDict([('motor_interfaces', '/home/tony/webots_ws/install/motor_interfaces'), ('traj_interfaces', '/home/tony/webots_ws/install/traj_interfaces')])}
+[0.000383] (multi_mpc_controller) JobStarted: {'identifier': 'multi_mpc_controller'}
+[0.016298] (multi_mpc_controller) JobProgress: {'identifier': 'multi_mpc_controller', 'progress': 'cmake'}
+[0.017412] (multi_mpc_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/tony/webots_ws/src/multi_mpc_controller', '-DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/install/multi_mpc_controller'], 'cwd': '/home/tony/webots_ws/build/multi_mpc_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1681'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1580'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '38136'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tony/webots_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:55336'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1717,unix/Jarvis:/tmp/.ICE-unix/1717'), ('INVOCATION_ID', 'ed78cf2ae2ba41ceb1f89da7bc7f5b8d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/home/tony/webots_ws/install/motor_interfaces:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:9407fcb2-2bb0-4c2d-b8d2-a5ce15ee4d4d'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/build/multi_mpc_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy')]), 'shell': False}
+[0.099379] (-) TimerEvent: {}
+[0.111211] (multi_mpc_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.167223] (multi_mpc_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.177149] (multi_mpc_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.199486] (-) TimerEvent: {}
+[0.241244] (multi_mpc_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.242468] (multi_mpc_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299800] (-) TimerEvent: {}
+[0.308466] (multi_mpc_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.315562] (multi_mpc_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.316422] (multi_mpc_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.318733] (multi_mpc_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.389763] (multi_mpc_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.390656] (multi_mpc_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399896] (-) TimerEvent: {}
+[0.464043] (multi_mpc_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.473192] (multi_mpc_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.473585] (multi_mpc_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.477173] (multi_mpc_controller) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.500006] (-) TimerEvent: {}
+[0.500670] (multi_mpc_controller) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.500851] (multi_mpc_controller) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.600122] (-) TimerEvent: {}
+[0.680829] (multi_mpc_controller) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.700248] (-) TimerEvent: {}
+[0.731878] (multi_mpc_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.739813] (multi_mpc_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.800374] (-) TimerEvent: {}
+[0.832785] (multi_mpc_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.860801] (multi_mpc_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.900512] (-) TimerEvent: {}
+[0.934760] (multi_mpc_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.986375] (multi_mpc_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.988102] (multi_mpc_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.989451] (multi_mpc_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.000634] (-) TimerEvent: {}
+[1.058858] (multi_mpc_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.059135] (multi_mpc_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.100757] (-) TimerEvent: {}
+[1.128981] (multi_mpc_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.129210] (multi_mpc_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.186871] (multi_mpc_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.187106] (multi_mpc_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.200881] (-) TimerEvent: {}
+[1.251901] (multi_mpc_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.252840] (multi_mpc_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.301364] (-) TimerEvent: {}
+[1.374801] (multi_mpc_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[1.400838] (multi_mpc_controller) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[1.401452] (-) TimerEvent: {}
+[1.455837] (multi_mpc_controller) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[1.466684] (multi_mpc_controller) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[1.474768] (multi_mpc_controller) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[1.475444] (multi_mpc_controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.501902] (-) TimerEvent: {}
+[1.602608] (-) TimerEvent: {}
+[1.702895] (-) TimerEvent: {}
+[1.770879] (multi_mpc_controller) StdoutLine: {'line': b'-- Found motor_interfaces: 0.0.0 (/home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake)\n'}
+[1.776216] (multi_mpc_controller) StdoutLine: {'line': b'-- Found traj_interfaces: 0.0.0 (/home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake)\n'}
+[1.802997] (-) TimerEvent: {}
+[1.820332] (multi_mpc_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.902596] (multi_mpc_controller) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.903092] (-) TimerEvent: {}
+[1.903878] (multi_mpc_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.904029] (multi_mpc_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.904122] (multi_mpc_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.905163] (multi_mpc_controller) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.905267] (multi_mpc_controller) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.906166] (multi_mpc_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.907474] (multi_mpc_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.907582] (multi_mpc_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.908167] (multi_mpc_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.914753] (multi_mpc_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.925452] (multi_mpc_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[1.926719] (multi_mpc_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/tony/webots_ws/build/multi_mpc_controller\n'}
+[1.934237] (multi_mpc_controller) CommandEnded: {'returncode': 0}
+[1.934860] (multi_mpc_controller) JobProgress: {'identifier': 'multi_mpc_controller', 'progress': 'build'}
+[1.938450] (multi_mpc_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tony/webots_ws/build/multi_mpc_controller', '--', '-j16', '-l16'], 'cwd': '/home/tony/webots_ws/build/multi_mpc_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1681'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1580'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '38136'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tony/webots_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:55336'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1717,unix/Jarvis:/tmp/.ICE-unix/1717'), ('INVOCATION_ID', 'ed78cf2ae2ba41ceb1f89da7bc7f5b8d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/home/tony/webots_ws/install/motor_interfaces:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:9407fcb2-2bb0-4c2d-b8d2-a5ce15ee4d4d'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/build/multi_mpc_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy')]), 'shell': False}
+[2.003041] (multi_mpc_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_node\x1b[0m\n'}
+[2.003257] (-) TimerEvent: {}
+[2.103547] (-) TimerEvent: {}
+[2.109555] (multi_mpc_controller) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o\x1b[0m\n'}
+[2.109750] (multi_mpc_controller) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/control_node.dir/src/uniform_bspline.cpp.o\x1b[0m\n'}
+[2.109836] (multi_mpc_controller) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/control_node.dir/src/mpc_controller.cpp.o\x1b[0m\n'}
+[2.203667] (-) TimerEvent: {}
+[2.303797] (multi_mpc_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:1014\x1b[m\x1b[K,\n'}
+[2.304156] (-) TimerEvent: {}
+[2.304282] (multi_mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:66\x1b[m\x1b[K,\n'}
+[2.304411] (multi_mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/include/mpc_controller/mpc_controller.hpp:4\x1b[m\x1b[K,\n'}
+[2.304507] (multi_mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/mpc_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.304598] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid qpOASES::QProblemB::applyGivens(qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t&, qpOASES::real_t&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.304703] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:447:64:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Knu\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.304799] (multi_mpc_controller) StderrLine: {'line': b'  447 | inline void QProblemB::applyGivens( real_t c, real_t s, \x1b[01;35m\x1b[Kreal_t nu\x1b[m\x1b[K, real_t xold, real_t yold,\n'}
+[2.304887] (multi_mpc_controller) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.304973] (multi_mpc_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:43\x1b[m\x1b[K,\n'}
+[2.305068] (multi_mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:67\x1b[m\x1b[K,\n'}
+[2.305156] (multi_mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/include/mpc_controller/mpc_controller.hpp:4\x1b[m\x1b[K,\n'}
+[2.305243] (multi_mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/mpc_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.305330] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:\x1b[m\x1b[K In copy constructor \xe2\x80\x98\x1b[01m\x1b[KqpOASES::ConstraintProduct::ConstraintProduct(const qpOASES::ConstraintProduct&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.305417] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:64:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtoCopy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.305506] (multi_mpc_controller) StderrLine: {'line': b'   64 |   ConstraintProduct( \x1b[01;35m\x1b[Kconst ConstraintProduct &toCopy\x1b[m\x1b[K /**< Rhs object. */\n'}
+[2.305593] (multi_mpc_controller) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[2.305678] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KqpOASES::ConstraintProduct& qpOASES::ConstraintProduct::operator=(const qpOASES::ConstraintProduct&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.305775] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:71:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtoCopy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.305862] (multi_mpc_controller) StderrLine: {'line': b'   71 |   ConstraintProduct &operator=( \x1b[01;35m\x1b[Kconst ConstraintProduct &toCopy\x1b[m\x1b[K /**< Rhs object. */\n'}
+[2.305946] (multi_mpc_controller) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[2.404295] (-) TimerEvent: {}
+[2.504635] (-) TimerEvent: {}
+[2.604978] (-) TimerEvent: {}
+[2.705290] (-) TimerEvent: {}
+[2.805584] (-) TimerEvent: {}
+[2.905890] (-) TimerEvent: {}
+[3.006208] (-) TimerEvent: {}
+[3.106502] (-) TimerEvent: {}
+[3.204932] (multi_mpc_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:1014\x1b[m\x1b[K,\n'}
+[3.205246] (multi_mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:66\x1b[m\x1b[K,\n'}
+[3.205363] (multi_mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/include/mpc_controller/mpc_controller.hpp:4\x1b[m\x1b[K,\n'}
+[3.205442] (multi_mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/control_node.cpp:5\x1b[m\x1b[K:\n'}
+[3.205515] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid qpOASES::QProblemB::applyGivens(qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t&, qpOASES::real_t&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.205590] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:447:64:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Knu\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.205745] (multi_mpc_controller) StderrLine: {'line': b'  447 | inline void QProblemB::applyGivens( real_t c, real_t s, \x1b[01;35m\x1b[Kreal_t nu\x1b[m\x1b[K, real_t xold, real_t yold,\n'}
+[3.205819] (multi_mpc_controller) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~~~~^~\x1b[m\x1b[K\n'}
+[3.205880] (multi_mpc_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:43\x1b[m\x1b[K,\n'}
+[3.205939] (multi_mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:67\x1b[m\x1b[K,\n'}
+[3.205996] (multi_mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/include/mpc_controller/mpc_controller.hpp:4\x1b[m\x1b[K,\n'}
+[3.206060] (multi_mpc_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/control_node.cpp:5\x1b[m\x1b[K:\n'}
+[3.206114] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:\x1b[m\x1b[K In copy constructor \xe2\x80\x98\x1b[01m\x1b[KqpOASES::ConstraintProduct::ConstraintProduct(const qpOASES::ConstraintProduct&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.206168] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:64:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtoCopy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.206232] (multi_mpc_controller) StderrLine: {'line': b'   64 |   ConstraintProduct( \x1b[01;35m\x1b[Kconst ConstraintProduct &toCopy\x1b[m\x1b[K /**< Rhs object. */\n'}
+[3.206286] (multi_mpc_controller) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.206338] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KqpOASES::ConstraintProduct& qpOASES::ConstraintProduct::operator=(const qpOASES::ConstraintProduct&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.206398] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:71:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtoCopy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.206452] (multi_mpc_controller) StderrLine: {'line': b'   71 |   ConstraintProduct &operator=( \x1b[01;35m\x1b[Kconst ConstraintProduct &toCopy\x1b[m\x1b[K /**< Rhs object. */\n'}
+[3.206502] (-) TimerEvent: {}
+[3.206577] (multi_mpc_controller) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.306633] (-) TimerEvent: {}
+[3.406957] (-) TimerEvent: {}
+[3.507277] (-) TimerEvent: {}
+[3.607601] (-) TimerEvent: {}
+[3.707911] (-) TimerEvent: {}
+[3.808231] (-) TimerEvent: {}
+[3.908577] (-) TimerEvent: {}
+[4.008884] (-) TimerEvent: {}
+[4.082230] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/mpc_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::MatrixXd MPC_controller::MPC_Solve_qp(Eigen::Vector3d, std::vector<Eigen::Matrix<double, 3, 1> >, std::vector<Eigen::Matrix<double, 2, 1> >, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.082541] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/mpc_controller.cpp:82:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[KH\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wvla\x1b[m\x1b[K]\n'}
+[4.082624] (multi_mpc_controller) StderrLine: {'line': b'   82 |     real_t \x1b[01;35m\x1b[KH\x1b[m\x1b[K[2*N*2*N],g[2*N],A[2*N],lb[2*N],ub[2*N],lbA[1],ubA[1];\n'}
+[4.082698] (multi_mpc_controller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.082766] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/mpc_controller.cpp:82:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Kg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wvla\x1b[m\x1b[K]\n'}
+[4.082834] (multi_mpc_controller) StderrLine: {'line': b'   82 |     real_t H[2*N*2*N],\x1b[01;35m\x1b[Kg\x1b[m\x1b[K[2*N],A[2*N],lb[2*N],ub[2*N],lbA[1],ubA[1];\n'}
+[4.082900] (multi_mpc_controller) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.082966] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/mpc_controller.cpp:82:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[KA\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wvla\x1b[m\x1b[K]\n'}
+[4.083034] (multi_mpc_controller) StderrLine: {'line': b'   82 |     real_t H[2*N*2*N],g[2*N],\x1b[01;35m\x1b[KA\x1b[m\x1b[K[2*N],lb[2*N],ub[2*N],lbA[1],ubA[1];\n'}
+[4.083099] (multi_mpc_controller) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.083273] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/mpc_controller.cpp:82:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Klb\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wvla\x1b[m\x1b[K]\n'}
+[4.083382] (multi_mpc_controller) StderrLine: {'line': b'   82 |     real_t H[2*N*2*N],g[2*N],A[2*N],\x1b[01;35m\x1b[Klb\x1b[m\x1b[K[2*N],ub[2*N],lbA[1],ubA[1];\n'}
+[4.083459] (multi_mpc_controller) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.083526] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/mpc_controller.cpp:82:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Kub\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wvla\x1b[m\x1b[K]\n'}
+[4.083594] (multi_mpc_controller) StderrLine: {'line': b'   82 |     real_t H[2*N*2*N],g[2*N],A[2*N],lb[2*N],\x1b[01;35m\x1b[Kub\x1b[m\x1b[K[2*N],lbA[1],ubA[1];\n'}
+[4.083658] (multi_mpc_controller) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.083721] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/mpc_controller.cpp:110:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Kx_solution\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wvla\x1b[m\x1b[K]\n'}
+[4.083785] (multi_mpc_controller) StderrLine: {'line': b'  110 |     real_t \x1b[01;35m\x1b[Kx_solution\x1b[m\x1b[K[2*N];\n'}
+[4.083847] (multi_mpc_controller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.084598] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/control_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid control_node::MPC_calculate(double&, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.084718] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/control_node.cpp:531:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.084843] (multi_mpc_controller) StderrLine: {'line': b'  531 |             for (int i = 0; \x1b[01;35m\x1b[Ki < U_r.size()\x1b[m\x1b[K; i++)\n'}
+[4.084914] (multi_mpc_controller) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.088281] (multi_mpc_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tony/webots_ws/src/multi_mpc_controller/src/control_node.cpp:409:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kyaw_start\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[4.088406] (multi_mpc_controller) StderrLine: {'line': b'  409 |         double \x1b[01;35m\x1b[Kyaw_start\x1b[m\x1b[K = atan2(vel_start(1), vel_start(0));       // \xe5\x88\x9d\xe5\xa7\x8b\xe8\x88\xaa\xe5\x90\x91\xe8\xa7\x92\n'}
+[4.088495] (multi_mpc_controller) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.109015] (-) TimerEvent: {}
+[4.209306] (-) TimerEvent: {}
+[4.309626] (-) TimerEvent: {}
+[4.409926] (-) TimerEvent: {}
+[4.510246] (-) TimerEvent: {}
+[4.610567] (-) TimerEvent: {}
+[4.710894] (-) TimerEvent: {}
+[4.811227] (-) TimerEvent: {}
+[4.911558] (-) TimerEvent: {}
+[5.011885] (-) TimerEvent: {}
+[5.112217] (-) TimerEvent: {}
+[5.212543] (-) TimerEvent: {}
+[5.312874] (-) TimerEvent: {}
+[5.413201] (-) TimerEvent: {}
+[5.513529] (-) TimerEvent: {}
+[5.613856] (-) TimerEvent: {}
+[5.714197] (-) TimerEvent: {}
+[5.814538] (-) TimerEvent: {}
+[5.914864] (-) TimerEvent: {}
+[6.015193] (-) TimerEvent: {}
+[6.115526] (-) TimerEvent: {}
+[6.215859] (-) TimerEvent: {}
+[6.316185] (-) TimerEvent: {}
+[6.416505] (-) TimerEvent: {}
+[6.516832] (-) TimerEvent: {}
+[6.617162] (-) TimerEvent: {}
+[6.717488] (-) TimerEvent: {}
+[6.817812] (-) TimerEvent: {}
+[6.918136] (-) TimerEvent: {}
+[7.018477] (-) TimerEvent: {}
+[7.118791] (-) TimerEvent: {}
+[7.219115] (-) TimerEvent: {}
+[7.320086] (-) TimerEvent: {}
+[7.420376] (-) TimerEvent: {}
+[7.520670] (-) TimerEvent: {}
+[7.621291] (-) TimerEvent: {}
+[7.721910] (-) TimerEvent: {}
+[7.822643] (-) TimerEvent: {}
+[7.923265] (-) TimerEvent: {}
+[8.024029] (-) TimerEvent: {}
+[8.124326] (-) TimerEvent: {}
+[8.225051] (-) TimerEvent: {}
+[8.325713] (-) TimerEvent: {}
+[8.426011] (-) TimerEvent: {}
+[8.526307] (-) TimerEvent: {}
+[8.626590] (-) TimerEvent: {}
+[8.727332] (-) TimerEvent: {}
+[8.827639] (-) TimerEvent: {}
+[8.927924] (-) TimerEvent: {}
+[9.028215] (-) TimerEvent: {}
+[9.128501] (-) TimerEvent: {}
+[9.228786] (-) TimerEvent: {}
+[9.329077] (-) TimerEvent: {}
+[9.429363] (-) TimerEvent: {}
+[9.529657] (-) TimerEvent: {}
+[9.629954] (-) TimerEvent: {}
+[9.730245] (-) TimerEvent: {}
+[9.830536] (-) TimerEvent: {}
+[9.930849] (-) TimerEvent: {}
+[10.031176] (-) TimerEvent: {}
+[10.055601] (multi_mpc_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable control_node\x1b[0m\n'}
+[10.131306] (-) TimerEvent: {}
+[10.231604] (-) TimerEvent: {}
+[10.331920] (-) TimerEvent: {}
+[10.432204] (-) TimerEvent: {}
+[10.532492] (-) TimerEvent: {}
+[10.576670] (multi_mpc_controller) StdoutLine: {'line': b'[100%] Built target control_node\n'}
+[10.593162] (multi_mpc_controller) CommandEnded: {'returncode': 0}
+[10.632640] (-) TimerEvent: {}
+[10.640116] (multi_mpc_controller) JobProgress: {'identifier': 'multi_mpc_controller', 'progress': 'install'}
+[10.651884] (multi_mpc_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tony/webots_ws/build/multi_mpc_controller'], 'cwd': '/home/tony/webots_ws/build/multi_mpc_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'tony'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1681'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tony'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1580'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '38136'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tony/webots_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tony'), ('JOURNAL_STREAM', '8:55336'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/tony/anaconda3/condabin:/home/tony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Jarvis:@/tmp/.ICE-unix/1717,unix/Jarvis:/tmp/.ICE-unix/1717'), ('INVOCATION_ID', 'ed78cf2ae2ba41ceb1f89da7bc7f5b8d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/home/tony/webots_ws/install/motor_interfaces:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/tony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:9407fcb2-2bb0-4c2d-b8d2-a5ce15ee4d4d'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tony/webots_ws/build/multi_mpc_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tony/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy')]), 'shell': False}
+[10.667722] (multi_mpc_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.667926] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/ament_index/resource_index/package_run_dependencies/multi_mpc_controller\n'}
+[10.668119] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/ament_index/resource_index/parent_prefix_path/multi_mpc_controller\n'}
+[10.668292] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/multi_mpc_controller/environment/ament_prefix_path.sh\n'}
+[10.668424] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/multi_mpc_controller/environment/ament_prefix_path.dsv\n'}
+[10.668557] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/multi_mpc_controller/environment/path.sh\n'}
+[10.668689] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/multi_mpc_controller/environment/path.dsv\n'}
+[10.668808] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/multi_mpc_controller/local_setup.bash\n'}
+[10.668918] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/multi_mpc_controller/local_setup.sh\n'}
+[10.669043] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/multi_mpc_controller/local_setup.zsh\n'}
+[10.669165] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/multi_mpc_controller/local_setup.dsv\n'}
+[10.669291] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/multi_mpc_controller/package.dsv\n'}
+[10.669451] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/ament_index/resource_index/packages/multi_mpc_controller\n'}
+[10.669606] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/multi_mpc_controller/cmake/multi_mpc_controllerConfig.cmake\n'}
+[10.669706] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/multi_mpc_controller/cmake/multi_mpc_controllerConfig-version.cmake\n'}
+[10.669828] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/share/multi_mpc_controller/package.xml\n'}
+[10.670040] (multi_mpc_controller) StdoutLine: {'line': b'-- Installing: /home/tony/webots_ws/install/multi_mpc_controller/lib/multi_mpc_controller/control_node\n'}
+[10.680106] (multi_mpc_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/tony/webots_ws/install/multi_mpc_controller/lib/multi_mpc_controller/control_node" to ""\n'}
+[10.682166] (multi_mpc_controller) CommandEnded: {'returncode': 0}
+[10.732821] (-) TimerEvent: {}
+[10.748296] (multi_mpc_controller) JobEnded: {'identifier': 'multi_mpc_controller', 'rc': 0}
+[10.750268] (-) EventReactorShutdown: {}

@@ -1,0 +1,54 @@
+[35m[1mScanning dependencies of target control_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+In file included from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:1014[m[K,
+                 from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:66[m[K,
+                 from [01m[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4[m[K,
+                 from [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:5[m[K:
+[01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:[m[K In member function ‘[01m[Kvoid qpOASES::QProblemB::applyGivens(qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t&, qpOASES::real_t&) const[m[K’:
+[01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:447:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knu[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  447 | inline void QProblemB::applyGivens( real_t c, real_t s, [01;35m[Kreal_t nu[m[K, real_t xold, real_t yold,
+      |                                                         [01;35m[K~~~~~~~^~[m[K
+In file included from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:43[m[K,
+                 from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:67[m[K,
+                 from [01m[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4[m[K,
+                 from [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:5[m[K:
+[01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:[m[K In copy constructor ‘[01m[KqpOASES::ConstraintProduct::ConstraintProduct(const qpOASES::ConstraintProduct&)[m[K’:
+[01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:64:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtoCopy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   64 |   ConstraintProduct( [01;35m[Kconst ConstraintProduct &toCopy[m[K /**< Rhs object. */
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:[m[K In member function ‘[01m[KqpOASES::ConstraintProduct& qpOASES::ConstraintProduct::operator=(const qpOASES::ConstraintProduct&)[m[K’:
+[01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:71:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtoCopy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   71 |   ConstraintProduct &operator=( [01;35m[Kconst ConstraintProduct &toCopy[m[K /**< Rhs object. */
+      |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::MPC_calculate(double&, int)[m[K’:
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:503:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  503 |             for (int i = 0; [01;35m[Ki < U_r.size()[m[K; i++)
+      |                             [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:381:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw_start[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  381 |         double [01;35m[Kyaw_start[m[K = atan2(vel_start(1), vel_start(0));       // 初始航向角
+      |                [01;35m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/context.hpp:19[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/contexts/default_context.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:32[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:4[m[K:
+/usr/include/c++/9/functional: In instantiation of ‘[01m[Kstruct std::_Bind_check_arity<void (control_node::*)(int), control_node*, const std::_Placeholder<1>&, int&>[m[K’:
+[01m[K/usr/include/c++/9/functional:787:12:[m[K   required from ‘[01m[Kstruct std::_Bind_helper<false, void (control_node::*)(int), control_node*, const std::_Placeholder<1>&, int&>[m[K’
+[01m[K/usr/include/c++/9/functional:808:5:[m[K   required by substitution of ‘[01m[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (control_node::*)(int); _BoundArgs = {control_node*, const std::_Placeholder<1>&, int&}][m[K’
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:535:105:[m[K   required from here
+[01m[K/usr/include/c++/9/functional:775:7:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: Wrong number of arguments for pointer-to-member
+  774 |       static_assert(_Varargs::[01;31m[Kvalue[m[K
+      |                               [01;31m[K~~~~~[m[K
+  775 | [01;31m[K      ? sizeof...(_BoundArgs) >= _Arity::value + 1[m[K
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  776 | [01;31m[K      : sizeof...(_BoundArgs) == _Arity::value + 1[m[K,
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:536:22:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  536 |         auto timer = [01;31m[Kthis[m[K->create_wall_timer(std::chrono::milliseconds(30), timer_callback);
+      |                      [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/control_node.dir/build.make:63: CMakeFiles/control_node.dir/src/control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

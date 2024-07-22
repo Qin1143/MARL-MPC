@@ -1,0 +1,13 @@
+[01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:[m[K In constructor ‘[01m[KTrajectoryPublisher::TrajectoryPublisher(std::string)[m[K’:
+[01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:17:74:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPlanningVisualization::PlanningVisualization(const rclcpp::NodeOptions&)[m[K’
+   17 |         visualization_.reset(new PlanningVisualization(get_node_options()[01;31m[K)[m[K, robot_num);
+      |                                                                          [01;31m[K^[m[K
+In file included from [01m[K/home/tony/webots_ws/src/traj_publish/include/traj_publish/traj_pub.hpp:7[m[K,
+                 from [01m[K/home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp:1[m[K:
+[01m[K/home/tony/webots_ws/src/traj_publish/include/traj_visualization.hpp:10:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KPlanningVisualization::PlanningVisualization(const rclcpp::NodeOptions&, int)[m[K’
+   10 |         explicit [01;36m[KPlanningVisualization[m[K(const rclcpp::NodeOptions & options, int robot_num);
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/tony/webots_ws/src/traj_publish/include/traj_visualization.hpp:10:18:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+make[2]: *** [CMakeFiles/traj_pub.dir/build.make:63: CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/traj_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

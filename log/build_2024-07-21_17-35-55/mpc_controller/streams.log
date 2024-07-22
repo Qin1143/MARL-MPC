@@ -1,0 +1,79 @@
+[0.030s] Invoking command in '/home/tony/webots_ws/build/mpc_controller': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/tony/webots_ws/build/mpc_controller -- -j16 -l16
+[0.079s] [35m[1mScanning dependencies of target control_node[0m
+[0.156s] [ 25%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[1.238s] In file included from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.hpp:1014[m[K,
+[1.238s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:66[m[K,
+[1.238s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4[m[K,
+[1.239s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:5[m[K:
+[1.239s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:[m[K In member function ‘[01m[Kvoid qpOASES::QProblemB::applyGivens(qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t, qpOASES::real_t&, qpOASES::real_t&) const[m[K’:
+[1.239s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblemB.ipp:447:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knu[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.239s]   447 | inline void QProblemB::applyGivens( real_t c, real_t s, [01;35m[Kreal_t nu[m[K, real_t xold, real_t yold,
+[1.239s]       |                                                         [01;35m[K~~~~~~~^~[m[K
+[1.239s] In file included from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/QProblem.hpp:43[m[K,
+[1.239s]                  from [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp:67[m[K,
+[1.239s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp:4[m[K,
+[1.239s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:5[m[K:
+[1.239s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:[m[K In copy constructor ‘[01m[KqpOASES::ConstraintProduct::ConstraintProduct(const qpOASES::ConstraintProduct&)[m[K’:
+[1.239s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:64:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtoCopy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.239s]    64 |   ConstraintProduct( [01;35m[Kconst ConstraintProduct &toCopy[m[K /**< Rhs object. */
+[1.239s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.239s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:[m[K In member function ‘[01m[KqpOASES::ConstraintProduct& qpOASES::ConstraintProduct::operator=(const qpOASES::ConstraintProduct&)[m[K’:
+[1.240s] [01m[K/home/tony/webots_ws/src/qpOASES/include/qpOASES/ConstraintProduct.hpp:71:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtoCopy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.240s]    71 |   ConstraintProduct &operator=( [01;35m[Kconst ConstraintProduct &toCopy[m[K /**< Rhs object. */
+[1.240s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[2.022s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In lambda function:
+[2.022s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:72:233:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kshared_ptr<[01;32m[Ktraj_interfaces::msg::Bspline_<std::allocator<void> >[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Kstd_msgs::msg::UInt8_<std::allocator<void> >[m[K>[m[K’
+[2.022s]    72 | this, i](const traj_interfaces::msg::Bspline::SharedPtr msg) {this->stop_callback([01;31m[Kmsg[m[K, i);});
+[2.022s]       |                                                                                   [01;31m[K^~~[m[K
+[2.022s]       |                                                                                   [01;31m[K|[m[K
+[2.022s]       |                                                                                   [01;31m[Kshared_ptr<traj_interfaces::msg::Bspline_<std::allocator<void> >>[m[K
+[2.023s] 
+[2.023s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:258:62:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid control_node::stop_callback(std_msgs::msg::UInt8_<std::allocator<void> >::SharedPtr, int)[m[K’
+[2.023s]   258 |     void stop_callback([01;36m[Kconst std_msgs::msg::UInt8::SharedPtr msg[m[K, int robot_id)
+[2.023s]       |                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.025s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In lambda function:
+[2.025s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:74:204:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kshared_ptr<[01;32m[Kstd_msgs::msg::UInt8_<std::allocator<void> >[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Ktraj_interfaces::msg::Bspline_<std::allocator<void> >[m[K>[m[K’
+[2.025s]    74 | 1), 10, [this, i](const std_msgs::msg::UInt8::SharedPtr msg) {this->traj_callback([01;31m[Kmsg[m[K, i);});
+[2.025s]       |                                                                                   [01;31m[K^~~[m[K
+[2.025s]       |                                                                                   [01;31m[K|[m[K
+[2.025s]       |                                                                                   [01;31m[Kshared_ptr<std_msgs::msg::UInt8_<std::allocator<void> >>[m[K
+[2.025s] 
+[2.025s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:303:71:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid control_node::traj_callback(traj_interfaces::msg::Bspline_<std::allocator<void> >::SharedPtr, int)[m[K’
+[2.025s]   303 |     void traj_callback([01;36m[Kconst traj_interfaces::msg::Bspline::SharedPtr msg[m[K, int robot_id)
+[2.026s]       |                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.100s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In member function ‘[01m[Kvoid control_node::MPC_calculate(double&, int)[m[K’:
+[2.100s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:503:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[2.100s]   503 |             for (int i = 0; [01;35m[Ki < U_r.size()[m[K; i++)
+[2.100s]       |                             [01;35m[K~~^~~~~~~~~~~~[m[K
+[2.103s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:381:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw_start[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.103s]   381 |         double [01;35m[Kyaw_start[m[K = atan2(vel_start(1), vel_start(0));       // 初始航向角
+[2.103s]       |                [01;35m[K^~~~~~~~~[m[K
+[2.113s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.113s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:535:151:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcontrol_node::create_wall_timer(std::chrono::milliseconds, std::_Bind_helper<false, void (control_node::*)(int), std::shared_ptr<control_node>&, int&>::type)[m[K’
+[2.114s]   535 | d::chrono::milliseconds(30), std::bind(&control_node::cmdCallback, node, i)[01;31m[K)[m[K;
+[2.114s]       |                                                                            [01;31m[K^[m[K
+[2.114s] 
+[2.114s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.114s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[2.114s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.114s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:4[m[K:
+[2.114s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:232:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[2.114s]   232 |   [01;36m[Kcreate_wall_timer[m[K(
+[2.114s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[2.114s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:232:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.114s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1224[m[K,
+[2.114s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.114s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[2.114s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.115s]                  from [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:4[m[K:
+[2.115s] /opt/ros/foxy/include/rclcpp/node_impl.hpp: In substitution of ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr) [with DurationRepT = long int; DurationT = std::ratio<1, 1000>; CallbackT = std::_Bind<void (control_node::*(std::shared_ptr<control_node>, int))(int)>][m[K’:
+[2.115s] [01m[K/home/tony/webots_ws/src/mpc_controller/src/control_node.cpp:535:151:[m[K   required from here
+[2.115s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[2.115s]   109 | [01;31m[KNode[m[K::create_wall_timer(
+[2.115s]       | [01;31m[K^~~~[m[K
+[2.115s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[2.115s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:[m[K [01;36m[Knote: [m[Kinvalid template non-type parameter
+[4.300s] make[2]: *** [CMakeFiles/control_node.dir/build.make:63: CMakeFiles/control_node.dir/src/control_node.cpp.o] Error 1
+[4.300s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/control_node.dir/all] Error 2
+[4.300s] make: *** [Makefile:141: all] Error 2
+[4.302s] Invoked command in '/home/tony/webots_ws/build/mpc_controller' returned '2': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy PYTHONPATH=/home/tony/webots_ws/install/traj_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/my_mir_package/lib/python3.8/site-packages:/home/tony/webots_ws/install/multi_mir_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/tony/webots_ws/build/mpc_controller -- -j16 -l16

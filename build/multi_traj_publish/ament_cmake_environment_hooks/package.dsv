@@ -1,0 +1,4 @@
+source;share/multi_traj_publish/local_setup.bash
+source;share/multi_traj_publish/local_setup.dsv
+source;share/multi_traj_publish/local_setup.sh
+source;share/multi_traj_publish/local_setup.zsh

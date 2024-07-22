@@ -68,21 +68,23 @@ rosidl_typesupport_cpp/message_type_support.hpp
 
 /home/tony/webots_ws/install/traj_interfaces/include/traj_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
-/home/tony/webots_ws/src/traj_publish/include/traj_publish/traj_pub.hpp
+/home/tony/webots_ws/src/traj_publish/include/traj_pub.hpp
 rclcpp/rclcpp.hpp
-/home/tony/webots_ws/src/traj_publish/include/traj_publish/rclcpp/rclcpp.hpp
+/home/tony/webots_ws/src/traj_publish/include/rclcpp/rclcpp.hpp
 geometry_msgs/msg/pose_stamped.hpp
-/home/tony/webots_ws/src/traj_publish/include/traj_publish/geometry_msgs/msg/pose_stamped.hpp
+/home/tony/webots_ws/src/traj_publish/include/geometry_msgs/msg/pose_stamped.hpp
 geometry_msgs/msg/point.hpp
-/home/tony/webots_ws/src/traj_publish/include/traj_publish/geometry_msgs/msg/point.hpp
+/home/tony/webots_ws/src/traj_publish/include/geometry_msgs/msg/point.hpp
 nav_msgs/msg/path.hpp
-/home/tony/webots_ws/src/traj_publish/include/traj_publish/nav_msgs/msg/path.hpp
+/home/tony/webots_ws/src/traj_publish/include/nav_msgs/msg/path.hpp
 std_msgs/msg/u_int8.hpp
-/home/tony/webots_ws/src/traj_publish/include/traj_publish/std_msgs/msg/u_int8.hpp
+/home/tony/webots_ws/src/traj_publish/include/std_msgs/msg/u_int8.hpp
 traj_interfaces/msg/bspline.hpp
-/home/tony/webots_ws/src/traj_publish/include/traj_publish/traj_interfaces/msg/bspline.hpp
+/home/tony/webots_ws/src/traj_publish/include/traj_interfaces/msg/bspline.hpp
 traj_visualization.hpp
-/home/tony/webots_ws/src/traj_publish/include/traj_publish/traj_visualization.hpp
+/home/tony/webots_ws/src/traj_publish/include/traj_visualization.hpp
+visualization_msgs/msg/marker.hpp
+/home/tony/webots_ws/src/traj_publish/include/visualization_msgs/msg/marker.hpp
 Eigen/Eigen
 -
 
@@ -97,12 +99,8 @@ vector
 /home/tony/webots_ws/src/traj_publish/include/vector
 
 /home/tony/webots_ws/src/traj_publish/src/traj_pub.cpp
-traj_publish/traj_pub.hpp
-/home/tony/webots_ws/src/traj_publish/src/traj_publish/traj_pub.hpp
-
-/home/tony/webots_ws/src/traj_publish/src/traj_visualization.cpp
-traj_visualization.hpp
-/home/tony/webots_ws/src/traj_publish/src/traj_visualization.hpp
+traj_pub.hpp
+/home/tony/webots_ws/src/traj_publish/src/traj_pub.hpp
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp

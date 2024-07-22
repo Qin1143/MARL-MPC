@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target traj_pub[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable traj_pub[0m
+[100%] Built target traj_pub

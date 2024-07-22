@@ -31,6 +31,6 @@
             <gyroName>imu_data gyro</gyroName>
         </plugin>
 
-        <plugin type="multi_mir_package.multi_mir_driver.MyRobotDriver" />
+        <plugin type="multi_mir_package.mir_robot_1_driver.MyRobotDriver" />
     </webots>
 </robot>
