@@ -20,23 +20,12 @@ const double HALF_DISTANCE_BETWEEN_WHEELS = 0.2230;
 const double WHEEL_RADIUS = 0.0625;
 
 MPC_controller mpc_controller;
-// Eigen::Vector3d odom_pos_, odom_vel_;
-// Eigen::Quaterniond odom_orient_;
 tf2::Quaternion quat;
-// std_msgs::msg::UInt8 dir;
-// std_msgs::msg::UInt8 stop_command;
 motor_interfaces::msg::Motor motor_cmd;
 
-// rclcpp::Time start_time_, time_s, time_e;
 clock_t start_clock, end_clock;
 double duration;
-// double traj_duration_;
-// double t_step;
 
-// int traj_id_;
-// double roll, pitch, yaw;
-// vector<bspline_planner::UniformBspline> traj_;
-// bool receive_traj_ = false;
 bool is_orientation_init = false;
 std::vector<rclcpp::TimerBase::SharedPtr> timers;
 
@@ -45,7 +34,7 @@ enum DIRECTION {POSITIVE=0,NEGATIVE=1};
 class control_node : public rclcpp::Node
 {
 public:
-    const int robot_num = 3;
+    int robot_num;
     std::vector<std_msgs::msg::UInt8> stop_command;
     std::vector<bool> receive_traj;
     double t_step = 0.03;
@@ -53,12 +42,16 @@ public:
     control_node(std::string node_name) : Node(node_name)
     {        
         // 声明参数
-        this->declare_parameter("robot_num", 1);
+        this->declare_parameter<int>("robot_num", 1);
         this->declare_parameter("v_max", 1.8);
         this->declare_parameter("w_max", 1.2);
         this->declare_parameter("omega0", 1.0);
         this->declare_parameter("omega1", 0.1);
-        
+
+        // 打印robot_num参数
+        this->get_parameter("robot_num", robot_num);
+        std::cout << "/control_node robot_num: " << robot_num << std::endl;
+
         stop_command.resize(robot_num);
         receive_traj.resize(robot_num);
         odom_pos.resize(robot_num);
@@ -72,9 +65,6 @@ public:
         time_e.resize(robot_num);
         traj_duration.resize(robot_num);
 
-        // 打印robot_num参数
-        // this->get_parameter("robot_num", robot_num);
-        std::cout << "robot_num: " << robot_num << std::endl;
         for (int i = 0; i < robot_num; ++i)
         {
             auto pub_robot_cmd = this->create_publisher<motor_interfaces::msg::Motor>("/motor_cmd_" + std::to_string(i + 1), 10);
@@ -109,16 +99,6 @@ public:
 
             std::cout << "########初始化完成: " << i << "########" << std::endl;
         }
-
-        // pub_robot_1_cmd = this->create_publisher<motor_interfaces::msg::Motor>("/mir_robot_1/motor_cmd", 10);
-        // pub_robot_2_cmd = this->create_publisher<motor_interfaces::msg::Motor>("/mir_robot_2/motor_cmd", 10);
-        // pub_robot_3_cmd = this->create_publisher<motor_interfaces::msg::Motor>("/mir_robot_3/motor_cmd", 10);
-
-        // bspline_visualization_ = this->create_publisher<nav_msgs::msg::Path>("/bspline_visualization", 10);
-        // sub_odom_msg = this->create_subscription<nav_msgs::msg::Odometry>("/mir_robot_1/odom", 10, std::bind(&control_node::odom_callback, this, std::placeholders::_1));
-        // sub_dir_msg = this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/direction_1", 10, std::bind(&control_node::dir_callback, this, std::placeholders::_1));
-        // sub_stop_msg = this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/stop", 10, std::bind(&control_node::stop_callback, this, std::placeholders::_1));
-        // sub_bspline_msg = this->create_subscription<traj_interfaces::msg::Bspline>("/traj_pub/bspline_traj_1", 10, std::bind(&control_node::traj_callback, this, std::placeholders::_1));
     }
 
     void cmdCallback(int robot_id)
@@ -167,10 +147,6 @@ public:
         // pub_robot_1_cmd->publish(motor_cmd);
     }
 private:
-    // rclcpp::Publisher<motor_interfaces::msg::Motor>::SharedPtr pub_robot_1_cmd;
-    // rclcpp::Publisher<motor_interfaces::msg::Motor>::SharedPtr pub_robot_2_cmd;
-    // rclcpp::Publisher<motor_interfaces::msg::Motor>::SharedPtr pub_robot_3_cmd;
-
     std::vector<rclcpp::Publisher<motor_interfaces::msg::Motor>::SharedPtr> pub_robot_cmds;
     std::vector<rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr> bspline_visualizations;
 
@@ -179,13 +155,6 @@ private:
     std::vector<rclcpp::Subscription<traj_interfaces::msg::Bspline>::SharedPtr> sub_robot_bsplines;
     std::vector<rclcpp::Subscription<std_msgs::msg::UInt8>::SharedPtr> sub_robot_stops;
 
-
-    // rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr bspline_visualization_;
-    // rclcpp::Subscription<std_msgs::msg::UInt8>::SharedPtr sub_stop_msg;
-    // rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr sub_odom_msg;
-    // rclcpp::Subscription<std_msgs::msg::UInt8>::SharedPtr sub_dir_msg;
-    // rclcpp::Subscription<traj_interfaces::msg::Bspline>::SharedPtr sub_bspline_msg;
-
     std::vector<Eigen::Vector3d> odom_pos, odom_vel;
     std::vector<Eigen::Quaterniond> odom_orient;
     std::vector<double> yaw;
@@ -193,38 +162,6 @@ private:
     std::vector<vector<bspline_planner::UniformBspline>> traj;
     std::vector<rclcpp::Time> start_time, time_e;
     std::vector<double> traj_duration;
-
-    // void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
-    // {
-    //     // 读取当前状态
-    //     odom_pos_(0) = msg->pose.pose.position.x;
-    //     odom_pos_(1) = msg->pose.pose.position.y;
-    //     odom_pos_(2) = msg->pose.pose.position.z;
-
-    //     odom_vel_(0) = msg->twist.twist.linear.x;
-    //     odom_vel_(1) = msg->twist.twist.linear.y;
-    //     odom_vel_(2) = msg->twist.twist.linear.z;
-
-    //     odom_orient_.w() = msg->pose.pose.orientation.w;
-    //     odom_orient_.x() = msg->pose.pose.orientation.x;
-    //     odom_orient_.y() = msg->pose.pose.orientation.y;
-    //     odom_orient_.z() = msg->pose.pose.orientation.z;
-
-    //     tf2::fromMsg(msg->pose.pose.orientation, quat);
-    //     tf2::Matrix3x3(quat).getRPY(roll, pitch, yaw);
-
-    //     if (dir.data == NEGATIVE)
-    //     {
-    //         if (yaw > 0)
-    //         {
-    //             yaw -= PI;
-    //         }
-    //         else if (yaw < 0)
-    //         {
-    //             yaw += PI;
-    //         }
-    //     }
-    // }
 
     void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg, int robot_id)
     {   
@@ -268,65 +205,15 @@ private:
         yaw[robot_id] = yaw_;
     }
 
-    // void dir_callback(const std_msgs::msg::UInt8::SharedPtr msg)
-    // {
-    //     dir = *msg;
-    // }
-
     void dir_callback(const std_msgs::msg::UInt8::SharedPtr msg, int robot_id)
     {
         dir[robot_id] = *msg;
     }
 
-    // void stop_callback(const std_msgs::msg::UInt8::SharedPtr msg)
-    // {
-    //     stop_command = *msg;
-    // }
-
     void stop_callback(const std_msgs::msg::UInt8::SharedPtr msg, int robot_id)
     {
         stop_command[robot_id] = *msg;
     }
-
-    // void traj_callback(const traj_interfaces::msg::Bspline::SharedPtr msg)
-
-    // {   
-    //     if (receive_traj_ == true)
-    //     {
-    //         return;
-    //     }
-
-    //     Eigen::MatrixXd pos_pts(3, msg->pos_pts.size());
-
-    //     Eigen::VectorXd knots(msg->knots.size());
-
-    //     for (size_t i = 0; i < msg->knots.size(); ++i)
-    //     {
-    //         knots(i) = msg->knots[i];
-    //     }
-
-    //     for (size_t i = 0; i < msg->pos_pts.size(); ++i)
-    //     {
-    //         pos_pts(0, i) = msg->pos_pts[i].x;
-    //         pos_pts(1, i) = msg->pos_pts[i].y;
-    //         pos_pts(2, i) = msg->pos_pts[i].z;
-    //     }
-
-    //     bspline_planner::UniformBspline pos_traj(pos_pts, msg->order, 0.1);
-    //     pos_traj.setKnot(knots);
-
-    //     start_time_ = msg->start_time;
-    //     traj_id_ = msg->traj_id;
-
-    //     traj_.clear();
-    //     traj_.push_back(pos_traj);
-    //     traj_.push_back(traj_[0].getDerivative());
-    //     traj_.push_back(traj_[1].getDerivative());
-
-    //     traj_duration_ = traj_[0].getTimeSum();
-
-    //     receive_traj_ = true;
-    // }
 
     void traj_callback(const traj_interfaces::msg::Bspline::SharedPtr msg, int robot_id)
     {   
@@ -555,9 +442,6 @@ int main(int argc, char **argv)
     rclcpp::init(argc, argv);
     auto node = std::make_shared<control_node>("control_node");
     mpc_controller.MPC_init(node);
-    // stop_command.data = 0;
-    // t_step = 0.03;
-    // rclcpp::TimerBase::SharedPtr cmd_timer = node->create_wall_timer(std::chrono::milliseconds(30), std::bind(&control_node::cmdCallback, node));
     for(int i = 0 ; i < node->robot_num; ++i)
     {
         auto timer_callback = [node, i](/* rclcpp::TimerBase::SharedPtr timer */)

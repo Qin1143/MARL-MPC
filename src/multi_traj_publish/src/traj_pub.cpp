@@ -7,7 +7,10 @@ class TrajectoryPublisher : public rclcpp::Node
 public:
     TrajectoryPublisher(std::string node_name)  : Node(node_name)
     {   
-        robot_num = 3;
+        this->declare_parameter<int>("robot_num", 1);
+        this->get_parameter("robot_num", robot_num);
+        std::cout << "/traj_pub robot_num: " << robot_num << std::endl;
+
         Eigen::MatrixXd pos_pts_1(3, 9);
         pos_pts_1 << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
             0.0, 0.0, 1.0, 3.0, 3.0, 3.0, 1.0, 0.0, 0.0,        // 第二行：y坐标
@@ -26,7 +29,6 @@ public:
             0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;          // 第三行：z坐标
         pos_pts.push_back(pos_pts_3);
 
-        // visualization_.reset(new PlanningVisualization(get_node_options(), robot_num));
         for (int i = 0; i < robot_num; ++i)
         {
             auto bspline_publisher = this->create_publisher<traj_interfaces::msg::Bspline>("/traj_pub/bspline_traj_" + std::to_string(i+1), 10);
@@ -38,11 +40,7 @@ public:
             auto traj_rviz_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("/traj_visualization_" + std::to_string(i + 1), 10);
             traj_rviz_pubs_.push_back(traj_rviz_pub_);
         }
-        // robot_1_bspline_publisher_ = this->create_publisher<traj_interfaces::msg::Bspline>("/traj_pub/bspline_traj", 10);
-        // robot_1_dir_publisher_ = this->create_publisher<std_msgs::msg::UInt8>("/traj_pub/direction", 10);
-        // 使用lambda表达式代替std::bind
-        // timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), [this, pos_pts]()
-        //                                  { this->publishBspline(pos_pts); }); // 单位毫秒 10Hz 的频率
+
         timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&TrajectoryPublisher::publishMultiTrajectory, this)); // 单位毫秒 10Hz 的频率
     }
 
@@ -52,8 +50,7 @@ private:
     std::vector<rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr> traj_rviz_pubs_;
 
     rclcpp::TimerBase::SharedPtr timer_;
-    // rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr robot_1_dir_publisher_;
-    // rclcpp::Publisher<traj_interfaces::msg::Bspline>::SharedPtr robot_1_bspline_publisher_;
+
     enum DIRECTION {POSITIVE=0,NEGATIVE=1};
     DIRECTION dir = POSITIVE;
     std::vector<Eigen::MatrixXd> pos_pts; // 定义为类的成员变量，方便在publishBspline函数中使用
@@ -80,10 +77,6 @@ private:
         bspline.start_time = this->get_clock()->now();
         bspline.traj_id = 1;
 
-        // Eigen::MatrixXd pos_pts(3, 9);
-        // pos_pts << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0,// 第一行：x坐标
-        //    0.0, 0.0, 1.0, 3.0, 3.0, 3.0, 1.0, 0.0, 0.0,// 第二行：y坐标
-        //    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;// 第三行：z坐标
         bspline.pos_pts.reserve(pos_pts.cols()); // 预留足够的空间来存储控制点
         // Eigen::Vector3d point_temp;
         for (int i = 0; i < pos_pts.cols(); ++i)
@@ -100,11 +93,7 @@ private:
         int m_k = pos_pts.cols() + 1 + bspline.order; // 控制点个数
         int mid = m_k - bspline.order*2;
         Eigen::VectorXd mid_knots = Eigen::VectorXd::LinSpaced(mid, 0.0, pos_pts.cols());
-
-        // Eigen::VectorXd knots = Eigen::VectorXd::LinSpaced(8, 0.0, 1.0); // knot vector 节点向量 (数量=n+1+p+1)
-
         Eigen::VectorXd knots(m_k); // knot vector 节点向量
-        // knots << 0.0, 0.0, 0.0, 0.0, 3.0, 3.0, 3.0, 3.0;
         for (int i = 0; i < bspline.order; ++i)
         {
             knots(i) = 0.0;

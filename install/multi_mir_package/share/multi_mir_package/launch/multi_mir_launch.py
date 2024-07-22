@@ -15,7 +15,8 @@ def generate_launch_description():
     robot_description_1 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_1.urdf')).read_text()
     robot_description_2 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_2.urdf')).read_text()
     robot_description_3 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_3.urdf')).read_text()
-    config = os.getcwd() + '/src/mpc_controller/config/mpc_controller.yaml'
+    # config = os.getcwd() + '/src/mpc_controller/config/mpc_controller.yaml'
+    robot_num_value = 3
 
     webots = WebotsLauncher(
         world=os.path.join(package_dir, 'worlds', 'multi_robot_world.wbt')
@@ -51,17 +52,11 @@ def generate_launch_description():
         ]
     )
 
-    # multi_mir_driver = WebotsController(
-    #     robot_name='multi_robot_1',
-    #     parameters=[{'robot_description' : robot_description}],
-    #     respawn=True
-    # )
-
     control_node = Node(
         package='multi_mpc_controller',
         executable='control_node',
         output='screen',
-        parameters=[{'robot_num': 1}]
+        parameters=[{'robot_num': robot_num_value}]
     )
 
     rviz2_node = Node(
@@ -77,7 +72,8 @@ def generate_launch_description():
             Node(
                 package='multi_traj_publish',
                 executable='traj_pub',
-                output='screen'
+                output='screen',
+                parameters=[{'robot_num': robot_num_value}]
             )
         ]
     )
