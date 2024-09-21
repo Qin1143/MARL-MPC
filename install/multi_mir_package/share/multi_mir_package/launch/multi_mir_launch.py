@@ -15,8 +15,11 @@ def generate_launch_description():
     robot_description_1 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_1.urdf')).read_text()
     robot_description_2 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_2.urdf')).read_text()
     robot_description_3 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_3.urdf')).read_text()
-    # config = os.getcwd() + '/src/mpc_controller/config/mpc_controller.yaml'
-    robot_num_value = 3
+    config = os.getcwd() + '/src/multi_mir_package/config/multi_control_node.yaml'
+    # with open(config, 'r') as file:
+    #     config_content = file.read()
+    # print(config_content)
+    # robot_num_value = 3
 
     webots = WebotsLauncher(
         world=os.path.join(package_dir, 'worlds', 'multi_robot_world.wbt')
@@ -29,6 +32,7 @@ def generate_launch_description():
         additional_env={'WEBOTS_CONTROLLER_URL': controller_url_prefix() + 'mir_robot_1'},
         parameters=[
             {'robot_description': robot_description_1},
+            {'use_sim_time': True}
         ]
     )
 
@@ -39,6 +43,7 @@ def generate_launch_description():
         additional_env={'WEBOTS_CONTROLLER_URL': controller_url_prefix() + 'mir_robot_2'},
         parameters=[
             {'robot_description': robot_description_2},
+            {'use_sim_time': True}
         ]
     )
 
@@ -49,14 +54,15 @@ def generate_launch_description():
         additional_env={'WEBOTS_CONTROLLER_URL': controller_url_prefix() + 'mir_robot_3'},
         parameters=[
             {'robot_description': robot_description_3},
+            {'use_sim_time': True}
         ]
     )
 
     control_node = Node(
         package='multi_mpc_controller',
-        executable='control_node',
+        executable='multi_control_node',
         output='screen',
-        parameters=[{'robot_num': robot_num_value}]
+        parameters=[config]
     )
 
     rviz2_node = Node(
@@ -66,14 +72,14 @@ def generate_launch_description():
         arguments=['-d', os.path.join(package_dir, 'config', 'mir100.rviz')]
     )
 
-    traj_pub = TimerAction(
+    traj_node = TimerAction(
         period=3.0,
         actions=[
             Node(
                 package='multi_traj_publish',
                 executable='traj_pub',
                 output='screen',
-                parameters=[{'robot_num': robot_num_value}]
+                parameters=[config]
             )
         ]
     )
@@ -85,7 +91,7 @@ def generate_launch_description():
         mir_robot_3_driver,
         control_node,
         rviz2_node,
-        traj_pub,
+        traj_node,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,

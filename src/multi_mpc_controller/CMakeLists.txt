@@ -46,12 +46,12 @@ include_directories(
   /home/tony/webots_ws/src/qpOASES/include 
   )
 
-add_executable(control_node src/control_node.cpp src/uniform_bspline.cpp src/mpc_controller.cpp)
-ament_target_dependencies(control_node rclcpp std_msgs geometry_msgs nav_msgs tf2 tf2_geometry_msgs motor_interfaces traj_interfaces)
+add_executable(multi_control_node src/multi_control_node.cpp src/uniform_bspline.cpp src/mpc_controller.cpp)
+ament_target_dependencies(multi_control_node rclcpp std_msgs geometry_msgs nav_msgs tf2 tf2_geometry_msgs motor_interfaces traj_interfaces)
 
-target_link_libraries(control_node qpOASES)
+target_link_libraries(multi_control_node qpOASES)
 
 install(TARGETS
-  control_node
+  multi_control_node
   DESTINATION lib/${PROJECT_NAME}
 )

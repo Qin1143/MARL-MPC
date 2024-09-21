@@ -8,7 +8,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.30134996778023593 0.1334559043890978 0.9441280201871666 2.3193762452561324
-  position 5.849044253533739 -5.920184586038165 5.553003466871526
+  position 4.417116679748624 -4.227485267474515 3.99103511508231
 }
 TexturedBackground {
 }
@@ -811,7 +811,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_left_wheel_joint"
-          maxVelocity 40
+          maxVelocity 80
           maxTorque 100
         }
         PositionSensor {
@@ -906,7 +906,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_right_wheel_joint"
-          maxVelocity 40
+          maxVelocity 80
           maxTorque 100
         }
         PositionSensor {
@@ -2263,7 +2263,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_left_wheel_joint"
-          maxVelocity 40
+          maxVelocity 80
           maxTorque 100
         }
         PositionSensor {
@@ -2358,7 +2358,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_right_wheel_joint"
-          maxVelocity 40
+          maxVelocity 80
           maxTorque 100
         }
         PositionSensor {
@@ -3715,7 +3715,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_left_wheel_joint"
-          maxVelocity 40
+          maxVelocity 80
           maxTorque 100
         }
         PositionSensor {
@@ -3810,7 +3810,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_right_wheel_joint"
-          maxVelocity 40
+          maxVelocity 80
           maxTorque 100
         }
         PositionSensor {

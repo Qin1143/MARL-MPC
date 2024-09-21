@@ -12,7 +12,11 @@ from webots_ros2_driver.utils import controller_url_prefix
 def generate_launch_description():
     package_dir = get_package_share_directory('my_mir_package')
     robot_description = pathlib.Path(os.path.join(package_dir, 'resource', 'my_mir_robot.urdf')).read_text()
-    config = os.getcwd() + '/src/mpc_controller/config/mpc_controller.yaml'
+    config = os.getcwd() + '/src/my_mir_package/config/control_node.yaml'
+    # with open(config, 'r') as file:
+    #     config_content = file.read()
+    # print(config_content)
+    # config = os.path.join(package_dir, 'config', 'control_node.yaml')
 
     webots = WebotsLauncher(
         world=os.path.join(package_dir, 'worlds', 'my_world.wbt')
@@ -25,6 +29,7 @@ def generate_launch_description():
         additional_env={'WEBOTS_CONTROLLER_URL': controller_url_prefix() + 'my_mir_robot'},
         parameters=[
             {'robot_description': robot_description},
+            {'use_sim_time': True}
         ]
     )
 

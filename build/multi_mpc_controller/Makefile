@@ -80,28 +80,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -134,6 +112,28 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,17 +168,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named control_node
+# Target rules for targets named multi_control_node
 
 # Build rule for target.
-control_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 control_node
-.PHONY : control_node
+multi_control_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 multi_control_node
+.PHONY : multi_control_node
 
 # fast build rule for target.
-control_node/fast:
-	$(MAKE) -f CMakeFiles/control_node.dir/build.make CMakeFiles/control_node.dir/build
-.PHONY : control_node/fast
+multi_control_node/fast:
+	$(MAKE) -f CMakeFiles/multi_control_node.dir/build.make CMakeFiles/multi_control_node.dir/build
+.PHONY : multi_control_node/fast
 
 #=============================================================================
 # Target rules for targets named multi_mpc_controller_uninstall
@@ -206,40 +206,13 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
-src/control_node.o: src/control_node.cpp.o
-
-.PHONY : src/control_node.o
-
-# target to build an object file
-src/control_node.cpp.o:
-	$(MAKE) -f CMakeFiles/control_node.dir/build.make CMakeFiles/control_node.dir/src/control_node.cpp.o
-.PHONY : src/control_node.cpp.o
-
-src/control_node.i: src/control_node.cpp.i
-
-.PHONY : src/control_node.i
-
-# target to preprocess a source file
-src/control_node.cpp.i:
-	$(MAKE) -f CMakeFiles/control_node.dir/build.make CMakeFiles/control_node.dir/src/control_node.cpp.i
-.PHONY : src/control_node.cpp.i
-
-src/control_node.s: src/control_node.cpp.s
-
-.PHONY : src/control_node.s
-
-# target to generate assembly for a file
-src/control_node.cpp.s:
-	$(MAKE) -f CMakeFiles/control_node.dir/build.make CMakeFiles/control_node.dir/src/control_node.cpp.s
-.PHONY : src/control_node.cpp.s
-
 src/mpc_controller.o: src/mpc_controller.cpp.o
 
 .PHONY : src/mpc_controller.o
 
 # target to build an object file
 src/mpc_controller.cpp.o:
-	$(MAKE) -f CMakeFiles/control_node.dir/build.make CMakeFiles/control_node.dir/src/mpc_controller.cpp.o
+	$(MAKE) -f CMakeFiles/multi_control_node.dir/build.make CMakeFiles/multi_control_node.dir/src/mpc_controller.cpp.o
 .PHONY : src/mpc_controller.cpp.o
 
 src/mpc_controller.i: src/mpc_controller.cpp.i
@@ -248,7 +221,7 @@ src/mpc_controller.i: src/mpc_controller.cpp.i
 
 # target to preprocess a source file
 src/mpc_controller.cpp.i:
-	$(MAKE) -f CMakeFiles/control_node.dir/build.make CMakeFiles/control_node.dir/src/mpc_controller.cpp.i
+	$(MAKE) -f CMakeFiles/multi_control_node.dir/build.make CMakeFiles/multi_control_node.dir/src/mpc_controller.cpp.i
 .PHONY : src/mpc_controller.cpp.i
 
 src/mpc_controller.s: src/mpc_controller.cpp.s
@@ -257,8 +230,35 @@ src/mpc_controller.s: src/mpc_controller.cpp.s
 
 # target to generate assembly for a file
 src/mpc_controller.cpp.s:
-	$(MAKE) -f CMakeFiles/control_node.dir/build.make CMakeFiles/control_node.dir/src/mpc_controller.cpp.s
+	$(MAKE) -f CMakeFiles/multi_control_node.dir/build.make CMakeFiles/multi_control_node.dir/src/mpc_controller.cpp.s
 .PHONY : src/mpc_controller.cpp.s
+
+src/multi_control_node.o: src/multi_control_node.cpp.o
+
+.PHONY : src/multi_control_node.o
+
+# target to build an object file
+src/multi_control_node.cpp.o:
+	$(MAKE) -f CMakeFiles/multi_control_node.dir/build.make CMakeFiles/multi_control_node.dir/src/multi_control_node.cpp.o
+.PHONY : src/multi_control_node.cpp.o
+
+src/multi_control_node.i: src/multi_control_node.cpp.i
+
+.PHONY : src/multi_control_node.i
+
+# target to preprocess a source file
+src/multi_control_node.cpp.i:
+	$(MAKE) -f CMakeFiles/multi_control_node.dir/build.make CMakeFiles/multi_control_node.dir/src/multi_control_node.cpp.i
+.PHONY : src/multi_control_node.cpp.i
+
+src/multi_control_node.s: src/multi_control_node.cpp.s
+
+.PHONY : src/multi_control_node.s
+
+# target to generate assembly for a file
+src/multi_control_node.cpp.s:
+	$(MAKE) -f CMakeFiles/multi_control_node.dir/build.make CMakeFiles/multi_control_node.dir/src/multi_control_node.cpp.s
+.PHONY : src/multi_control_node.cpp.s
 
 src/uniform_bspline.o: src/uniform_bspline.cpp.o
 
@@ -266,7 +266,7 @@ src/uniform_bspline.o: src/uniform_bspline.cpp.o
 
 # target to build an object file
 src/uniform_bspline.cpp.o:
-	$(MAKE) -f CMakeFiles/control_node.dir/build.make CMakeFiles/control_node.dir/src/uniform_bspline.cpp.o
+	$(MAKE) -f CMakeFiles/multi_control_node.dir/build.make CMakeFiles/multi_control_node.dir/src/uniform_bspline.cpp.o
 .PHONY : src/uniform_bspline.cpp.o
 
 src/uniform_bspline.i: src/uniform_bspline.cpp.i
@@ -275,7 +275,7 @@ src/uniform_bspline.i: src/uniform_bspline.cpp.i
 
 # target to preprocess a source file
 src/uniform_bspline.cpp.i:
-	$(MAKE) -f CMakeFiles/control_node.dir/build.make CMakeFiles/control_node.dir/src/uniform_bspline.cpp.i
+	$(MAKE) -f CMakeFiles/multi_control_node.dir/build.make CMakeFiles/multi_control_node.dir/src/uniform_bspline.cpp.i
 .PHONY : src/uniform_bspline.cpp.i
 
 src/uniform_bspline.s: src/uniform_bspline.cpp.s
@@ -284,7 +284,7 @@ src/uniform_bspline.s: src/uniform_bspline.cpp.s
 
 # target to generate assembly for a file
 src/uniform_bspline.cpp.s:
-	$(MAKE) -f CMakeFiles/control_node.dir/build.make CMakeFiles/control_node.dir/src/uniform_bspline.cpp.s
+	$(MAKE) -f CMakeFiles/multi_control_node.dir/build.make CMakeFiles/multi_control_node.dir/src/uniform_bspline.cpp.s
 .PHONY : src/uniform_bspline.cpp.s
 
 # Help Target
@@ -295,20 +295,20 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... edit_cache"
-	@echo "... test"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... control_node"
+	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... multi_control_node"
 	@echo "... multi_mpc_controller_uninstall"
 	@echo "... uninstall"
-	@echo "... src/control_node.o"
-	@echo "... src/control_node.i"
-	@echo "... src/control_node.s"
 	@echo "... src/mpc_controller.o"
 	@echo "... src/mpc_controller.i"
 	@echo "... src/mpc_controller.s"
+	@echo "... src/multi_control_node.o"
+	@echo "... src/multi_control_node.i"
+	@echo "... src/multi_control_node.s"
 	@echo "... src/uniform_bspline.o"
 	@echo "... src/uniform_bspline.i"
 	@echo "... src/uniform_bspline.s"

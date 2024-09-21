@@ -16,6 +16,7 @@ CMakeFiles/control_node.dir/src/control_node.cpp.o: /home/tony/webots_ws/install
 CMakeFiles/control_node.dir/src/control_node.cpp.o: /home/tony/webots_ws/src/mpc_controller/include/mpc_controller/mpc_controller.hpp
 CMakeFiles/control_node.dir/src/control_node.cpp.o: /home/tony/webots_ws/src/mpc_controller/include/mpc_controller/uniform_bspline.h
 CMakeFiles/control_node.dir/src/control_node.cpp.o: /home/tony/webots_ws/src/mpc_controller/src/control_node.cpp
+CMakeFiles/control_node.dir/src/control_node.cpp.o: /home/tony/webots_ws/src/mpc_controller/src/record.cpp
 CMakeFiles/control_node.dir/src/control_node.cpp.o: /home/tony/webots_ws/src/qpOASES/include/qpOASES.hpp
 CMakeFiles/control_node.dir/src/control_node.cpp.o: /home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.hpp
 CMakeFiles/control_node.dir/src/control_node.cpp.o: /home/tony/webots_ws/src/qpOASES/include/qpOASES/Bounds.ipp

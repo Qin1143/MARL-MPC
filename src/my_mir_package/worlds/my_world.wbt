@@ -7,8 +7,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.219775799245733 -0.01736851641792218 0.9753957825946037 3.254416213528096
-  position 9.402143684420471 -0.028762747100165558 3.2441035625744257
+  orientation -0.18737924952812196 0.15068302339758355 0.970661446286006 1.766873283879721
+  position 4.130567233414474 -7.362409536439846 3.726914314968119
 }
 TexturedBackground {
 }
@@ -811,7 +811,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_left_wheel_joint"
-          maxVelocity 40
+          maxVelocity 80
           maxTorque 100
         }
         PositionSensor {
@@ -906,7 +906,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_right_wheel_joint"
-          maxVelocity 40
+          maxVelocity 80
           maxTorque 100
         }
         PositionSensor {
@@ -1465,4 +1465,7 @@ Robot {
     mass 70
   }
   controller "<extern>"
+  controllerArgs [
+    "--clock"
+  ]
 }

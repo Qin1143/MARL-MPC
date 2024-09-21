@@ -1,5 +1,0 @@
-[0.055s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/multi_traj_publish:/home/tony/webots_ws/install/multi_mpc_controller:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
-[0.096s] [35m[1mScanning dependencies of target traj_pub[0m
-[0.151s] [ 33%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
-[3.879s] [ 66%] [32m[1mLinking CXX executable traj_pub[0m
-[4.078s] [100%] Built target traj_pub

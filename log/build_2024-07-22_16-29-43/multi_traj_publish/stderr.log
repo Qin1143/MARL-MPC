@@ -1,9 +1,0 @@
-[01m[K/home/tony/webots_ws/src/multi_traj_publish/src/traj_pub.cpp:65:9:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint TrajectoryPublisher::robot_num[m[K’
-   65 |     int [01;31m[Krobot_num[m[K;
-      |         [01;31m[K^~~~~~~~~[m[K
-[01m[K/home/tony/webots_ws/src/multi_traj_publish/src/traj_pub.cpp:8:9:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint TrajectoryPublisher::robot_num[m[K’
-    8 |     int [01;36m[Krobot_num[m[K;
-      |         [01;36m[K^~~~~~~~~[m[K
-make[2]: *** [CMakeFiles/traj_pub.dir/build.make:63: CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/traj_pub.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

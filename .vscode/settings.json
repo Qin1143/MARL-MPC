@@ -69,5 +69,7 @@
         "core": "cpp",
         "codecvt": "cpp",
         "regex": "cpp"
-    }
+    },
+    "cmake.ignoreCMakeListsMissing": true,
+    "C_Cpp.dimInactiveRegions": false
 }

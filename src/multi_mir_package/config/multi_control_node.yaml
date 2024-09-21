@@ -1,0 +1,15 @@
+multi_control_node: # This is the name of the node!
+  ros__parameters:
+    robot_num: 3
+    v_max: 1.8
+    w_max: 1.2
+    omega0: 1.0
+    omega1: 0.1
+    kx: 1.0
+    ky: 1.0
+    kth: 1.0
+    control_mode: "backstepping"
+
+traj_node: # This is the name of the node!
+  ros__parameters:
+    robot_num: 3

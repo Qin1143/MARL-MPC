@@ -9,7 +9,7 @@ public:
     {   
         this->declare_parameter<int>("robot_num", 1);
         this->get_parameter("robot_num", robot_num);
-        std::cout << "/traj_pub robot_num: " << robot_num << std::endl;
+        std::cout << "/traj_node robot_num: " << robot_num << std::endl;
 
         Eigen::MatrixXd pos_pts_1(3, 9);
         pos_pts_1 << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
@@ -190,7 +190,7 @@ private:
 int main(int argc, char** argv)
 {   
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<TrajectoryPublisher>("traj_pub"));
+    rclcpp::spin(std::make_shared<TrajectoryPublisher>("traj_node"));
     rclcpp::shutdown();
     return 0;
 }

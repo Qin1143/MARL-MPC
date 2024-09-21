@@ -1,5 +1,6 @@
 #include "time.h"
 #include "math.h"
+#include "Eigen/Dense"
 #include "std_msgs/msg/u_int8.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "mpc_controller/mpc_controller.hpp"
@@ -11,6 +12,7 @@
 #include "tf2_geometry_msgs/tf2_geometry_msgs.h"
 #include "nav_msgs/msg/path.hpp"
 #include "mpc_controller/uniform_bspline.h"
+#include "record.cpp"
 
 #define PI 3.1415926
 #define yaw_error_max 90.0/180*PI
@@ -19,6 +21,7 @@
 const double HALF_DISTANCE_BETWEEN_WHEELS = 0.2230;
 const double WHEEL_RADIUS = 0.0625;
 
+// RobotPoseRecorder recorder;
 MPC_controller mpc_controller;
 Eigen::Vector3d odom_pos_, odom_vel_;
 Eigen::Quaterniond odom_orient_;
@@ -30,10 +33,13 @@ motor_interfaces::msg::Motor motor_cmd;
 rclcpp::Time start_time_, time_s, time_e;
 clock_t start_clock, end_clock;
 double duration;
-double traj_duration_;
+double traj_duration;
 double linear_v, angular_v;
+double kx, ky, kth;
 
 int robot_num;
+std::string control_mode;
+bool display;
 int traj_id_;
 double roll, pitch, yaw;
 vector<bspline_planner::UniformBspline> traj_;
@@ -50,18 +56,37 @@ public:
     control_node(std::string node_name) : Node(node_name)
     {        
         // 声明参数
-        this->declare_parameter("robot_num", 1);
-        this->declare_parameter("v_max", 1.8);
-        this->declare_parameter("w_max", 1.2);
-        this->declare_parameter("omega0", 1.0);
-        this->declare_parameter("omega1", 0.1);
+        this->declare_parameter<int>("robot_num", 1);
+        this->declare_parameter<double>("v_max", 1.8);
+        this->declare_parameter<double>("w_max", 1.2);
+        this->declare_parameter<double>("omega0", 1.0);
+        this->declare_parameter<double>("omega1", 0.1);
+        this->declare_parameter<double>("kx", 2.5);
+        this->declare_parameter<double>("ky", 20.0);
+        this->declare_parameter<double>("kth", 8.0);
+        this->declare_parameter<std::string>("control_mode", "mpc");
+        this->declare_parameter<bool>("display", false);
         
         // 打印robot_num参数
         this->get_parameter("robot_num", robot_num);
-        std::cout << "robot_num: " << robot_num << std::endl;
+        std::cout << "########## robot_num: " << robot_num << " ##########" << std::endl;
+        // recorder.init(robot_num); // 初始化记录器
+
+        // 打印display参数
+        this->get_parameter("display", display);
+        std::cout << "########## display: " << display << " ##########" << std::endl;
+
+        // 获取Backstepping参数
+        this->get_parameter("kx", kx);
+        this->get_parameter("ky", ky);
+        this->get_parameter("kth", kth);
+
+        // 获取字符串参数
+        this->get_parameter("control_mode", control_mode);
+        std::cout << "########## control_mode: " << control_mode << " ##########" << std::endl;
 
         pub_motor_cmd = this->create_publisher<motor_interfaces::msg::Motor>("motor_cmd", 10);
-        bspline_visualization_ = this->create_publisher<nav_msgs::msg::Path>("/bspline_visualization", 10);
+        bspline_visualization = this->create_publisher<nav_msgs::msg::Path>("/bspline_visualization", 10);
         sub_odom_msg = this->create_subscription<nav_msgs::msg::Odometry>("odom", 10, std::bind(&control_node::odom_callback, this, std::placeholders::_1));
         sub_dir_msg = this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/direction", 10, std::bind(&control_node::dir_callback, this, std::placeholders::_1));
         sub_stop_msg = this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/stop", 10, std::bind(&control_node::stop_callback, this, std::placeholders::_1));
@@ -69,13 +94,15 @@ public:
     }
 
     void cmdCallback()
-    {
+    {   
+        // std::cout << "########## cmdCallback ##########" << std::endl;
         /* no publishing before receive traj_ */
         if (stop_command.data == 1)
         {
             motor_cmd.left_speed = 0;
             motor_cmd.right_speed = 0;
             pub_motor_cmd->publish(motor_cmd);
+            std::cout << "########## Mission Finished !!! ##########" << std::endl;
             return;
         }
 
@@ -87,18 +114,30 @@ public:
         double t_cur = (time_s - start_time_).seconds();
         static rclcpp::Time time_last = this->get_clock()->now();
 
-        if (t_cur < traj_duration_ && t_cur >= 0.0)
+        if (t_cur < traj_duration && t_cur >= 0.0)
         {
-            // ROS_INFO("MPC_Calculate!");
             start_clock = clock();
-            MPC_calculate(t_cur);
-            publish_bspline_tracking_points(t_cur);
+            if (control_mode == "mpc")
+            {
+                // std::cout << "########## MPC ##########" << std::endl;
+                MPC_calculate(t_cur);
+                publish_bspline_tracking_points(t_cur);
+            }
+            else if (control_mode == "backstepping")
+            {
+                // std::cout << "########## Backstepping ##########" << std::endl;
+                backstepping_calculate(t_cur);
+                publish_bspline_tracking_points(t_cur);
+            }
+            // MPC_calculate(t_cur);
+            // publish_bspline_tracking_points(t_cur);
             end_clock = clock();
             duration = (double)(end_clock - start_clock) / CLOCKS_PER_SEC * 1000;
             // ROS_INFO("Control times : %f ms",duration);
         }
-        else if (t_cur >= traj_duration_)
+        else if (t_cur >= traj_duration)
         {
+            std::cout << "########## Time Finished!!! ##########" << std::endl;
             motor_cmd.left_speed = 0;
             motor_cmd.right_speed = 0;
             pub_motor_cmd->publish(motor_cmd);
@@ -114,7 +153,7 @@ public:
     }
 private:
     rclcpp::Publisher<motor_interfaces::msg::Motor>::SharedPtr pub_motor_cmd;
-    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr bspline_visualization_;
+    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr bspline_visualization;
     rclcpp::Subscription<std_msgs::msg::UInt8>::SharedPtr sub_stop_msg;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr sub_odom_msg;
     rclcpp::Subscription<std_msgs::msg::UInt8>::SharedPtr sub_dir_msg;
@@ -164,7 +203,6 @@ private:
     }
 
     void traj_callback(const traj_interfaces::msg::Bspline::SharedPtr msg)
-
     {   
         if (receive_traj_ == true)
         {
@@ -198,7 +236,7 @@ private:
         traj_.push_back(traj_[0].getDerivative());
         traj_.push_back(traj_[1].getDerivative());
 
-        traj_duration_ = traj_[0].getTimeSum();
+        traj_duration = traj_[0].getTimeSum();
 
         receive_traj_ = true;
     }
@@ -209,7 +247,7 @@ private:
         path_msg.header.stamp = this->get_clock()->now();
         path_msg.header.frame_id = "map";
 
-        for (double t = t_cur; t <= traj_duration_; t += 0.1)
+        for (double t = t_cur; t <= traj_duration; t += 0.1)
         {
             Eigen::Vector3d pos = traj_[0].evaluateDeBoor(t);
             geometry_msgs::msg::PoseStamped pose;
@@ -219,7 +257,7 @@ private:
             path_msg.poses.push_back(pose);
         }
 
-        bspline_visualization_->publish(path_msg);
+        bspline_visualization->publish(path_msg);
     }
 
     void MPC_calculate(double &t_cur)
@@ -241,7 +279,18 @@ private:
         double yaw_start = atan2(vel_start(1), vel_start(0));       // 初始航向角
         bool is_orientation_adjust = false;
         double orientation_adjust = 0;
-        pos_final = traj_[0].evaluateDeBoor(traj_duration_);
+        pos_final = traj_[0].evaluateDeBoor(traj_duration);
+
+        std::cout << "########## pos_final: "<< pos_final[0] << " " << pos_final[1] << " ##########" << std::endl;
+        std::cout << "########## t_cur: " << t_cur << " ##########" << std::endl;
+        std::cout << "########## traj_duration: " << traj_duration << " ##########" << std::endl;
+        // 检查当前位置是否到达终点
+        if (abs(odom_pos_(0) - pos_final[0]) < 0.1 && abs(odom_pos_(1) - pos_final[1]) < 0.1)
+        {
+            // std::cout << "########## Mission Finished !!! ##########" << std::endl;
+            stop_command.data = 1;
+            return;
+        }
 
         is_orientation_init = true;
         for (int i = 0; i < N; i++)
@@ -261,7 +310,7 @@ private:
             v_r_1(2) = 0;
             v_r_2(2) = 0;
             v_linear_1 = v_r_1.norm();
-            if ((t_k - traj_duration_) >= 0)
+            if ((t_k - traj_duration) >= 0)
             {
                 x_r(2) = atan2((pos_r - pos_final)(1), (pos_r - pos_final)(0));
             }
@@ -354,29 +403,121 @@ private:
 
         motor_cmd.left_speed = (linear_v - angular_v * HALF_DISTANCE_BETWEEN_WHEELS) / WHEEL_RADIUS;
         motor_cmd.right_speed = (linear_v + angular_v * HALF_DISTANCE_BETWEEN_WHEELS) / WHEEL_RADIUS;
-
-        static int conut1 = 0;
-        conut1 += 1;
-        if (conut1 % 20 == 0)
+        if (display == true)
         {
-            RCLCPP_WARN(this->get_logger(), "U r :");
-            for (int i = 0; i < U_r.size(); i++)
+            static int conut1 = 0;
+            conut1 += 1;
+            if (conut1 % 20 == 0)
             {
-                cout << "vel ref :" << U_r[i](0) << "," << "w ref : " << U_r[i](1);
+                // RCLCPP_WARN(this->get_logger(), "U r :");
+                for (int i = 0; i < U_r.size(); i++)
+                {
+                    cout << "vel ref :" << U_r[i](0) << "," << "w ref : " << U_r[i](1);
+                    cout << endl;
+                }
                 cout << endl;
-            }
-            cout << endl;
-            RCLCPP_WARN(this->get_logger(), "U k :");
-            for (int i = 0; i < u_k.cols(); i++)
-            {
-                cout << "vel optimal :" << u_k.col(i)(0) << "," << "w optimal : " << u_k.col(i)(1);
+                // RCLCPP_WARN(this->get_logger(), "U k :");
+                for (int i = 0; i < u_k.cols(); i++)
+                {
+                    cout << "vel optimal :" << u_k.col(i)(0) << "," << "w optimal : " << u_k.col(i)(1);
+                    cout << endl;
+                }
                 cout << endl;
+                cout << "current vel : : " << u_k.col(0)(0) << "m/s" << endl;
+                cout << "current w : " << u_k.col(0)(1) << "rad/s" << endl;
+                conut1 = 0;
             }
-            cout << endl;
-            cout << "current vel : : " << u_k.col(0)(0) << "m/s" << endl;
-            cout << "current w : " << u_k.col(0)(1) << "rad/s" << endl;
-            conut1 = 0;
         }
+
+        pub_motor_cmd->publish(motor_cmd);
+    }
+
+    void backstepping_calculate(double &t_cur)
+    {
+        Eigen::Matrix<float, 3, 3> T;
+        Eigen::Matrix<float, 3, 1> Eg; // Error of global 全局坐标系下的误差
+        Eigen::Matrix<float, 3, 1> Eb; // Error of body 车体坐标系下的误差
+        Eigen::Vector3d pos_ref_1, pos_final; // 期望位置
+        Eigen::Vector3d vel_ref_1, vel_ref_2; // 初始速度
+        double Vr, Wr, linear_v, angular_v;
+        double orientation_adjust = 0;
+        bool is_orientation_adjust = false;
+
+        pos_final = traj_[0].evaluateDeBoor(traj_duration);
+        // std::cout << "########## pos_final: "<< pos_final[0] << " " << pos_final[1] << " ##########" << std::endl;
+        // std::cout << "########## t_cur: " << t_cur << " ##########" << std::endl;
+        // std::cout << "########## traj_duration: " << traj_duration << " ##########" << std::endl;
+
+        // 检查当前位置是否到达终点
+        if (abs(odom_pos_(0) - pos_final[0]) < 0.1 && abs(odom_pos_(1) - pos_final[1] < 0.1))
+        {
+            // std::cout << "########## Mission Finished !!! ##########" << std::endl;
+            stop_command.data = 1;
+            return;
+        }
+
+        pos_ref_1 = traj_[0].evaluateDeBoor(t_cur); // 期望位置
+        vel_ref_1 = traj_[1].evaluateDeBoor(t_cur); // 初始速度
+        T << 1, 0, -sin(yaw),
+            0, 1, cos(yaw),
+            0, 0, 1;
+
+        double yaw_ref = atan2(vel_ref_1(1), vel_ref_1(0));       // 初始航向角
+
+        // 计算期望角速度
+        vel_ref_2 = traj_[1].evaluateDeBoor(t_cur + t_step);
+
+        // 判断并调整航向角
+        double yaw1 = atan2(vel_ref_1(1), vel_ref_1(0));
+        double yaw2 = atan2(vel_ref_2(1), vel_ref_2(0));
+
+        if (abs(yaw2 - yaw1) > PI)
+        {
+            is_orientation_adjust = true;
+            if ((yaw2 - yaw1) < 0)
+            {
+                orientation_adjust = 2 * PI;
+                Wr = (2 * PI + (yaw2 - yaw1)) / t_step;
+            }
+            else
+            {
+                Wr = ((yaw2 - yaw1) - 2 * PI) / t_step;
+                orientation_adjust = -2 * PI;
+            }
+        }
+        else
+        {
+            Wr = (yaw2 - yaw1) / t_step;
+        }
+
+        if (is_orientation_adjust == true)
+        {
+            pos_ref_1(2) += orientation_adjust;
+        }
+
+        if (yaw*yaw_ref >= 0)
+        {
+            Eg << pos_ref_1(0) - odom_pos_(0), pos_ref_1(1) - odom_pos_(1), yaw_ref - yaw;
+        }
+        else
+        {
+            if (yaw > 0)
+            {
+                Eg << pos_ref_1(0) - odom_pos_(0), pos_ref_1(1) - odom_pos_(1), yaw_ref - yaw - 2 * PI;
+            }
+            else
+            {
+                Eg << pos_ref_1(0) - odom_pos_(0), pos_ref_1(1) - odom_pos_(1), yaw_ref - yaw + 2 * PI;
+            }
+        }
+
+        Eb = T * Eg;
+        Vr = sqrt(pow(vel_ref_1(0), 2) + pow(vel_ref_1(1), 2));
+        linear_v = Vr * cos(Eb[2]) + kx * Eb[0];
+        angular_v = Wr + ky * Eb[1] + kth * sin(Eb[2]);
+
+        motor_cmd.left_speed = (linear_v - angular_v * HALF_DISTANCE_BETWEEN_WHEELS) / WHEEL_RADIUS;
+        motor_cmd.right_speed = (linear_v + angular_v * HALF_DISTANCE_BETWEEN_WHEELS) / WHEEL_RADIUS;
 
         pub_motor_cmd->publish(motor_cmd);
     }
@@ -385,6 +526,7 @@ private:
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
+    // 创建一个名为control_node的节点，并将其储存在一个共享指针node中
     auto node = std::make_shared<control_node>("control_node");
     mpc_controller.MPC_init(node);
     stop_command.data = 0;
