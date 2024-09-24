@@ -21,8 +21,8 @@
 const double HALF_DISTANCE_BETWEEN_WHEELS = 0.2230;
 const double WHEEL_RADIUS = 0.0625;
 
-// RobotPoseRecorder recorder;
 MPC_controller mpc_controller;
+RobotPoseRecorder recorder;
 Eigen::Vector3d odom_pos_, odom_vel_;
 Eigen::Quaterniond odom_orient_;
 tf2::Quaternion quat;
@@ -45,6 +45,23 @@ double roll, pitch, yaw;
 vector<bspline_planner::UniformBspline> traj_;
 bool receive_traj_ = false;
 bool is_orientation_init = false;
+// 获取当前的年月日时分秒
+std::time_t t = std::time(nullptr);
+std::tm* now = std::localtime(&t);
+int year = now->tm_year + 1900;
+int month = now->tm_mon + 1;
+int day = now->tm_mday;
+int hour = now->tm_hour;
+int minute = now->tm_min;
+int second = now->tm_sec;
+std::string file_time = std::to_string(year) + "_" + 
+                        std::to_string(month) + "_" + 
+                        std::to_string(day) + "_" + 
+                        std::to_string(hour) + "_" + 
+                        std::to_string(minute) + "_" + 
+                        std::to_string(second);
+// 数据保存标志位
+bool data_saved = false;
 
 enum DIRECTION {POSITIVE=0,NEGATIVE=1};
 
@@ -70,7 +87,6 @@ public:
         // 打印robot_num参数
         this->get_parameter("robot_num", robot_num);
         std::cout << "########## robot_num: " << robot_num << " ##########" << std::endl;
-        // recorder.init(robot_num); // 初始化记录器
 
         // 打印display参数
         this->get_parameter("display", display);
@@ -103,6 +119,11 @@ public:
             motor_cmd.right_speed = 0;
             pub_motor_cmd->publish(motor_cmd);
             std::cout << "########## Mission Finished !!! ##########" << std::endl;
+            if (!data_saved)
+            {
+                recorder.savePosesToFile(file_time + "_" + control_mode + "_poses.txt");
+                data_saved = true;
+            }
             return;
         }
 
@@ -142,6 +163,11 @@ public:
             motor_cmd.right_speed = 0;
             pub_motor_cmd->publish(motor_cmd);
             is_orientation_init = false;
+            if (!data_saved)
+            {
+                recorder.savePosesToFile(file_time + "_" + control_mode + "_poses.txt");
+                data_saved = true;
+            }
         }
         else
         {   
@@ -281,9 +307,9 @@ private:
         double orientation_adjust = 0;
         pos_final = traj_[0].evaluateDeBoor(traj_duration);
 
-        std::cout << "########## pos_final: "<< pos_final[0] << " " << pos_final[1] << " ##########" << std::endl;
-        std::cout << "########## t_cur: " << t_cur << " ##########" << std::endl;
-        std::cout << "########## traj_duration: " << traj_duration << " ##########" << std::endl;
+        // std::cout << "########## pos_final: "<< pos_final[0] << " " << pos_final[1] << " ##########" << std::endl;
+        // std::cout << "########## t_cur: " << t_cur << " ##########" << std::endl;
+        // std::cout << "########## traj_duration: " << traj_duration << " ##########" << std::endl;
         // 检查当前位置是否到达终点
         if (abs(odom_pos_(0) - pos_final[0]) < 0.1 && abs(odom_pos_(1) - pos_final[1]) < 0.1)
         {
@@ -383,8 +409,12 @@ private:
         {
             X_k(2) = yaw;
         }
+
+        // 记录当前位置与参考位置
         // cout<<"xr  : "<<X_r[0]<<endl;
         // cout<<"xk  : "<<X_k<<endl;
+        int id = 0;
+        recorder.recordPose(robot_num, id, X_r[0](0), X_r[0](1), X_r[0](2), X_k(0), X_k(1), X_k(2), t_cur);        
 
         // ROS_INFO("Run to here!");
         //  使用MPC求解器计算最优控制输入
@@ -510,6 +540,10 @@ private:
                 Eg << pos_ref_1(0) - odom_pos_(0), pos_ref_1(1) - odom_pos_(1), yaw_ref - yaw + 2 * PI;
             }
         }
+
+        // 记录数据
+        int id = 0;
+        recorder.recordPose(robot_num, id, pos_ref_1(0), pos_ref_1(1), yaw_ref, odom_pos_(0), odom_pos_(1), yaw, t_cur);
 
         Eb = T * Eg;
         Vr = sqrt(pow(vel_ref_1(0), 2) + pow(vel_ref_1(1), 2));

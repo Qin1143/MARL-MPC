@@ -11,6 +11,7 @@
 #include "tf2_geometry_msgs/tf2_geometry_msgs.h"
 #include "nav_msgs/msg/path.hpp"
 #include "mpc_controller/uniform_bspline.h"
+#include "record.cpp"
 
 #define PI 3.1415926
 #define yaw_error_max 90.0/180*PI
@@ -20,6 +21,7 @@ const double HALF_DISTANCE_BETWEEN_WHEELS = 0.2230;
 const double WHEEL_RADIUS = 0.0625;
 
 MPC_controller mpc_controller;
+RobotPoseRecorder recorder;
 tf2::Quaternion quat;
 motor_interfaces::msg::Motor motor_cmd;
 
@@ -31,6 +33,23 @@ std::string control_mode;
 bool is_orientation_init = false;
 bool display = false;
 std::vector<rclcpp::TimerBase::SharedPtr> timers;
+// 获取当前的年月日时分秒
+std::time_t t = std::time(nullptr);
+std::tm* now = std::localtime(&t);
+int year = now->tm_year + 1900;
+int month = now->tm_mon + 1;
+int day = now->tm_mday;
+int hour = now->tm_hour;
+int minute = now->tm_min;
+int second = now->tm_sec;
+std::string file_time = std::to_string(year) + "_" + 
+                        std::to_string(month) + "_" + 
+                        std::to_string(day) + "_" + 
+                        std::to_string(hour) + "_" + 
+                        std::to_string(minute) + "_" + 
+                        std::to_string(second);
+// 数据保存标志位
+bool data_saved = false;
 
 enum DIRECTION {POSITIVE=0,NEGATIVE=1};
 
@@ -127,6 +146,11 @@ public:
             motor_cmd.left_speed = 0;
             motor_cmd.right_speed = 0;
             pub_robot_cmds[robot_id]->publish(motor_cmd);
+            if (!data_saved)
+            {
+                recorder.savePosesToFile(file_time + "_" + control_mode + "_poses.txt");
+                data_saved = true;
+            }
             return;
         }
 
@@ -165,6 +189,11 @@ public:
             motor_cmd.right_speed = 0;
             pub_robot_cmds[robot_id]->publish(motor_cmd);
             is_orientation_init = false;
+            if (!data_saved)
+            {
+                recorder.savePosesToFile(file_time + "_" + control_mode + "_multi_poses.txt");
+                data_saved = true;
+            }
         }
         else
         {   
@@ -419,6 +448,7 @@ private:
         }
         // cout<<"xr  : "<<X_r[0]<<endl;
         // cout<<"xk  : "<<X_k<<endl;
+        recorder.recordPose(robot_num, robot_id, X_r[0](0), X_r[0](1), X_r[0](2), X_k(0), X_k(1), X_k(2), t_cur);
 
         // ROS_INFO("Run to here!");
         //  使用MPC求解器计算最优控制输入
@@ -532,6 +562,8 @@ private:
                 Eg << pos_ref_1(0) - odom_pos[robot_id](0), pos_ref_1(1) - odom_pos[robot_id](1), yaw_ref - yaw[robot_id] + 2 * PI;
             }
         }
+
+        recorder.recordPose(robot_num, robot_id, pos_ref_1(0), pos_ref_1(1), yaw_ref, odom_pos[robot_id](0), odom_pos[robot_id](1), yaw[robot_id], t_cur);
 
         Eb = T * Eg;
         Vr = sqrt(pow(vel_ref_1(0), 2) + pow(vel_ref_1(1), 2));
