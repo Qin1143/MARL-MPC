@@ -24,7 +24,7 @@ ros2 launch multi_mir_package multi_mir_launch.py
 
 Firstly, run the simulation program, and the trajectory data will be automatically saved in a `.txt` file.
 
-The, get in `src/`, run:
+Then, get in `src/`, run:
 
 ```
 python3 result_plot.py
