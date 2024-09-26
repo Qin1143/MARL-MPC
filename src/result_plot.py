@@ -1,4 +1,8 @@
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+
+
+all_data_valid: bool = True
 
 def read_poses(file_path):
     reference_trajectories = dict()
@@ -73,11 +77,47 @@ def plot_x_y_yaw(reference_trajectories, actual_trajectories, timestamp):
     
         plt.tight_layout()  # 调整子图间距
     plt.show()
+
+def plot_in_one_xyfigure(reference_trajectories, actual_trajectories, timestamp):
+    plt.figure()
+    # 获取机器人数量
+    num_robots = len(reference_trajectories.keys())
+    
+    # 生成颜色列表
+    colors = cm.rainbow([i / num_robots for i in range(num_robots)])
+    
+    for color_index, key in enumerate(reference_trajectories.keys()):
+        # * 操作符用于解包列表，将列表中的每个元组作为单独的参数传递给 zip 函数
+        # zip 函数将多个元组的对应元素组合在一起，形成新的元组
+        ref_x, ref_y, ref_yaw = zip(*reference_trajectories[key])
+        act_x, act_y, act_yaw = zip(*actual_trajectories[key])
+
+        label1 = f'Ref Traj (Robot:{key})'
+        label2 = f'Act Traj (Robot:{key})'
+
+        # 获取当前机器人的颜色
+        color = colors[color_index]
+
+        plt.plot(ref_x, ref_y, label=label1, color=color, alpha=0.8, linestyle='-.')  # 参考轨迹透明度为0.5
+        plt.plot(act_x, act_y, label=label2, color=color, alpha=1.0)  # 实际轨迹透明度为1.0
+        plt.xlabel('X')
+        plt.ylabel('Y')
+        plt.title('Trajectories of All Robots')
+        plt.legend()
+        plt.grid(True)
+
+        # 清空数据
+        ref_x, ref_y, ref_yaw = None, None, None
+        act_x, act_y, act_yaw = None, None, None
+    plt.show()
     
 
 if __name__ == "__main__":
     # file_path = '/home/tony/webots_ws/2024_9_24_15_48_38_poses.txt' # 单车数据
     file_path = '/home/tony/webots_ws/2024_9_24_16_2_13_multi_poses.txt' # 多车数据
     reference_trajectories, actual_trajectories, timestamp = read_poses(file_path)
-    plot_trajectories_xy(reference_trajectories, actual_trajectories, timestamp)
-    plot_x_y_yaw(reference_trajectories, actual_trajectories, timestamp)
+    if all_data_valid:
+        plot_in_one_xyfigure(reference_trajectories, actual_trajectories, timestamp)
+    else:
+        plot_trajectories_xy(reference_trajectories, actual_trajectories, timestamp)
+        plot_x_y_yaw(reference_trajectories, actual_trajectories, timestamp)
