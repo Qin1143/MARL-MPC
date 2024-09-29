@@ -1,4 +1,5 @@
 #include "traj_pub.hpp"
+#include <Eigen/Dense>
 
 // PlanningVisualization::Ptr visualization_;
 
@@ -11,23 +12,46 @@ public:
         this->get_parameter("robot_num", robot_num);
         std::cout << "/traj_node robot_num: " << robot_num << std::endl;
 
-        Eigen::MatrixXd pos_pts_1(3, 9);
-        pos_pts_1 << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
+        // 控制点
+        Eigen::MatrixXd pos(3, 9);
+        pos << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
             0.0, 0.0, 1.0, 3.0, 3.0, 3.0, 1.0, 0.0, 0.0,        // 第二行：y坐标
             0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;        // 第三行：z坐标
+        // 偏移量
+        Eigen::MatrixXd offset1(3, 1);
+        Eigen::MatrixXd offset2(3, 1);
+        Eigen::MatrixXd offset3(3, 1);
+        Eigen::MatrixXd offset4(3, 1);
+        offset1 << -4.0, -4.0, 0.0;
+        offset2 << 4.0, -4.0, 0.0;
+        offset3 << 4.0, 4.0, 0.0;
+        offset4 << -4.0, 4.0, 0.0;
+        Eigen::MatrixXd pos_pts_1 = pos + offset1.replicate(1, pos.cols());
+        Eigen::MatrixXd pos_pts_2 = pos + offset2.replicate(1, pos.cols());
+        Eigen::MatrixXd pos_pts_3 = pos + offset3.replicate(1, pos.cols());
+        Eigen::MatrixXd pos_pts_4 = pos + offset4.replicate(1, pos.cols());
         pos_pts.push_back(pos_pts_1);
-
-        Eigen::MatrixXd pos_pts_2(3, 9);
-        pos_pts_2 << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
-            2.0, 2.0, 3.0, 5.0, 5.0, 5.0, 3.0, 2.0, 2.0,          // 第二行：y坐标
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;          // 第三行：z坐标
         pos_pts.push_back(pos_pts_2);
-
-        Eigen::MatrixXd pos_pts_3(3, 9);
-        pos_pts_3 << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
-            -2.0, -2.0, -1.0, 1.0, 1.0, 1.0, -1.0, -2.0, -2.0,          // 第二行：y坐标
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;          // 第三行：z坐标
         pos_pts.push_back(pos_pts_3);
+        pos_pts.push_back(pos_pts_4);
+
+        // Eigen::MatrixXd pos_pts_1(3, 9);
+        // pos_pts_1 << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
+        //     0.0, 0.0, 1.0, 3.0, 3.0, 3.0, 1.0, 0.0, 0.0,        // 第二行：y坐标
+        //     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;        // 第三行：z坐标
+        // pos_pts.push_back(pos_pts_1);
+
+        // Eigen::MatrixXd pos_pts_2(3, 9);
+        // pos_pts_2 << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
+        //     2.0, 2.0, 3.0, 5.0, 5.0, 5.0, 3.0, 2.0, 2.0,          // 第二行：y坐标
+        //     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;          // 第三行：z坐标
+        // pos_pts.push_back(pos_pts_2);
+
+        // Eigen::MatrixXd pos_pts_3(3, 9);
+        // pos_pts_3 << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
+        //     -2.0, -2.0, -1.0, 1.0, 1.0, 1.0, -1.0, -2.0, -2.0,          // 第二行：y坐标
+        //     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;          // 第三行：z坐标
+        // pos_pts.push_back(pos_pts_3);
 
         for (int i = 0; i < robot_num; ++i)
         {

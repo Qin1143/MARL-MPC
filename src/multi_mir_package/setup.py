@@ -8,6 +8,7 @@ data_files.append(('share/' + package_name + '/worlds', ['worlds/multi_robot_wor
 data_files.append(('share/' + package_name + '/resource', ['resource/mir_robot_1.urdf']))
 data_files.append(('share/' + package_name + '/resource', ['resource/mir_robot_2.urdf']))
 data_files.append(('share/' + package_name + '/resource', ['resource/mir_robot_3.urdf']))
+data_files.append(('share/' + package_name + '/resource', ['resource/mir_robot_4.urdf']))
 data_files.append(('share/' + package_name, ['package.xml']))
 data_files.append(('share/' + package_name + '/config', ['config/mir100.rviz']))
 
@@ -27,7 +28,8 @@ setup(
         'console_scripts': [
             'mir_robot_1_driver = multi_mir_package.mir_robot_1_driver:main',
             'mir_robot_2_driver = multi_mir_package.mir_robot_2_driver:main',
-            'mir_robot_3_driver = multi_mir_package.mir_robot_3_driver:main'
+            'mir_robot_3_driver = multi_mir_package.mir_robot_3_driver:main',
+            'mir_robot_4_driver = multi_mir_package.mir_robot_4_driver:main'
         ],
     },
 )

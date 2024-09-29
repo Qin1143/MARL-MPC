@@ -50,6 +50,7 @@ std::string file_time = std::to_string(year) + "_" +
                         std::to_string(second);
 // 数据保存标志位
 bool data_saved = false;
+bool save_data;
 
 enum DIRECTION {POSITIVE=0,NEGATIVE=1};
 
@@ -73,6 +74,7 @@ public:
         this->declare_parameter<double>("ky", 20.0);
         this->declare_parameter<double>("kth", 8.0);
         this->declare_parameter<std::string>("control_mode", "mpc");
+        this->declare_parameter<bool>("save_data", false);
 
         // 打印robot_num参数
         this->get_parameter("robot_num", robot_num);
@@ -86,6 +88,10 @@ public:
         // 获取字符串参数
         this->get_parameter("control_mode", control_mode);
         std::cout << "########## control_mode: " << control_mode << " ##########" << std::endl;
+
+        // 获取数据保存标志位
+        this->get_parameter("save_data", save_data);
+        std::cout << "########## save_data: " << save_data << " ##########" << std::endl;
 
 
         stop_command.resize(robot_num);
@@ -146,7 +152,7 @@ public:
             motor_cmd.left_speed = 0;
             motor_cmd.right_speed = 0;
             pub_robot_cmds[robot_id]->publish(motor_cmd);
-            if (!data_saved)
+            if (!data_saved && save_data)
             {
                 recorder.savePosesToFile(file_time + "_" + control_mode + "_poses.txt");
                 data_saved = true;
@@ -189,7 +195,7 @@ public:
             motor_cmd.right_speed = 0;
             pub_robot_cmds[robot_id]->publish(motor_cmd);
             is_orientation_init = false;
-            if (!data_saved)
+            if (!data_saved && save_data)
             {
                 recorder.savePosesToFile(file_time + "_" + control_mode + "_multi_poses.txt");
                 data_saved = true;

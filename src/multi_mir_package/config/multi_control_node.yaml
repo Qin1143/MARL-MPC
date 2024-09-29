@@ -1,6 +1,6 @@
 multi_control_node: # This is the name of the node!
   ros__parameters:
-    robot_num: 3
+    robot_num: 4
     v_max: 1.8
     w_max: 1.2
     omega0: 1.0
@@ -9,7 +9,8 @@ multi_control_node: # This is the name of the node!
     ky: 1.0
     kth: 1.0
     control_mode: "backstepping"
+    save_data: false
 
 traj_node: # This is the name of the node!
   ros__parameters:
-    robot_num: 3
+    robot_num: 4

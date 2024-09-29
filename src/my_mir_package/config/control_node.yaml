@@ -11,3 +11,5 @@ control_node:
     control_mode: "backstepping"
     # control_mode: "mpc"
     display: false
+    # save_data: false
+    save_data: true
