@@ -1,0 +1,21 @@
+[0.543s] Invoking command in '/home/tony/webots_ws/src/post_train': PYTHONPATH=/home/tony/webots_ws/build/post_train/prefix_override:/home/tony/webots_ws/install/post_train/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/post_train build --build-base /home/tony/webots_ws/build/post_train/build install --record /home/tony/webots_ws/build/post_train/install.log --install-scripts $base/lib/post_train --single-version-externally-managed install_data
+[0.724s] running egg_info
+[0.724s] writing ../../build/post_train/post_train.egg-info/PKG-INFO
+[0.724s] writing dependency_links to ../../build/post_train/post_train.egg-info/dependency_links.txt
+[0.725s] writing entry points to ../../build/post_train/post_train.egg-info/entry_points.txt
+[0.725s] writing requirements to ../../build/post_train/post_train.egg-info/requires.txt
+[0.725s] writing top-level names to ../../build/post_train/post_train.egg-info/top_level.txt
+[0.748s] reading manifest file '../../build/post_train/post_train.egg-info/SOURCES.txt'
+[0.749s] writing manifest file '../../build/post_train/post_train.egg-info/SOURCES.txt'
+[0.749s] running build
+[0.749s] running build_py
+[0.749s] running install
+[0.750s] running install_lib
+[0.751s] running install_data
+[0.751s] running install_egg_info
+[0.752s] removing '/home/tony/webots_ws/install/post_train/lib/python3.8/site-packages/post_train-0.0.0-py3.8.egg-info' (and everything under it)
+[0.752s] Copying ../../build/post_train/post_train.egg-info to /home/tony/webots_ws/install/post_train/lib/python3.8/site-packages/post_train-0.0.0-py3.8.egg-info
+[0.753s] running install_scripts
+[0.765s] Installing post_train_node script to /home/tony/webots_ws/install/post_train/lib/post_train
+[0.765s] writing list of installed files to '/home/tony/webots_ws/build/post_train/install.log'
+[0.780s] Invoked command in '/home/tony/webots_ws/src/post_train' returned '0': PYTHONPATH=/home/tony/webots_ws/build/post_train/prefix_override:/home/tony/webots_ws/install/post_train/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/post_train build --build-base /home/tony/webots_ws/build/post_train/build install --record /home/tony/webots_ws/build/post_train/install.log --install-scripts $base/lib/post_train --single-version-externally-managed install_data

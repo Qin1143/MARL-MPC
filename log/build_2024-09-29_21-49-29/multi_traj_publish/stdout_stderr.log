@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target traj_pub[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:164[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/tony/webots_ws/src/multi_traj_publish/include/traj_visualization.hpp:3[m[K,
+                 from [01m[K/home/tony/webots_ws/src/multi_traj_publish/include/traj_pub.hpp:8[m[K,
+                 from [01m[K/home/tony/webots_ws/src/multi_traj_publish/src/traj_pub.cpp:1[m[K:
+/usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h: In instantiation of ‘[01m[KEigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<typename ExpressionType::Scalar, typename OtherDerived::Scalar>, const typename Eigen::internal::remove_all<typename Eigen::internal::ref_selector<T>::non_const_type>::type, const typename Eigen::VectorwiseOp<ExpressionType, Direction>::ExtendedType<OtherDerived>::Type> Eigen::VectorwiseOp<ExpressionType, Direction>::operator+(const Eigen::DenseBase<OtherDerived>&) const [with OtherDerived = Eigen::Matrix<double, -1, -1>; ExpressionType = Eigen::Matrix<double, -1, -1>; int Direction = 0; typename Eigen::VectorwiseOp<ExpressionType, Direction>::ExtendedType<OtherDerived>::Type = Eigen::Replicate<Eigen::Matrix<double, -1, -1>, 1, -1>; typename Eigen::internal::remove_all<typename Eigen::internal::ref_selector<T>::non_const_type>::type = Eigen::Matrix<double, -1, -1>; typename OtherDerived::Scalar = double; typename ExpressionType::Scalar = double][m[K’:
+[01m[K/home/tony/webots_ws/src/multi_traj_publish/src/traj_pub.cpp:29:53:[m[K   required from here
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h:143:29:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_TRIED_CALLING_A_VECTOR_METHOD_ON_A_MATRIX
+  143 |   EIGEN_STATIC_ASSERT(TYPE::[01;31m[KIsVectorAtCompileTime[m[K, \
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+      |                                                      [01;36m[K^[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h:638:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_VECTOR_ONLY[m[K’
+  638 |       [01;36m[KEIGEN_STATIC_ASSERT_VECTOR_ONLY[m[K(OtherDerived)
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/traj_pub.dir/build.make:63: CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/traj_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

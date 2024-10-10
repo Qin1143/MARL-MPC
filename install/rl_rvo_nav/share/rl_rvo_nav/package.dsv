@@ -1,0 +1,3 @@
+source;share/rl_rvo_nav/hook/pythonpath.ps1
+source;share/rl_rvo_nav/hook/pythonpath.dsv
+source;share/rl_rvo_nav/hook/pythonpath.sh

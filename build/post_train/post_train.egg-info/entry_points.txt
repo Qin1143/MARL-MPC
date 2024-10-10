@@ -1,0 +1,3 @@
+[console_scripts]
+post_train_node = post_train.post_train:main
+

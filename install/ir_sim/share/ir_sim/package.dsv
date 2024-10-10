@@ -1,0 +1,3 @@
+source;share/ir_sim/hook/pythonpath.ps1
+source;share/ir_sim/hook/pythonpath.dsv
+source;share/ir_sim/hook/pythonpath.sh

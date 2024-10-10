@@ -1,0 +1,24 @@
+[0.843s] Invoking command in '/home/tony/webots_ws/intelligent-robot-simulator': PYTHONPATH=/home/tony/webots_ws/build/ir_sim/prefix_override:/home/tony/webots_ws/install/ir_sim/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/ir_sim build --build-base /home/tony/webots_ws/build/ir_sim/build install --record /home/tony/webots_ws/build/ir_sim/install.log --single-version-externally-managed
+[1.048s] running egg_info
+[1.048s] writing ../build/ir_sim/ir_sim.egg-info/PKG-INFO
+[1.048s] writing dependency_links to ../build/ir_sim/ir_sim.egg-info/dependency_links.txt
+[1.048s] writing requirements to ../build/ir_sim/ir_sim.egg-info/requires.txt
+[1.048s] writing top-level names to ../build/ir_sim/ir_sim.egg-info/top_level.txt
+[1.071s] file ir_sim.py (for module ir_sim) not found
+[1.071s] reading manifest file '../build/ir_sim/ir_sim.egg-info/SOURCES.txt'
+[1.072s] writing manifest file '../build/ir_sim/ir_sim.egg-info/SOURCES.txt'
+[1.072s] file ir_sim.py (for module ir_sim) not found
+[1.072s] file ir_sim.py (for module ir_sim) not found
+[1.072s] running build
+[1.072s] running build_py
+[1.072s] running install
+[1.073s] running install_lib
+[1.073s] running install_egg_info
+[1.073s] warning: install_lib: '/home/tony/webots_ws/build/ir_sim/build/lib' does not exist -- no Python modules to install
+[1.073s] 
+[1.075s] removing '/home/tony/webots_ws/install/ir_sim/lib/python3.8/site-packages/ir_sim-2.0-py3.8.egg-info' (and everything under it)
+[1.075s] Copying ../build/ir_sim/ir_sim.egg-info to /home/tony/webots_ws/install/ir_sim/lib/python3.8/site-packages/ir_sim-2.0-py3.8.egg-info
+[1.075s] running install_scripts
+[1.088s] file ir_sim.py (for module ir_sim) not found
+[1.088s] writing list of installed files to '/home/tony/webots_ws/build/ir_sim/install.log'
+[1.484s] Invoked command in '/home/tony/webots_ws/intelligent-robot-simulator' returned '0': PYTHONPATH=/home/tony/webots_ws/build/ir_sim/prefix_override:/home/tony/webots_ws/install/ir_sim/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/ir_sim build --build-base /home/tony/webots_ws/build/ir_sim/build install --record /home/tony/webots_ws/build/ir_sim/install.log --single-version-externally-managed

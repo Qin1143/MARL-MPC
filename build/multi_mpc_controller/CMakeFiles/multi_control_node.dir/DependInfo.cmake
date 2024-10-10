@@ -24,6 +24,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/tony/webots_ws/src/qpOASES/include"
   "/home/tony/webots_ws/install/traj_interfaces/include"
   "/home/tony/webots_ws/install/motor_interfaces/include"
+  "/home/tony/webots_ws/install/action_interfaces/include"
   "/opt/ros/foxy/include"
   "/usr/include/eigen3"
   )

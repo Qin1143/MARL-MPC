@@ -15,6 +15,7 @@ def generate_launch_description():
     robot_description_1 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_1.urdf')).read_text()
     robot_description_2 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_2.urdf')).read_text()
     robot_description_3 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_3.urdf')).read_text()
+    robot_description_4 = pathlib.Path(os.path.join(package_dir, 'resource', 'mir_robot_4.urdf')).read_text()
     config = os.getcwd() + '/src/multi_mir_package/config/multi_control_node.yaml'
     # with open(config, 'r') as file:
     #     config_content = file.read()
@@ -58,6 +59,17 @@ def generate_launch_description():
         ]
     )
 
+    mir_robot_4_driver = Node(
+        package='webots_ros2_driver',
+        executable='driver',
+        output='screen',
+        additional_env={'WEBOTS_CONTROLLER_URL': controller_url_prefix() + 'mir_robot_4'},
+        parameters=[
+            {'robot_description': robot_description_4},
+            {'use_sim_time': True}
+        ]
+    )
+
     control_node = Node(
         package='multi_mpc_controller',
         executable='multi_control_node',
@@ -89,6 +101,7 @@ def generate_launch_description():
         mir_robot_1_driver,
         mir_robot_2_driver,
         mir_robot_3_driver,
+        mir_robot_4_driver,
         control_node,
         rviz2_node,
         traj_node,

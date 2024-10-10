@@ -1,0 +1,7 @@
+README.md
+setup.py
+../build/ir_sim/ir_sim.egg-info/PKG-INFO
+../build/ir_sim/ir_sim.egg-info/SOURCES.txt
+../build/ir_sim/ir_sim.egg-info/dependency_links.txt
+../build/ir_sim/ir_sim.egg-info/requires.txt
+../build/ir_sim/ir_sim.egg-info/top_level.txt

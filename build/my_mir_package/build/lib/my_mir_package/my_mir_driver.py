@@ -54,7 +54,9 @@ class MyRobotDriver:
     def step(self):
         rclpy.spin_once(self.__node, timeout_sec=0)
 
-        x, y, v = self.__gps.getValues()
+        x, y, _ = self.__gps.getValues()
+        v = self.__gps.getSpeed() # 获取速度方式1
+        vx, vy, vz = self.__gps.getSpeedVector() # 获取速度方式2
         _, _, twist_yaw = self.__gyro.getValues()
         roll, pitch, yaw = self.__inertial_unit.getRollPitchYaw()
 
@@ -73,7 +75,9 @@ class MyRobotDriver:
         # Remove covariance from the message (useless)
         odom_msg.pose.covariance = [0.0] * 36
         odom_msg.twist.covariance = [0.0] * 36
-        odom_msg.twist.twist.linear.x = v
+        odom_msg.twist.twist.linear.x = vx
+        odom_msg.twist.twist.linear.y = vy
+        odom_msg.twist.twist.linear.z = vz
         odom_msg.twist.twist.angular.z = twist_yaw
         self.__odom_pub.publish(odom_msg)
 

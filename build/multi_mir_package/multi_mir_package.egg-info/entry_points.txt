@@ -2,4 +2,5 @@
 mir_robot_1_driver = multi_mir_package.mir_robot_1_driver:main
 mir_robot_2_driver = multi_mir_package.mir_robot_2_driver:main
 mir_robot_3_driver = multi_mir_package.mir_robot_3_driver:main
+mir_robot_4_driver = multi_mir_package.mir_robot_4_driver:main
 

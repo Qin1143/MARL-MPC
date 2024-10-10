@@ -1,0 +1,53 @@
+[0.206s] Invoking command in '/home/tony/webots_ws/build/qpOASES': /usr/bin/cmake --build /home/tony/webots_ws/build/qpOASES -- -j16 -l16
+[0.245s] [ 46%] Built target qpOASES
+[0.267s] [ 65%] Built target example1
+[0.267s] [ 65%] Built target example1a
+[0.268s] [ 65%] Built target qrecipe
+[0.268s] [ 70%] Built target exampleLP
+[0.268s] [ 73%] Built target example5
+[0.268s] [ 78%] Built target example3b
+[0.268s] [ 82%] Built target example4
+[0.268s] [ 92%] Built target qrecipeSchur
+[0.268s] [ 92%] Built target example1b
+[0.269s] [ 97%] Built target example3
+[0.269s] [100%] Built target example2
+[0.280s] Invoked command in '/home/tony/webots_ws/build/qpOASES' returned '0': /usr/bin/cmake --build /home/tony/webots_ws/build/qpOASES -- -j16 -l16
+[0.357s] Invoking command in '/home/tony/webots_ws/build/qpOASES': /usr/bin/cmake --install /home/tony/webots_ws/build/qpOASES
+[0.363s] -- Install configuration: "Release"
+[0.363s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/lib/libqpOASES.a
+[0.363s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES.hpp
+[0.363s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES
+[0.363s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Types.hpp
+[0.364s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/QProblem.hpp
+[0.364s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/QProblemB.hpp
+[0.364s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/extras
+[0.364s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/extras/SolutionAnalysis.hpp
+[0.364s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/extras/OQPinterface.hpp
+[0.364s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/extras/SolutionAnalysis.ipp
+[0.364s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Matrices.hpp
+[0.364s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SparseSolver.hpp
+[0.364s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Flipper.hpp
+[0.365s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Bounds.ipp
+[0.365s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/QProblem.ipp
+[0.365s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Indexlist.ipp
+[0.365s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/MessageHandling.ipp
+[0.365s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Indexlist.hpp
+[0.365s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Constraints.ipp
+[0.365s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/QProblemB.ipp
+[0.365s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SQProblemSchur.hpp
+[0.366s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Constants.hpp
+[0.366s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Bounds.hpp
+[0.366s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/MessageHandling.hpp
+[0.366s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Utils.ipp
+[0.366s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Options.hpp
+[0.366s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Utils.hpp
+[0.366s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SQProblem.hpp
+[0.366s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/LapackBlasReplacement.hpp
+[0.367s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Constraints.hpp
+[0.367s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SQProblemSchur.ipp
+[0.367s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SubjectTo.ipp
+[0.367s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SQProblem.ipp
+[0.367s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/ConstraintProduct.hpp
+[0.367s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SubjectTo.hpp
+[0.367s] -- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/UnitTesting.hpp
+[0.368s] Invoked command in '/home/tony/webots_ws/build/qpOASES' returned '0': /usr/bin/cmake --install /home/tony/webots_ws/build/qpOASES

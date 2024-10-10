@@ -275,7 +275,10 @@ SITE:STRING=Jarvis
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/tony/webots_ws/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_fastrtps_cpp.so
+
+//The directory containing a CMake configuration file for action_interfaces.
+action_interfaces_DIR:PATH=/home/tony/webots_ws/install/action_interfaces/share/action_interfaces/cmake
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/foxy/share/action_msgs/cmake

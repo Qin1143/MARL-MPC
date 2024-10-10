@@ -121,7 +121,7 @@ env_name = 'CartPole-v0'
 env = gym.make(env_name)
 env.seed(0)
 torch.manual_seed(0)
-state_dim = env.observation_space.shape[0]
+state_dim = env..shape[0]
 action_dim = env.action_space.n
 agent = PPO(state_dim, hidden_dim, action_dim, actor_lr, critic_lr, lmbda, epochs, eps, gamma, device)
 

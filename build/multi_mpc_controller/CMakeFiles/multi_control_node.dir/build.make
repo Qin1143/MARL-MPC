@@ -121,6 +121,10 @@ multi_control_node: /home/tony/webots_ws/install/traj_interfaces/lib/libtraj_int
 multi_control_node: /home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_c.so
 multi_control_node: /home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_introspection_cpp.so
 multi_control_node: /home/tony/webots_ws/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_cpp.so
+multi_control_node: /home/tony/webots_ws/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_introspection_c.so
+multi_control_node: /home/tony/webots_ws/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_c.so
+multi_control_node: /home/tony/webots_ws/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_introspection_cpp.so
+multi_control_node: /home/tony/webots_ws/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_cpp.so
 multi_control_node: /opt/ros/foxy/lib/libnav_msgs__rosidl_generator_c.so
 multi_control_node: /opt/ros/foxy/lib/liborocos-kdl.so.1.4.0
 multi_control_node: /opt/ros/foxy/lib/libstatic_transform_broadcaster_node.so
@@ -199,9 +203,10 @@ multi_control_node: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_
 multi_control_node: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 multi_control_node: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 multi_control_node: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+multi_control_node: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+multi_control_node: /home/tony/webots_ws/install/action_interfaces/lib/libaction_interfaces__rosidl_generator_c.so
 multi_control_node: /opt/ros/foxy/lib/librosidl_typesupport_introspection_cpp.so
 multi_control_node: /opt/ros/foxy/lib/librosidl_typesupport_introspection_c.so
-multi_control_node: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 multi_control_node: /opt/ros/foxy/lib/librosidl_typesupport_cpp.so
 multi_control_node: /opt/ros/foxy/lib/librosidl_typesupport_c.so
 multi_control_node: /opt/ros/foxy/lib/librcpputils.so

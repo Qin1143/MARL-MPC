@@ -108,7 +108,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/multi_mpc_controller/multi_control_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/multi_mpc_controller/multi_control_node"
-         OLD_RPATH "/opt/ros/foxy/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/home/tony/webots_ws/install/traj_interfaces/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:"
+         OLD_RPATH "/opt/ros/foxy/lib:/home/tony/webots_ws/install/motor_interfaces/lib:/home/tony/webots_ws/install/traj_interfaces/lib:/home/tony/webots_ws/install/action_interfaces/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/multi_mpc_controller/multi_control_node")
