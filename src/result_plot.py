@@ -114,7 +114,7 @@ def plot_in_one_xyfigure(reference_trajectories, actual_trajectories, timestamp)
 
 if __name__ == "__main__":
     # file_path = '/home/tony/webots_ws/2024_9_24_15_48_38_poses.txt' # 单车数据
-    file_path = '/home/tony/webots_ws/2024_9_24_16_2_13_multi_poses.txt' # 多车数据
+    file_path = '/home/tony/webots_ws/2024_10_9_15_20_6_backstepping_poses.txt' # 多车数据
     reference_trajectories, actual_trajectories, timestamp = read_poses(file_path)
     if all_data_valid:
         plot_in_one_xyfigure(reference_trajectories, actual_trajectories, timestamp)

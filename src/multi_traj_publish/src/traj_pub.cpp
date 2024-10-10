@@ -22,10 +22,10 @@ public:
         Eigen::MatrixXd offset2(3, 1);
         Eigen::MatrixXd offset3(3, 1);
         Eigen::MatrixXd offset4(3, 1);
-        offset1 << -4.0, -4.0, 0.0;
-        offset2 << 4.0, -4.0, 0.0;
-        offset3 << 4.0, 4.0, 0.0;
-        offset4 << -4.0, 4.0, 0.0;
+        offset1 << 1.0, 1.0, 0.0;
+        offset2 << 9.0, 1.0, 0.0;
+        offset3 << 9.0, 9.0, 0.0;
+        offset4 << 1.0, 9.0, 0.0;
         Eigen::MatrixXd pos_pts_1 = pos + offset1.replicate(1, pos.cols());
         Eigen::MatrixXd pos_pts_2 = pos + offset2.replicate(1, pos.cols());
         Eigen::MatrixXd pos_pts_3 = pos + offset3.replicate(1, pos.cols());

@@ -26,6 +26,7 @@ find_package(tf2 REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(motor_interfaces REQUIRED)
 find_package(traj_interfaces REQUIRED)
+find_package(action_interfaces REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -47,7 +48,7 @@ include_directories(
   )
 
 add_executable(multi_control_node src/multi_control_node.cpp src/uniform_bspline.cpp src/mpc_controller.cpp)
-ament_target_dependencies(multi_control_node rclcpp std_msgs geometry_msgs nav_msgs tf2 tf2_geometry_msgs motor_interfaces traj_interfaces)
+ament_target_dependencies(multi_control_node rclcpp std_msgs geometry_msgs nav_msgs tf2 tf2_geometry_msgs motor_interfaces traj_interfaces action_interfaces)
 
 target_link_libraries(multi_control_node qpOASES)
 

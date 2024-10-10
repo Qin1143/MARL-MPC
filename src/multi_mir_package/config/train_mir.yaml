@@ -1,0 +1,27 @@
+multi_control_node: # This is the name of the node!
+  ros__parameters:
+    robot_num: 4
+    accuracy: 4
+    v_max: 1.8
+    w_max: 1.2
+    omega0: 1.0
+    omega1: 0.1
+    kx: 1.0
+    ky: 1.0
+    kth: 1.0
+    # control_mode: "backstepping"
+    control_mode: "train"
+    save_data: false
+
+post_train_node:
+  ros__parameters:
+    robot_num: 4
+    accuracy: 4
+    # rvo
+    neighbors_region: 10
+    neighbors_num: 10
+    vxmax: 1.5
+    vymax: 1.5
+    acceler: 0.5
+    env_train: true
+    radius_exp: 0.2

@@ -4,7 +4,9 @@ package_name = 'multi_mir_package'
 data_files = []
 data_files.append(('share/ament_index/resource_index/packages', ['resource/' + package_name]))
 data_files.append(('share/' + package_name + '/launch', ['launch/multi_mir_launch.py']))
+data_files.append(('share/' + package_name + '/launch', ['launch/train_mir_launch.py']))
 data_files.append(('share/' + package_name + '/worlds', ['worlds/multi_robot_world.wbt']))
+data_files.append(('share/' + package_name + '/worlds', ['worlds/train_robot_world.wbt']))
 data_files.append(('share/' + package_name + '/resource', ['resource/mir_robot_1.urdf']))
 data_files.append(('share/' + package_name + '/resource', ['resource/mir_robot_2.urdf']))
 data_files.append(('share/' + package_name + '/resource', ['resource/mir_robot_3.urdf']))
