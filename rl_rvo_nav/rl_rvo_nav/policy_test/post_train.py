@@ -1,3 +1,4 @@
+import os
 import torch
 import numpy as np
 from pathlib import Path
@@ -31,6 +32,10 @@ class post_train:
         self.nr = neighbor_region
         self.nm = neighbor_num
         self.args = args
+
+        # 存放机器人的state
+        self.robot_state_list = {i: [] for i in range(self.robot_number)}
+        self.robot_time_list = {i: [] for i in range(self.robot_number)}
 
         self.print_info = print_info # 是否打印信息
 
@@ -66,7 +71,12 @@ class post_train:
 
                     temp = end_time - start_time
                     action_time_list.append(temp)
+                    self.robot_time_list[i].append(0.1)
+                    cur_time = np.sum(self.robot_time_list[i])
 
+                    cur_state = self.env.ir_gym.robot_list[i].state
+                    self.save_state_list(i, cur_state, cur_time)
+                    # print('cur_state:', cur_state)
                     cur_vel = self.env.ir_gym.robot_list[i].vel_omni # 当前速度
                     abs_action = self.acceler_vel * a_inc + np.squeeze(cur_vel) # 计算绝对速度
                     abs_action_list.append(abs_action)
@@ -91,6 +101,7 @@ class post_train:
                 speed = np.mean(speed_list)
                 figure_id = 0
                 if np.min(info): # 任务成功
+                    self.save_file()
                     ep_len_list.append(ep_len)
                     # ep_ret：累计奖励；ep_len：累计步长
                     if self.inf_print: print('Successful, Episode %d \t EpRet %.3f \t EpLen %d \t EpSpeed  %.3f'%(n, ep_ret, ep_len, speed))
@@ -164,3 +175,19 @@ class post_train:
     def dis(self, p1, p2):
         # 距离计算函数
         return sqrt( (p2.py - p1.py)**2 + (p2.px - p1.px)**2 )
+    
+    def save_state_list(self, robot_id, state, time):
+        state_with_time = np.vstack([state, np.array([[time]])])
+        self.robot_state_list[robot_id].append(state_with_time)
+
+    def save_file(self):
+        # 获取webots_ws目录路径
+        webots_ws_path = os.path.expanduser('~/webots_ws')
+        # 构建文件路径
+        file_path = os.path.join(webots_ws_path, 'robot_state_list.txt')
+        # 将robot_state_list存储到txt文件中
+        with open(file_path, 'w') as f:
+            for robot_id, states in self.robot_state_list.items():
+                for state in states:
+                    f.write(f"{robot_id} {state[0][0]} {state[1][0]} {state[2][0]} {state[3][0]}\n")
+        

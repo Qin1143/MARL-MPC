@@ -184,8 +184,8 @@ class PostTrainNode(Node):
         return get_action
     
     def cal_des_vel_omni(self, state, goal):
-        print("state:", state)
-        print("goal:", goal)
+        # print("state:", state)
+        # print("goal:", goal)
         dis, radian = self.relative(state, goal)
         
         if dis > self.goal_threshold:

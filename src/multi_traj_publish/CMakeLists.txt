@@ -40,7 +40,7 @@ endif()
 ament_package()
 
 include_directories(include ${EIGEN3_INCLUDE_DIR})
-
+# traj_pub 代表的是一个可执行目标的名称，src/trained_traj_pub.cpp 是可执行目标的源文件
 add_executable(traj_pub src/traj_pub.cpp src/traj_visualization.cpp)
 ament_target_dependencies(traj_pub rclcpp nav_msgs geometry_msgs traj_interfaces builtin_interfaces visualization_msgs)
 

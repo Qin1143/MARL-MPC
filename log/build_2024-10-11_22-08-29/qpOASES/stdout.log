@@ -1,0 +1,112 @@
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tony/webots_ws/build/qpOASES
+[35m[1mScanning dependencies of target qpOASES[0m
+[  7%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/BLASReplacement.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Bounds.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Constraints.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Matrices.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/LAPACKReplacement.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Flipper.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Options.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Indexlist.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/QProblem.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/OQPinterface.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/MessageHandling.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SQProblemSchur.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SparseSolver.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/QProblemB.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SQProblem.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SolutionAnalysis.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/Utils.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/qpOASES.dir/src/SubjectTo.cpp.o[0m
+[ 46%] [32m[1mLinking CXX static library libs/libqpOASES.a[0m
+[ 46%] Built target qpOASES
+[35m[1mScanning dependencies of target qrecipe[0m
+[35m[1mScanning dependencies of target example2[0m
+[35m[1mScanning dependencies of target example1a[0m
+[35m[1mScanning dependencies of target example1b[0m
+[35m[1mScanning dependencies of target example1[0m
+[35m[1mScanning dependencies of target example5[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/qrecipe.dir/examples/qrecipe.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/example1a.dir/examples/example1a.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/example1b.dir/examples/example1b.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/example2.dir/examples/example2.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/example1.dir/examples/example1.cpp.o[0m
+[35m[1mScanning dependencies of target example4[0m
+[35m[1mScanning dependencies of target example3b[0m
+[35m[1mScanning dependencies of target qrecipeSchur[0m
+[35m[1mScanning dependencies of target example3[0m
+[35m[1mScanning dependencies of target exampleLP[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/example5.dir/examples/example5.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/example3.dir/examples/example3.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/example3b.dir/examples/example3b.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/example4.dir/examples/example4.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/exampleLP.dir/examples/exampleLP.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/qrecipeSchur.dir/examples/qrecipeSchur.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable bin/example1[0m
+[ 78%] [32m[1mLinking CXX executable bin/example1a[0m
+[ 80%] [32m[1mLinking CXX executable bin/example1b[0m
+[ 82%] [32m[1mLinking CXX executable bin/example2[0m
+[ 85%] [32m[1mLinking CXX executable bin/example3[0m
+[ 87%] [32m[1mLinking CXX executable bin/qrecipe[0m
+[ 90%] [32m[1mLinking CXX executable bin/exampleLP[0m
+[ 92%] [32m[1mLinking CXX executable bin/example3b[0m
+[ 95%] [32m[1mLinking CXX executable bin/example5[0m
+[ 97%] [32m[1mLinking CXX executable bin/example4[0m
+[100%] [32m[1mLinking CXX executable bin/qrecipeSchur[0m
+[100%] Built target example1
+[100%] Built target example1a
+[100%] Built target example1b
+[100%] Built target example2
+[100%] Built target example3
+[100%] Built target qrecipe
+[100%] Built target exampleLP
+[100%] Built target example3b
+[100%] Built target example5
+[100%] Built target example4
+[100%] Built target qrecipeSchur
+-- Install configuration: "Release"
+-- Installing: /home/tony/webots_ws/install/qpOASES/lib/libqpOASES.a
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Types.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/QProblem.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/QProblemB.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/extras
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/extras/SolutionAnalysis.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/extras/OQPinterface.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/extras/SolutionAnalysis.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Matrices.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SparseSolver.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Flipper.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Bounds.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/QProblem.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Indexlist.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/MessageHandling.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Indexlist.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Constraints.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/QProblemB.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SQProblemSchur.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Constants.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Bounds.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/MessageHandling.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Utils.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Options.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Utils.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SQProblem.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/LapackBlasReplacement.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/Constraints.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SQProblemSchur.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SubjectTo.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SQProblem.ipp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/ConstraintProduct.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/SubjectTo.hpp
+-- Up-to-date: /home/tony/webots_ws/install/qpOASES/include/qpOASES/UnitTesting.hpp

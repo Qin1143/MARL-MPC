@@ -14,8 +14,6 @@ class rvo_inter(reciprocal_vel_obs):
 
     def config_vo_inf(self, robot_state, nei_state_list, obs_cir_list, obs_line_list, action=np.zeros((2,)), **kwargs):
         # mode: vo, rvo, hrvo
-        print('robot_state:', robot_state)
-        print('nei_state_list:', nei_state_list)
         robot_state, ns_list, oc_list, ol_list = self.preprocess(robot_state, nei_state_list, obs_cir_list, obs_line_list)
 
         action = np.squeeze(action)

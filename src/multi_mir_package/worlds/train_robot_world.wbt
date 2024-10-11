@@ -8,7 +8,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.49258377407160503 0.48408215739983346 0.7232051509831057 1.8601079054207692
-  position 5.697534235621963 -3.0437396756672292 18.256524443313566
+  position 5.647094554405344 -3.777800944934783 20.006554194120937
 }
 TexturedBackground {
 }
@@ -813,7 +813,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_left_wheel_joint"
-          maxVelocity 80
+          maxVelocity 100
           maxTorque 100
         }
         PositionSensor {
@@ -908,7 +908,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_right_wheel_joint"
-          maxVelocity 80
+          maxVelocity 100
           maxTorque 100
         }
         PositionSensor {
@@ -2266,7 +2266,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_left_wheel_joint"
-          maxVelocity 80
+          maxVelocity 100
           maxTorque 100
         }
         PositionSensor {
@@ -2361,7 +2361,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_right_wheel_joint"
-          maxVelocity 80
+          maxVelocity 100
           maxTorque 100
         }
         PositionSensor {
@@ -3718,7 +3718,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_left_wheel_joint"
-          maxVelocity 80
+          maxVelocity 100
           maxTorque 100
         }
         PositionSensor {
@@ -3813,7 +3813,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_right_wheel_joint"
-          maxVelocity 80
+          maxVelocity 100
           maxTorque 100
         }
         PositionSensor {
@@ -5171,7 +5171,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_left_wheel_joint"
-          maxVelocity 80
+          maxVelocity 100
           maxTorque 100
         }
         PositionSensor {
@@ -5266,7 +5266,7 @@ Robot {
       device [
         RotationalMotor {
           name "middle_right_wheel_joint"
-          maxVelocity 80
+          maxVelocity 100
           maxTorque 100
         }
         PositionSensor {

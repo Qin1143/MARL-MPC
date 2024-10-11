@@ -15,3 +15,16 @@ policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 95.0 std len
 policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 101.0 std length 0.0 average speed: 1.2 std speed 0.0
 policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 96.0 std length 0.0 average speed: 1.28 std speed 0.0
 policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 93.0 std length 0.0 average speed: 1.29 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 94.0 std length 0.0 average speed: 1.28 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 91.0 std length 0.0 average speed: 1.29 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 92.0 std length 0.0 average speed: 1.29 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 95.0 std length 0.0 average speed: 1.25 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 94.0 std length 0.0 average speed: 1.27 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 94.0 std length 0.0 average speed: 1.27 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 94.0 std length 0.0 average speed: 1.29 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 96.0 std length 0.0 average speed: 1.27 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 91.0 std length 0.0 average speed: 1.31 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 99.0 std length 0.0 average speed: 1.24 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 100.0 std length 0.0 average speed: 1.2 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 98.0 std length 0.0 average speed: 1.25 std speed 0.0
+policy_name: rl_rvo_4_dis0  successful rate: 100.00% average EpLen: 94.0 std length 0.0 average speed: 1.26 std speed 0.0

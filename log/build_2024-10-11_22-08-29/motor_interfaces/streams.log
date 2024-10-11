@@ -1,0 +1,215 @@
+[0.047s] Invoking command in '/home/tony/webots_ws/build/motor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/post_train:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake /home/tony/webots_ws/src/motor_interfaces -DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/install/motor_interfaces
+[0.869s] -- The C compiler identification is GNU 9.4.0
+[0.870s] -- The CXX compiler identification is GNU 9.4.0
+[0.870s] -- Check for working C compiler: /usr/bin/cc
+[0.870s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.870s] -- Detecting C compiler ABI info
+[0.870s] -- Detecting C compiler ABI info - done
+[0.870s] -- Detecting C compile features
+[0.870s] -- Detecting C compile features - done
+[0.870s] -- Check for working CXX compiler: /usr/bin/c++
+[0.870s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.870s] -- Detecting CXX compiler ABI info
+[0.871s] -- Detecting CXX compiler ABI info - done
+[0.871s] -- Detecting CXX compile features
+[0.871s] -- Detecting CXX compile features - done
+[0.871s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.871s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.871s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.871s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.871s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.871s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.871s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.871s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.934s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.000s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.291s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.539s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.567s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.593s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.597s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.642s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[1.642s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.642s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.642s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.671s] -- Found PythonExtra: .so  
+[1.768s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.819s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.824s] -- Added test 'lint_cmake' to check CMake code style
+[1.824s] -- Added test 'xmllint' to check XML markup files
+[1.830s] -- Configuring done
+[1.872s] -- Generating done
+[1.876s] -- Build files have been written to: /home/tony/webots_ws/build/motor_interfaces
+[1.894s] Invoked command in '/home/tony/webots_ws/build/motor_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/post_train:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake /home/tony/webots_ws/src/motor_interfaces -DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/install/motor_interfaces
+[1.894s] Invoking command in '/home/tony/webots_ws/build/motor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/post_train:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/motor_interfaces -- -j16 -l16
+[1.965s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.976s] [35m[1mScanning dependencies of target motor_interfaces__cpp[0m
+[2.032s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.331s] [35m[1mScanning dependencies of target motor_interfaces__rosidl_generator_c[0m
+[2.356s] [  9%] [32mBuilding C object CMakeFiles/motor_interfaces__rosidl_generator_c.dir/rosidl_generator_c/motor_interfaces/msg/detail/motor__functions.c.o[0m
+[2.400s] [  9%] Built target motor_interfaces__cpp
+[2.418s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.421s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.423s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.434s] [ 22%] [32m[1mLinking C shared library libmotor_interfaces__rosidl_generator_c.so[0m
+[2.621s] [ 22%] Built target motor_interfaces__rosidl_generator_c
+[2.672s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.678s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.818s] [35m[1mScanning dependencies of target motor_interfaces__rosidl_typesupport_cpp[0m
+[2.841s] [ 32%] [32mBuilding CXX object CMakeFiles/motor_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_interfaces/msg/motor__type_support.cpp.o[0m
+[2.877s] [35m[1mScanning dependencies of target motor_interfaces__rosidl_typesupport_introspection_cpp[0m
+[2.955s] [ 35%] [32mBuilding CXX object CMakeFiles/motor_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_interfaces/msg/detail/motor__type_support.cpp.o[0m
+[2.955s] [35m[1mScanning dependencies of target motor_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[3.008s] [ 38%] [32mBuilding CXX object CMakeFiles/motor_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_interfaces/msg/detail/dds_fastrtps/motor__type_support.cpp.o[0m
+[3.013s] [35m[1mScanning dependencies of target motor_interfaces__rosidl_typesupport_c[0m
+[3.045s] [ 41%] [32mBuilding CXX object CMakeFiles/motor_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_interfaces/msg/motor__type_support.cpp.o[0m
+[3.152s] [ 45%] [32m[1mLinking CXX shared library libmotor_interfaces__rosidl_typesupport_c.so[0m
+[3.212s] [35m[1mScanning dependencies of target motor_interfaces__rosidl_typesupport_introspection_c[0m
+[3.239s] [ 48%] [32mBuilding C object CMakeFiles/motor_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_interfaces/msg/detail/motor__type_support.c.o[0m
+[3.262s] [ 48%] Built target motor_interfaces__rosidl_typesupport_c
+[3.287s] [ 51%] [32m[1mLinking C shared library libmotor_interfaces__rosidl_typesupport_introspection_c.so[0m
+[3.288s] [ 54%] [32m[1mLinking CXX shared library libmotor_interfaces__rosidl_typesupport_cpp.so[0m
+[3.356s] [ 54%] Built target motor_interfaces__rosidl_typesupport_introspection_c
+[3.375s] [ 58%] [32m[1mLinking CXX shared library libmotor_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[3.376s] [ 58%] Built target motor_interfaces__rosidl_typesupport_cpp
+[3.427s] [ 58%] Built target motor_interfaces__rosidl_typesupport_introspection_cpp
+[3.596s] [ 61%] [32m[1mLinking CXX shared library libmotor_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.743s] [ 61%] Built target motor_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.753s] [ 64%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.955s] [35m[1mScanning dependencies of target motor_interfaces__rosidl_typesupport_fastrtps_c[0m
+[3.969s] [ 67%] [32mBuilding CXX object CMakeFiles/motor_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_interfaces/msg/detail/motor__type_support_c.cpp.o[0m
+[4.258s] [ 70%] [32m[1mLinking CXX shared library libmotor_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[4.342s] [ 70%] Built target motor_interfaces__rosidl_typesupport_fastrtps_c
+[4.353s] [35m[1mScanning dependencies of target motor_interfaces[0m
+[4.365s] [ 70%] Built target motor_interfaces
+[4.376s] [35m[1mScanning dependencies of target motor_interfaces__py[0m
+[4.389s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.780s] [ 74%] Built target motor_interfaces__py
+[4.791s] [35m[1mScanning dependencies of target motor_interfaces__python[0m
+[4.809s] [ 77%] [32mBuilding C object CMakeFiles/motor_interfaces__python.dir/rosidl_generator_py/motor_interfaces/msg/_motor_s.c.o[0m
+[4.884s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/motor_interfaces/libmotor_interfaces__python.so[0m
+[4.963s] [ 80%] Built target motor_interfaces__python
+[4.992s] [35m[1mScanning dependencies of target motor_interfaces__rosidl_typesupport_c__pyext[0m
+[4.997s] [35m[1mScanning dependencies of target motor_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[5.000s] [35m[1mScanning dependencies of target motor_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[5.024s] [ 83%] [32mBuilding C object CMakeFiles/motor_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/motor_interfaces/_motor_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[5.028s] [ 87%] [32mBuilding C object CMakeFiles/motor_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/motor_interfaces/_motor_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.074s] [ 90%] [32mBuilding C object CMakeFiles/motor_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/motor_interfaces/_motor_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.156s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/motor_interfaces/motor_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.179s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/motor_interfaces/motor_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.210s] [ 96%] Built target motor_interfaces__rosidl_typesupport_introspection_c__pyext
+[5.220s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/motor_interfaces/motor_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.242s] [100%] Built target motor_interfaces__rosidl_typesupport_c__pyext
+[5.307s] [100%] Built target motor_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[5.348s] Invoked command in '/home/tony/webots_ws/build/motor_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/post_train:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/motor_interfaces -- -j16 -l16
+[5.429s] Invoking command in '/home/tony/webots_ws/build/motor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/post_train:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake --install /home/tony/webots_ws/build/motor_interfaces
+[5.438s] -- Install configuration: ""
+[5.439s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/ament_index/resource_index/rosidl_interfaces/motor_interfaces
+[5.439s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces
+[5.439s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg
+[5.439s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/rosidl_generator_c__visibility_control.h
+[5.439s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/motor.h
+[5.439s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail
+[5.439s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__struct.h
+[5.439s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__type_support.h
+[5.439s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__functions.c
+[5.439s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__functions.h
+[5.440s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/environment/library_path.sh
+[5.440s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/environment/library_path.dsv
+[5.440s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_generator_c.so
+[5.440s] -- Set runtime path of "/home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_generator_c.so" to ""
+[5.440s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces
+[5.441s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg
+[5.441s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.441s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail
+[5.441s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__rosidl_typesupport_fastrtps_c.h
+[5.441s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_typesupport_fastrtps_c.so
+[5.441s] -- Set runtime path of "/home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[5.441s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces
+[5.442s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg
+[5.442s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.442s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail
+[5.442s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/dds_fastrtps
+[5.442s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__rosidl_typesupport_fastrtps_cpp.hpp
+[5.442s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[5.442s] -- Set runtime path of "/home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.443s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces
+[5.443s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg
+[5.443s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.443s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail
+[5.443s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__rosidl_typesupport_introspection_c.h
+[5.443s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__type_support.c
+[5.443s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_typesupport_introspection_c.so
+[5.443s] -- Set runtime path of "/home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[5.444s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_typesupport_c.so
+[5.444s] -- Set runtime path of "/home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_typesupport_c.so" to ""
+[5.444s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces
+[5.444s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg
+[5.444s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/motor.hpp
+[5.445s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.445s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail
+[5.445s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__struct.hpp
+[5.445s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__traits.hpp
+[5.445s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__builder.hpp
+[5.445s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__type_support.hpp
+[5.445s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces
+[5.445s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg
+[5.445s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail
+[5.445s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__rosidl_typesupport_introspection_cpp.hpp
+[5.446s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/include/motor_interfaces/msg/detail/motor__type_support.cpp
+[5.446s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_typesupport_introspection_cpp.so
+[5.446s] -- Set runtime path of "/home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[5.446s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_typesupport_cpp.so
+[5.447s] -- Set runtime path of "/home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__rosidl_typesupport_cpp.so" to ""
+[5.447s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/environment/pythonpath.sh
+[5.447s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/environment/pythonpath.dsv
+[5.447s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages/motor_interfaces/__init__.py
+[5.478s] Compiling '/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages/motor_interfaces/__init__.py'...
+[5.483s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages/motor_interfaces/msg
+[5.484s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages/motor_interfaces/msg/__init__.py
+[5.484s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages/motor_interfaces/msg/_motor.py
+[5.484s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages/motor_interfaces/msg/_motor_s.c
+[5.484s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages/motor_interfaces/motor_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[5.485s] -- Set runtime path of "/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages/motor_interfaces/motor_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[5.486s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages/motor_interfaces/motor_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[5.486s] -- Set runtime path of "/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages/motor_interfaces/motor_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[5.487s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages/motor_interfaces/motor_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[5.487s] -- Set runtime path of "/home/tony/webots_ws/install/motor_interfaces/lib/python3.8/site-packages/motor_interfaces/motor_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[5.487s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__python.so
+[5.488s] -- Set runtime path of "/home/tony/webots_ws/install/motor_interfaces/lib/libmotor_interfaces__python.so" to ""
+[5.488s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/msg/Motor.idl
+[5.488s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/msg/Motor.msg
+[5.488s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/ament_index/resource_index/package_run_dependencies/motor_interfaces
+[5.488s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/ament_index/resource_index/parent_prefix_path/motor_interfaces
+[5.489s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/environment/ament_prefix_path.sh
+[5.489s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/environment/ament_prefix_path.dsv
+[5.489s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/environment/path.sh
+[5.489s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/environment/path.dsv
+[5.489s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/local_setup.bash
+[5.489s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/local_setup.sh
+[5.489s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/local_setup.zsh
+[5.489s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/local_setup.dsv
+[5.490s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/package.dsv
+[5.490s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/ament_index/resource_index/packages/motor_interfaces
+[5.490s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfaces__rosidl_generator_cExport.cmake
+[5.490s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfaces__rosidl_generator_cExport-noconfig.cmake
+[5.490s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[5.491s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.491s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfaces__rosidl_typesupport_cExport.cmake
+[5.491s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[5.491s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfaces__rosidl_generator_cppExport.cmake
+[5.492s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[5.492s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.492s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfaces__rosidl_typesupport_cppExport.cmake
+[5.492s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[5.492s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/rosidl_cmake-extras.cmake
+[5.493s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.493s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[5.493s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[5.493s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.493s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.493s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.494s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfacesConfig.cmake
+[5.494s] -- Installing: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/cmake/motor_interfacesConfig-version.cmake
+[5.494s] -- Up-to-date: /home/tony/webots_ws/install/motor_interfaces/share/motor_interfaces/package.xml
+[5.496s] Invoked command in '/home/tony/webots_ws/build/motor_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tony/webots_ws/install/post_train:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake --install /home/tony/webots_ws/build/motor_interfaces

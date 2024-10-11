@@ -141,7 +141,7 @@ namespace bspline_planner
     int dimension = control_points_.rows();
 
     /* check vel feasibility and insert points */
-    double max_vel = -1.0;
+    double max_vel = -1.5;
     double enlarged_vel_lim = limit_vel_ * (1.0 + feasibility_tolerance_) + 1e-4;
     for (int i = 0; i < P.cols() - 1; ++i)
     {

@@ -8,6 +8,7 @@
 #include "action_interfaces/msg/action.hpp"
 #include "nav_msgs/msg/odometry.hpp"
 #include "geometry_msgs/msg/quaternion.hpp"
+#include "geometry_msgs/msg/pose.hpp"
 #include "tf2/LinearMath/Quaternion.h"
 #include "tf2_geometry_msgs/tf2_geometry_msgs.h"
 #include "nav_msgs/msg/path.hpp"
@@ -29,7 +30,7 @@ motor_interfaces::msg::Motor motor_cmd;
 
 clock_t start_clock, end_clock;
 double duration;
-double kx, ky, kth;
+double kx, ky, kth, interval;
 std::string control_mode;
 
 bool is_orientation_init = false;
@@ -61,7 +62,8 @@ class control_node : public rclcpp::Node
 public:
     int robot_num;
     std::vector<std_msgs::msg::UInt8> stop_command;
-    std::vector<bool> receive_traj;
+    std::vector<bool> receive_mission;
+    bool receive_action;
     double t_step = 0.03;
 
     control_node(std::string node_name) : Node(node_name)
@@ -75,6 +77,7 @@ public:
         this->declare_parameter<double>("kx", 2.5);
         this->declare_parameter<double>("ky", 20.0);
         this->declare_parameter<double>("kth", 8.0);
+        this->declare_parameter<double>("interval", 0.1);
         this->declare_parameter<std::string>("control_mode", "mpc");
         this->declare_parameter<bool>("save_data", false);
 
@@ -95,10 +98,13 @@ public:
         this->get_parameter("save_data", save_data);
         std::cout << "########## save_data: " << save_data << " ##########" << std::endl;
 
+        this->get_parameter("interval", interval);
 
         stop_command.resize(robot_num);
-        receive_traj.resize(robot_num);
+        receive_mission.resize(robot_num);
         odom_pos.resize(robot_num);
+        ref_pose.resize(robot_num);
+        pre_pose.resize(robot_num);
         odom_vel.resize(robot_num);
         odom_orient.resize(robot_num);
         odom_orient.resize(robot_num);
@@ -112,6 +118,36 @@ public:
         if (control_mode == "train")
         {
             sub_action_msg = this->create_subscription<action_interfaces::msg::Action>("/actions", 10, std::bind(&control_node::action_callback, this, std::placeholders::_1));
+            receive_action = false;
+            for (int i = 0; i < robot_num; ++i)
+            {
+                auto sub_robot_pose = this->create_subscription<geometry_msgs::msg::Pose>("/traj_pub/pose_" + std::to_string(i + 1), 10, [this, i](const geometry_msgs::msg::Pose::SharedPtr msg)
+                                                                                         { this->poses_callback(msg, i); });
+                sub_robot_poses.push_back(sub_robot_pose);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < robot_num; ++i)
+            {
+                auto sub_robot_dir = this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/direction_" + std::to_string(i + 1), 10, [this, i](const std_msgs::msg::UInt8::SharedPtr msg)
+                                                                                     { this->dir_callback(msg, i); });
+                // this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/direction_" + std::to_string(i + 1), 10, [this, i](const std_msgs::msg::UInt8::SharedPtr msg) {this->dir_callback(msg, i);});
+                sub_robot_dirs.push_back(sub_robot_dir);
+                // std::cout << "sub_robot_dir:" << i+1 << std::endl;
+
+                auto sub_robot_bspline = this->create_subscription<traj_interfaces::msg::Bspline>("/traj_pub/bspline_traj_" + std::to_string(i + 1), 10, [this, i](const traj_interfaces::msg::Bspline::SharedPtr msg)
+                                                                                                  { this->traj_callback(msg, i); });
+                // this->create_subscription<traj_interfaces::msg::Bspline>("/traj_pub/bspline_traj_" + std::to_string(i + 1), 10, [this, i](const traj_interfaces::msg::Bspline::SharedPtr msg) {this->traj_callback(msg, i);});
+                sub_robot_bsplines.push_back(sub_robot_bspline);
+                // std::cout << "sub_robot_bspline:" << i+1 << std::endl;
+
+                auto sub_robot_stop = this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/stop_" + std::to_string(i + 1), 10, [this, i](const std_msgs::msg::UInt8::SharedPtr msg)
+                                                                                      { this->stop_callback(msg, i); });
+                // this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/stop_" + std::to_string(i + 1), 10, [this, i](const std_msgs::msg::UInt8::SharedPtr msg) {this->stop_callback(msg, i);});
+                sub_robot_stops.push_back(sub_robot_stop);
+                // std::cout << "sub_robot_stop:" << i+1 << std::endl;
+            }
         }
 
         for (int i = 0; i < robot_num; ++i)
@@ -129,26 +165,8 @@ public:
             sub_robot_odoms.push_back(sub_robot_odom);
             // std::cout << "sub_robot_odom:" << i+1 << std::endl;
 
-            auto sub_robot_dir = this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/direction_" + std::to_string(i + 1), 10, [this, i](const std_msgs::msg::UInt8::SharedPtr msg)
-                                                                                 { this->dir_callback(msg, i); });
-            // this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/direction_" + std::to_string(i + 1), 10, [this, i](const std_msgs::msg::UInt8::SharedPtr msg) {this->dir_callback(msg, i);});
-            sub_robot_dirs.push_back(sub_robot_dir);
-            // std::cout << "sub_robot_dir:" << i+1 << std::endl;
-
-            auto sub_robot_bspline = this->create_subscription<traj_interfaces::msg::Bspline>("/traj_pub/bspline_traj_" + std::to_string(i + 1), 10, [this, i](const traj_interfaces::msg::Bspline::SharedPtr msg)
-                                                                                              { this->traj_callback(msg, i); });
-            // this->create_subscription<traj_interfaces::msg::Bspline>("/traj_pub/bspline_traj_" + std::to_string(i + 1), 10, [this, i](const traj_interfaces::msg::Bspline::SharedPtr msg) {this->traj_callback(msg, i);});
-            sub_robot_bsplines.push_back(sub_robot_bspline);
-            // std::cout << "sub_robot_bspline:" << i+1 << std::endl;
-
-            auto sub_robot_stop = this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/stop_" + std::to_string(i + 1), 10, [this, i](const std_msgs::msg::UInt8::SharedPtr msg)
-                                                                                  { this->stop_callback(msg, i); });
-            // this->create_subscription<std_msgs::msg::UInt8>("/traj_pub/stop_" + std::to_string(i + 1), 10, [this, i](const std_msgs::msg::UInt8::SharedPtr msg) {this->stop_callback(msg, i);});
-            sub_robot_stops.push_back(sub_robot_stop);
-            // std::cout << "sub_robot_stop:" << i+1 << std::endl;
-
             stop_command[i].data = 0; // 需要初始化向量大小
-            receive_traj[i] = false;
+            receive_mission[i] = false;
 
             std::cout << "########初始化完成: " << i << "########" << std::endl;
         }
@@ -171,14 +189,14 @@ public:
             return;
         }
 
-        if (!receive_traj[robot_id])
+        if (!receive_mission[robot_id])
             return;
         
         // RCLCPP_WARN(this->get_logger(), "Run here !");
         auto time_s = this->get_clock()->now();
         double t_cur = (time_s - start_time[robot_id]).seconds();
         static rclcpp::Time time_last = this->get_clock()->now();
-
+        
         if (t_cur < traj_duration[robot_id] && t_cur >= 0.0)
         {
             // ROS_INFO("MPC_Calculate!");
@@ -195,10 +213,7 @@ public:
                 backstepping_calculate(t_cur, robot_id);
                 publish_bspline_tracking_points(t_cur, robot_id);
             }
-            else if (control_mode == "train")
-            {
-                train_control(robot_id);
-            }
+
             end_clock = clock();
             duration = (double)(end_clock - start_clock) / CLOCKS_PER_SEC * 1000;
             // ROS_INFO("Control times : %f ms",duration);
@@ -224,17 +239,30 @@ public:
 
         // pub_robot_1_cmd->publish(motor_cmd);
     }
+
+    void actionCallback(int robot_id)
+    {
+        if (!receive_action)
+        {
+            return;
+        }
+        else
+        {
+            train_control(robot_id);
+        }
+    }
 private:
     std::vector<rclcpp::Publisher<motor_interfaces::msg::Motor>::SharedPtr> pub_robot_cmds;
     std::vector<rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr> bspline_visualizations;
 
     std::vector<rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr> sub_robot_odoms;
+    std::vector<rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr> sub_robot_poses;
     std::vector<rclcpp::Subscription<std_msgs::msg::UInt8>::SharedPtr> sub_robot_dirs;
     std::vector<rclcpp::Subscription<traj_interfaces::msg::Bspline>::SharedPtr> sub_robot_bsplines;
     std::vector<rclcpp::Subscription<std_msgs::msg::UInt8>::SharedPtr> sub_robot_stops;
     rclcpp::Subscription<action_interfaces::msg::Action>::SharedPtr sub_action_msg;
 
-    std::vector<Eigen::Vector3d> odom_pos, odom_vel;
+    std::vector<Eigen::Vector3d> odom_pos, odom_vel, ref_pose, pre_pose;
     std::vector<Eigen::Quaterniond> odom_orient;
     std::vector<double> yaw;
     std::vector<std_msgs::msg::UInt8> dir;
@@ -242,7 +270,23 @@ private:
     std::vector<rclcpp::Time> start_time, time_e;
     std::vector<double> traj_duration;
     std::vector<double> actions;
-    std::deque<std::vector<double>> action_queue;
+    std::vector<double> pre_actions;
+    double yaw_ref, yaw_pre;
+    // std::deque<std::vector<double>> action_queue;
+
+    void poses_callback(const geometry_msgs::msg::Pose::SharedPtr msg, int robot_id)
+    {
+        if (!receive_action)
+        {
+            receive_action = true;
+        }
+        Eigen::Vector3d ref_pose_;
+        pre_pose[robot_id] = ref_pose[robot_id];
+        ref_pose_(0) = msg->position.x;
+        ref_pose_(1) = msg->position.y;
+        ref_pose_(2) = msg->orientation.w;
+        ref_pose[robot_id] = (ref_pose_);
+    }
 
     void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg, int robot_id)
     {   
@@ -298,7 +342,7 @@ private:
 
     void traj_callback(const traj_interfaces::msg::Bspline::SharedPtr msg, int robot_id)
     {   
-        if (receive_traj[robot_id] == true)
+        if (receive_mission[robot_id] == true)
         {
             return;
         }
@@ -321,7 +365,7 @@ private:
             pos_pts(2, i) = msg->pos_pts[i].z;
         }
 
-        bspline_planner::UniformBspline pos_traj(pos_pts, msg->order, 0.1);
+        bspline_planner::UniformBspline pos_traj(pos_pts, msg->order, interval);
         pos_traj.setKnot(knots);
 
         start_time[robot_id] = msg->start_time;
@@ -333,31 +377,83 @@ private:
         traj_.push_back(traj_[1].getDerivative());
 
         traj_duration[robot_id] = traj_[0].getTimeSum();
+        std::cout << "########## traj_duration: " << traj_duration[robot_id] << " ##########" << std::endl;
 
-        receive_traj[robot_id] = true;
+        receive_mission[robot_id] = true;
         traj[robot_id] = traj_;
     }
 
     void action_callback(const action_interfaces::msg::Action::SharedPtr msg)
     {
-        action_queue.push_back(msg->action);
+        if (!receive_action)
+        {
+            receive_action = true;
+        }
+        pre_actions = actions;
         actions = msg->action;
     }
 
     void train_control(int &robot_id)
     {   
-        int index = robot_id*2;
-        double vx = actions[index];
-        double vy = actions[index+1];
-        double linear_v = sqrt(vx * vx + vy * vy);
-        double angular_v = 0;
-        if (action_queue.size() > 1)
+        // 这里是纯网络控制
+        // int index = robot_id*2;
+        // double vx = actions[index];
+        // double vy = actions[index+1];
+        // double linear_v = sqrt(vx * vx + vy * vy);
+        // auto cur_angle = atan2(vy, vx);
+        // double angular_v = 0;
+        // if (pre_actions.size() > 0)
+        // {
+        //     double pre_vx = pre_actions[index];
+        //     double pre_vy = pre_actions[index+1];
+        //     double angle = acos((vx * pre_vx + vy * pre_vy) / (sqrt(vx * vx + vy * vy) * sqrt(pre_vx * pre_vx + pre_vy * pre_vy)));
+        //     std::cout << "angle: " << angle << std::endl;
+        //     angular_v = angle / t_step;
+        //     // std::cout << "cur_angle: " << cur_angle << " pre_angle: " << pre_angle << std::endl;
+        // }
+        // // std::cout << "linear_v: " << linear_v << " angular_v: " << angular_v << std::endl;
+
+        // 加入反步控制
+        Eigen::Matrix<float, 3, 3> T;
+        Eigen::Matrix<float, 3, 1> Eg; // Error of global 全局坐标系下的误差
+        Eigen::Matrix<float, 3, 1> Eb; // Error of body 车体坐标系下的误差
+        Eigen::Vector3d pos_ref_1, pos_pre_1; // 期望位置
+        double Vr, Wr, linear_v, angular_v;
+
+        pos_ref_1 = ref_pose[robot_id]; // 期望位置
+        pos_pre_1 = pre_pose[robot_id]; // 上一时刻位置
+        auto dis = sqrt(pow(pos_ref_1(0) - pos_pre_1(0), 2) + pow(pos_ref_1(1) - pos_pre_1(1), 2));
+        T << 1, 0, -sin(yaw[robot_id]),
+            0, 1, cos(yaw[robot_id]),
+            0, 0, 1;
+        yaw_pre = yaw_ref;
+        yaw_ref = atan2(pos_ref_1(1)-pos_pre_1(1), pos_ref_1(0)-pos_pre_1(0));       // 初始航向角
+
+        Vr = dis / 0.1;
+        Wr = (yaw_ref - yaw_pre) / 0.1;
+        
+
+        if (yaw[robot_id]*yaw_ref >= 0)
         {
-            auto pre_action = action_queue.front();
-            auto pre_angle = atan2(pre_action[index], pre_action[index+1]);
-            auto cur_angle = atan2(vy, vx);
-            auto angular_v = (cur_angle - pre_angle) / t_step;
+            Eg << pos_ref_1(0) - odom_pos[robot_id](0), pos_ref_1(1) - odom_pos[robot_id](1), yaw_ref - yaw[robot_id];
         }
+        else
+        {
+            if (yaw[robot_id] > 0)
+            {
+                Eg << pos_ref_1(0) - odom_pos[robot_id](0), pos_ref_1(1) - odom_pos[robot_id](1), yaw_ref - yaw[robot_id] - 2 * PI;
+            }
+            else
+            {
+                Eg << pos_ref_1(0) - odom_pos[robot_id](0), pos_ref_1(1) - odom_pos[robot_id](1), yaw_ref - yaw[robot_id] + 2 * PI;
+            }
+        }
+
+        // recorder.recordPose(robot_num, robot_id, pos_ref_1(0), pos_ref_1(1), yaw_ref, odom_pos[robot_id](0), odom_pos[robot_id](1), yaw[robot_id], t_cur);
+
+        Eb = T * Eg;
+        linear_v = Vr * cos(Eb[2]) + kx * Eb[0];
+        angular_v = Wr + ky * Eb[1] + kth * sin(Eb[2]);
 
         motor_cmd.left_speed = (linear_v - angular_v * HALF_DISTANCE_BETWEEN_WHEELS) / WHEEL_RADIUS;
         motor_cmd.right_speed = (linear_v + angular_v * HALF_DISTANCE_BETWEEN_WHEELS) / WHEEL_RADIUS;
@@ -636,8 +732,15 @@ int main(int argc, char **argv)
     for(int i = 0 ; i < node->robot_num; ++i)
     {
         auto timer_callback = [node, i](/* rclcpp::TimerBase::SharedPtr timer */)
-        {
-            node->cmdCallback(/* timer, */ i);
+        {   
+            if (control_mode == "train")
+            {
+                node->actionCallback(i);
+            }
+            else
+            {
+                node->cmdCallback(i);
+            }
         };
         auto timer = node->create_wall_timer(std::chrono::milliseconds(30), timer_callback);
         timers.push_back(timer);

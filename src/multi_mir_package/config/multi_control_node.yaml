@@ -8,7 +8,8 @@ multi_control_node: # This is the name of the node!
     kx: 1.0
     ky: 1.0
     kth: 1.0
-    control_mode: "backstepping"
+    # control_mode: "backstepping"
+    control_mode: "mpc"
     save_data: false
 
 traj_node: # This is the name of the node!

@@ -1,5 +1,6 @@
 #include "traj_pub.hpp"
 #include <Eigen/Dense>
+#include <fstream>
 
 // PlanningVisualization::Ptr visualization_;
 
@@ -11,6 +12,7 @@ public:
         this->declare_parameter<int>("robot_num", 1);
         this->get_parameter("robot_num", robot_num);
         std::cout << "/traj_node robot_num: " << robot_num << std::endl;
+        this->readTrajectory("/home/tony/webots_ws/robot_state_list.txt", robot_num);
 
         // 控制点
         Eigen::MatrixXd pos(3, 9);
@@ -35,24 +37,6 @@ public:
         pos_pts.push_back(pos_pts_3);
         pos_pts.push_back(pos_pts_4);
 
-        // Eigen::MatrixXd pos_pts_1(3, 9);
-        // pos_pts_1 << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
-        //     0.0, 0.0, 1.0, 3.0, 3.0, 3.0, 1.0, 0.0, 0.0,        // 第二行：y坐标
-        //     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;        // 第三行：z坐标
-        // pos_pts.push_back(pos_pts_1);
-
-        // Eigen::MatrixXd pos_pts_2(3, 9);
-        // pos_pts_2 << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
-        //     2.0, 2.0, 3.0, 5.0, 5.0, 5.0, 3.0, 2.0, 2.0,          // 第二行：y坐标
-        //     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;          // 第三行：z坐标
-        // pos_pts.push_back(pos_pts_2);
-
-        // Eigen::MatrixXd pos_pts_3(3, 9);
-        // pos_pts_3 << 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, // 第一行：x坐标
-        //     -2.0, -2.0, -1.0, 1.0, 1.0, 1.0, -1.0, -2.0, -2.0,          // 第二行：y坐标
-        //     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;          // 第三行：z坐标
-        // pos_pts.push_back(pos_pts_3);
-
         for (int i = 0; i < robot_num; ++i)
         {
             auto bspline_publisher = this->create_publisher<traj_interfaces::msg::Bspline>("/traj_pub/bspline_traj_" + std::to_string(i+1), 10);
@@ -72,6 +56,8 @@ private:
     std::vector<rclcpp::Publisher<traj_interfaces::msg::Bspline>::SharedPtr> bspline_publishers_;
     std::vector<rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr> dir_publishers_;
     std::vector<rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr> traj_rviz_pubs_;
+    std::map<int, std::vector<std::tuple<double, double, double>>> trajectories_;
+    std::vector<Eigen::MatrixXd> trajectory_matrixs;
 
     rclcpp::TimerBase::SharedPtr timer_;
 
@@ -80,11 +66,60 @@ private:
     std::vector<Eigen::MatrixXd> pos_pts; // 定义为类的成员变量，方便在publishBspline函数中使用
     int robot_num;
 
+    void readTrajectory(const std::string &filename, int &robot_num)
+    {
+        std::ifstream file(filename);
+        if (!file.is_open())
+        {
+            std::cerr << "Failed to open file: " << filename << std::endl;
+            return;
+        }
+
+        int robot_id;
+        double x, y, theta, time;
+        while (file >> robot_id >> x >> y >> theta >> time)
+        {
+            trajectories_[robot_id].emplace_back(x, y, theta);
+        }
+
+        file.close();
+
+        // for (int i = 0; i < robot_num; i++)
+        // {
+        //     Eigen::MatrixXd trajectory_matrix(3, trajectories_[i].size());
+        //     for (size_t j = 0; j < trajectories_[i].size(); j++)
+        //     {
+        //         trajectory_matrix(0, j) = std::get<0>(trajectories_[i][j]);
+        //         trajectory_matrix(1, j) = std::get<1>(trajectories_[i][j]);
+        //         trajectory_matrix(2, j) = 0.0;
+        //     }
+        //     trajectory_matrixs.push_back(trajectory_matrix);
+        // }
+        for (int i = 0; i < robot_num; i++)
+        {
+            int num = 4;
+            size_t trajectory_size = trajectories_[i].size();
+            size_t matrix_cols = (trajectory_size + num - 1) / num; // 计算列数，每隔10个数据放入一列
+            Eigen::MatrixXd trajectory_matrix(3, matrix_cols);
+
+            size_t k = 0;
+            for (size_t j = 0; j < trajectory_size; j += num)
+            {
+                trajectory_matrix(0, k) = std::get<0>(trajectories_[i][j]);
+                trajectory_matrix(1, k) = std::get<1>(trajectories_[i][j]);
+                trajectory_matrix(2, k) = 0.0;
+                ++k; // 使用前置递增运算符
+            }
+
+            trajectory_matrixs.push_back(trajectory_matrix);
+        }
+    }
+
     void publishMultiTrajectory()
     {
         for(int i = 0; i < robot_num; i++)
         {
-            publishBspline(pos_pts[i], bspline_publishers_[i], dir_publishers_[i], i);
+            publishBspline(trajectory_matrixs[i], bspline_publishers_[i], dir_publishers_[i], i);
         }
     }
 

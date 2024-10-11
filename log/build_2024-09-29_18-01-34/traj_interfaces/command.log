@@ -1,4 +1,0 @@
-Invoking command in '/home/tony/webots_ws/build/traj_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_interfaces -- -j16 -l16
-Invoked command in '/home/tony/webots_ws/build/traj_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_interfaces -- -j16 -l16
-Invoking command in '/home/tony/webots_ws/build/traj_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tony/webots_ws/build/traj_interfaces
-Invoked command in '/home/tony/webots_ws/build/traj_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tony/webots_ws/build/traj_interfaces

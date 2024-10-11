@@ -23,7 +23,8 @@ def generate_launch_description():
     # robot_num_value = 3
 
     webots = WebotsLauncher(
-        world=os.path.join(package_dir, 'worlds', 'multi_robot_world.wbt')
+        # world=os.path.join(package_dir, 'worlds', 'multi_robot_world.wbt')
+        world=os.path.join(package_dir, 'worlds', 'train_robot_world.wbt')
     )
 
     mir_robot_1_driver = Node(

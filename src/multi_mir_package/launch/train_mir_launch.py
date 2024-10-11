@@ -84,6 +84,18 @@ def generate_launch_description():
         arguments=['-d', os.path.join(package_dir, 'config', 'mir100.rviz')]
     )
 
+    traj_node = TimerAction(
+        period=3.0,
+        actions=[
+            Node(
+                package='multi_traj_publish',
+                executable='traj_pub',
+                output='screen',
+                parameters=[config]
+            )
+        ]
+    )
+
     post_train_node = TimerAction(
         period=3.0,
         actions=[
@@ -104,7 +116,8 @@ def generate_launch_description():
         mir_robot_4_driver,
         control_node,
         rviz2_node,
-        post_train_node,
+        traj_node,
+        # post_train_node,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,

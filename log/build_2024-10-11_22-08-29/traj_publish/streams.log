@@ -1,0 +1,80 @@
+[0.028s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/multi_traj_publish:/home/tony/webots_ws/install/multi_mpc_controller:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/action_interfaces:/home/tony/webots_ws/install/post_train:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake /home/tony/webots_ws/src/traj_publish -DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/install/traj_publish
+[0.092s] -- The C compiler identification is GNU 9.4.0
+[0.148s] -- The CXX compiler identification is GNU 9.4.0
+[0.153s] -- Check for working C compiler: /usr/bin/cc
+[0.225s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.226s] -- Detecting C compiler ABI info
+[0.302s] -- Detecting C compiler ABI info - done
+[0.314s] -- Detecting C compile features
+[0.315s] -- Detecting C compile features - done
+[0.316s] -- Check for working CXX compiler: /usr/bin/c++
+[0.402s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.403s] -- Detecting CXX compiler ABI info
+[0.487s] -- Detecting CXX compiler ABI info - done
+[0.501s] -- Detecting CXX compile features
+[0.502s] -- Detecting CXX compile features - done
+[0.506s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.537s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.537s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.762s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.814s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.822s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.918s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.956s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.033s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.085s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.087s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.088s] -- Looking for pthread.h
+[1.159s] -- Looking for pthread.h - found
+[1.159s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.235s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.235s] -- Looking for pthread_create in pthreads
+[1.298s] -- Looking for pthread_create in pthreads - not found
+[1.298s] -- Looking for pthread_create in pthread
+[1.368s] -- Looking for pthread_create in pthread - found
+[1.369s] -- Found Threads: TRUE  
+[1.507s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.596s] -- Found traj_interfaces: 0.0.0 (/home/tony/webots_ws/install/traj_interfaces/share/traj_interfaces/cmake)
+[1.652s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[1.707s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.783s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.784s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.784s] -- Configured cppcheck include dirs: 
+[1.784s] -- Configured cppcheck exclude dirs and/or files: 
+[1.785s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.785s] -- Configured cpplint exclude dirs and/or files: 
+[1.786s] -- Added test 'lint_cmake' to check CMake code style
+[1.787s] -- Added test 'uncrustify' to check C / C++ code style
+[1.787s] -- Configured uncrustify additional arguments: 
+[1.788s] -- Added test 'xmllint' to check XML markup files
+[1.793s] -- Configuring done
+[1.802s] -- Generating done
+[1.803s] -- Build files have been written to: /home/tony/webots_ws/build/traj_publish
+[1.812s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '0': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/multi_traj_publish:/home/tony/webots_ws/install/multi_mpc_controller:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/action_interfaces:/home/tony/webots_ws/install/post_train:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake /home/tony/webots_ws/src/traj_publish -DCMAKE_INSTALL_PREFIX=/home/tony/webots_ws/install/traj_publish
+[1.815s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/multi_traj_publish:/home/tony/webots_ws/install/multi_mpc_controller:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/action_interfaces:/home/tony/webots_ws/install/post_train:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[1.854s] [35m[1mScanning dependencies of target traj_pub[0m
+[1.941s] [ 66%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_pub.cpp.o[0m
+[1.941s] [ 66%] [32mBuilding CXX object CMakeFiles/traj_pub.dir/src/traj_visualization.cpp.o[0m
+[7.450s] [100%] [32m[1mLinking CXX executable traj_pub[0m
+[7.681s] [100%] Built target traj_pub
+[7.694s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '0': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/multi_traj_publish:/home/tony/webots_ws/install/multi_mpc_controller:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/action_interfaces:/home/tony/webots_ws/install/post_train:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake --build /home/tony/webots_ws/build/traj_publish -- -j16 -l16
+[7.726s] Invoking command in '/home/tony/webots_ws/build/traj_publish': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/multi_traj_publish:/home/tony/webots_ws/install/multi_mpc_controller:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/action_interfaces:/home/tony/webots_ws/install/post_train:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake --install /home/tony/webots_ws/build/traj_publish
+[7.735s] -- Install configuration: ""
+[7.735s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/package_run_dependencies/traj_publish
+[7.735s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/parent_prefix_path/traj_publish
+[7.735s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/ament_prefix_path.sh
+[7.735s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/ament_prefix_path.dsv
+[7.735s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/path.sh
+[7.735s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/environment/path.dsv
+[7.735s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.bash
+[7.736s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.sh
+[7.736s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.zsh
+[7.736s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/local_setup.dsv
+[7.736s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/package.dsv
+[7.736s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/ament_index/resource_index/packages/traj_publish
+[7.736s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake/traj_publishConfig.cmake
+[7.736s] -- Installing: /home/tony/webots_ws/install/traj_publish/share/traj_publish/cmake/traj_publishConfig-version.cmake
+[7.737s] -- Up-to-date: /home/tony/webots_ws/install/traj_publish/share/traj_publish/package.xml
+[7.737s] -- Installing: /home/tony/webots_ws/install/traj_publish/lib/traj_publish/traj_pub
+[7.739s] -- Set runtime path of "/home/tony/webots_ws/install/traj_publish/lib/traj_publish/traj_pub" to ""
+[7.741s] Invoked command in '/home/tony/webots_ws/build/traj_publish' returned '0': CMAKE_PREFIX_PATH=/home/tony/webots_ws/install/traj_interfaces:/home/tony/webots_ws/install/traj_publish:/home/tony/webots_ws/install/multi_traj_publish:/home/tony/webots_ws/install/multi_mpc_controller:/home/tony/webots_ws/install/mpc_controller:/home/tony/webots_ws/install/motor_interfaces:/home/tony/webots_ws/install/action_interfaces:/home/tony/webots_ws/install/post_train:/home/tony/webots_ws/install/my_package:/home/tony/webots_ws/install/my_mir_package:/home/tony/webots_ws/install/multi_mir_package:/opt/ros/foxy /usr/bin/cmake --install /home/tony/webots_ws/build/traj_publish

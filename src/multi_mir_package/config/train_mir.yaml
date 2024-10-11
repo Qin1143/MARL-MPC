@@ -9,9 +9,14 @@ multi_control_node: # This is the name of the node!
     kx: 1.0
     ky: 1.0
     kth: 1.0
+    interval: 0.1
     # control_mode: "backstepping"
     control_mode: "train"
-    save_data: false
+    save_data: true
+
+traj_node: # This is the name of the node!
+  ros__parameters:
+    robot_num: 4
 
 post_train_node:
   ros__parameters:
