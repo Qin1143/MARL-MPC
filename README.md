@@ -33,3 +33,4 @@ python3 result_plot.py
 
 ![3_rviz](figures/3_rviz.png)
 
+![result](figures/4robots_mpc_traj.png)
